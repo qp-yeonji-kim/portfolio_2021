@@ -69,6 +69,10 @@ header, section, article, footer {
 .f_r {
   float: right; }
 
+.max1400 {
+  max-width: 1400px;
+  margin: 0 auto; }
+
 body {
   font-family: PnM;
   font-size: 16px;

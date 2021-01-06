@@ -61,7 +61,7 @@
     left: -10%;
     width: 1008px;
     height: 1036px;
-    background-image: url("../images/index/island-i.svg");
+    background-image: url("../images/main/island-i.svg");
   }
 
   .link-project {
@@ -69,7 +69,7 @@
     bottom: -30%;
     width: 951px;
     height: 957px;
-    background-image: url("../images/index/island-p.svg");
+    background-image: url("../images/main/island-p.svg");
   }
 
   .mysite {
@@ -97,4 +97,87 @@
       }
     }
   }
+}
+
+/* 자기소개 페이지 */
+#aboutme {
+  position: relative;
+  padding-top: 100px;
+  background: $b-pink;
+
+  .bottom-bg{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  h2 {
+    margin-left: 120px;
+    font-size: 50px;
+    /* font-weight: 400; */
+  }
+
+  .my_feature {
+    position: relative;
+    width: 100%;
+    font-size: 40px;
+    line-height: 68px;
+
+    p {
+      @include t-form(translateY(-50%));
+      position: absolute;
+      top: 50%;
+    }
+
+    .me {
+      width: 680px;
+      height: 680px;
+      background: no-repeat center / contain;
+    }
+  }
+
+  .think {
+    >* {
+      float: right;
+    }
+
+    .me {
+      background-image: url("../images/main/magic.png");
+    }
+  }
+
+  .happy {
+    >* {
+      float: left;
+    }
+
+    p {
+      right: 0;
+    }
+
+    .me {
+      background-image: url("../images/main/making.png");
+    }
+  }
+
+  .ability {
+    >* {
+      float: left;
+    }
+    p{
+      position: static;
+      margin-top: 700px;
+    }
+    .me {
+      position: absolute;
+      top: 0;
+      left: 0;
+      background-image: url("../images/main/flying.png");
+    }
+  }
+
+
+
 }
