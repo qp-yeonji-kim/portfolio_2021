@@ -72,24 +72,29 @@
     background-image: url("../images/index/island-p.svg");
   }
 
-  .website {
+  .mysite {
     position: absolute;
     top: 5%;
     right: 5%;
+
     li {
       float: left;
       margin: 0 10px;
-      background: gold;
+
       a {
         display: inline-block;
-        font-family: LuxM;
-        font-weight: 600;
-        background: lightgreen;
-        span{
+        text-align: center;
+
+        img {
+          width: 24px;
+        }
+
+        span {
+          font-family: LuxM;
+          font-weight: 600;
           display: block;
         }
       }
     }
   }
-
 }

@@ -56,20 +56,21 @@
     width: 951px;
     height: 957px;
     background-image: url("../images/index/island-p.svg"); }
-  #main-cnt .website {
+  #main-cnt .mysite {
     position: absolute;
     top: 5%;
     right: 5%; }
-    #main-cnt .website li {
+    #main-cnt .mysite li {
       float: left;
-      margin: 0 10px;
-      background: gold; }
-      #main-cnt .website li a {
+      margin: 0 10px; }
+      #main-cnt .mysite li a {
         display: inline-block;
-        font-family: LuxM;
-        font-weight: 600;
-        background: lightgreen; }
-        #main-cnt .website li a span {
+        text-align: center; }
+        #main-cnt .mysite li a img {
+          width: 24px; }
+        #main-cnt .mysite li a span {
+          font-family: LuxM;
+          font-weight: 600;
           display: block; }
 
 /*# sourceMappingURL=main.css.map */
