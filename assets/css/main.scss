@@ -4,26 +4,92 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: $pink; 
-  .talk{
+  background: $pink;
+  overflow: hidden;
+
+  .talk {
     @include t-form(translate(-50%, -50%));
+    @include borderbox;
     position: relative;
     top: 50%;
     left: 50%;
-    width: 928px;
+    width: 688px;
     height: auto;
-    p:first-of-type{
-      font-size: 100px;
+    padding: 160px 120px;
+    z-index: 10;
+
+    p:first-of-type {
+      font-size: 80px;
+      line-height: 2;
+      text-align: left;
     }
-    p:nth-of-type(2){
-      font-size: 50px;
+
+    p:nth-of-type(2) {
+      font-size: 40px;
+      line-height: 60px;
+      text-align: right;
+
+      span {
+        color: #447844;
+      }
     }
-    img{
+
+    img {
       position: absolute;
       top: 0;
       left: 0;
-      border: 1px solid red;
       z-index: -10;
     }
   }
+
+  .link {
+    @include borderbox;
+    position: absolute;
+    padding: 100px;
+    text-align: center;
+    background: no-repeat /contain;
+
+    a {
+      display: inline-block;
+      font-size: 50px;
+      line-height: 910px;
+    }
+  }
+
+  .link-intro {
+    top: -30%;
+    left: -10%;
+    width: 1008px;
+    height: 1036px;
+    background-image: url("../images/index/island-i.svg");
+  }
+
+  .link-project {
+    right: -10%;
+    bottom: -30%;
+    width: 951px;
+    height: 957px;
+    background-image: url("../images/index/island-p.svg");
+  }
+
+  .website {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    li {
+      float: left;
+      margin: 0 10px;
+      background: gold;
+      a {
+        display: inline-block;
+        font-family: LuxM;
+        font-weight: 600;
+        background: lightgreen;
+        span{
+          display: block;
+        }
+      }
+    }
+  }
+
 }
