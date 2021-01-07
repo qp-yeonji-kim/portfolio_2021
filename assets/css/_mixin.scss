@@ -1,23 +1,36 @@
-@mixin t-form($value...){
+@mixin t-form($value...) {
   -webkit-transform: $value;
   transform: $value;
 }
-@mixin t-sition($value...){
+
+@mixin t-sition($value...) {
   -webkit-transition: $value;
   -moz-transition: $value;
   -o-transition: $value;
   transition: $value;
 }
-@mixin bg-size($value...){
+
+@mixin bg-size($value...) {
   -webkit-background-size: $value !important;
   background-size: $value !important;
 }
-@mixin borderbox{
+
+@mixin borderbox {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-@mixin b-radius($value...){
-  -webkit-border-radius: $value; 
-  border-radius: $value; 
+
+@mixin b-radius($value...) {
+  -webkit-border-radius: $value;
+  -moz-border-radius: $value;
+  -ms-border-radius: $value;
+  -o-border-radius: $value;
+  border-radius: $value;
+}
+
+@mixin ani($value...) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  animation: $value;
 }
