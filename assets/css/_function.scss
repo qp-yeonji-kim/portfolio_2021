@@ -1,0 +1,4 @@
+@function vw-calc($px) {
+  $vwSize: $px / (1920 / 100);
+  @return #{$vwSize}vw;
+}
