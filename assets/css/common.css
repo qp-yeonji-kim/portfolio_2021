@@ -11,11 +11,18 @@
   src: url("../fonts/THELuxMj2B.eot");
   src: url("../fonts/THELuxMj2B.eot#iefix") format("embedded-opentype"), url("../fonts/THELuxMj2B.woff2") format("woff2"), url("../fonts/THELuxMj2B.woff") format("woff"), url("../fonts/THELuxMj2B.ttf") format("truetype"); }
 /* tag reset */
-body, h1, h2, h3, p, ul {
+body,
+h1,
+h2,
+h3,
+p,
+ul {
   padding: 0;
   margin: 0; }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-size: 100%; }
 
 ul {
@@ -25,7 +32,8 @@ img {
   border: none;
   vertical-align: top; }
 
-button, input {
+button,
+input {
   border: none;
   background: none;
   font-family: inherit;
@@ -36,11 +44,17 @@ button, input {
 button {
   cursor: pointer; }
 
-a:link, a:visited, a:hover, a:active {
+a:link,
+a:visited,
+a:hover,
+a:active {
   text-decoration: none;
   color: inherit; }
 
-header, section, article, footer {
+header,
+section,
+article,
+footer {
   display: block; }
 
 .blind-b {
@@ -72,6 +86,15 @@ header, section, article, footer {
 .max1400 {
   max-width: 1400px;
   margin: 0 auto; }
+
+.bg-bpink {
+  background: #d9abb3; }
+
+.bg-pink {
+  background: #e6c9c6; }
+
+.bg-lpink {
+  background: #e5dedd; }
 
 body {
   font-family: PnM;

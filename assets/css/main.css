@@ -3,7 +3,6 @@
   position: relative;
   width: 100%;
   height: 100vh;
-  background: #e6c9c6;
   overflow: hidden; }
   #main-cnt .talk {
     -webkit-transform: translate(-50%, -50%);
@@ -37,11 +36,25 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
     position: absolute;
     padding: 100px;
     text-align: center;
     background: no-repeat /contain; }
+    #main-cnt .link.bigger {
+      -webkit-transform: scale(5);
+      transform: scale(5);
+      z-index: 100; }
+      #main-cnt .link.bigger a {
+        opacity: 0; }
     #main-cnt .link a {
+      -webkit-transition: opacity 0.3s;
+      -moz-transition: opacity 0.3s;
+      -o-transition: opacity 0.3s;
+      transition: opacity 0.3s;
       display: inline-block;
       font-size: 50px;
       line-height: 910px; }
@@ -74,21 +87,26 @@
           font-weight: 600;
           display: block; }
 
-/* .change-site{
-  transform: scale(100, 100);
-  z-index: 1000;
-} 왜 안먹히는 것인가.. */
 /* 자기소개 페이지 */
 #aboutme {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
   position: relative;
+  top: 100px;
+  width: 100vw;
   padding-top: 100px;
-  background: #d9abb3; }
+  background: url("../images/main/bg-pink.svg") no-repeat bottom center/100% auto; }
+  #aboutme.appear {
+    opacity: 1;
+    top: 0px; }
   #aboutme .bottom-bg {
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
-    height: 100%; }
+    width: 100vw; }
   #aboutme h2 {
     margin-left: 120px;
     font-size: 50px;
@@ -127,16 +145,35 @@
     top: 0;
     left: 0;
     background-image: url("../images/main/flying.png"); }
-  #aboutme .ability_list strong {
-    font-family: LuxM;
-    font-size: 40px;
-    color: #333; }
-  #aboutme .ability_list p {
-    font-size: 24px;
-    line-height: 36px;
-    color: #fff; }
-  #aboutme .ability_list .orange-o, #aboutme .ability_list .black-o {
+  #aboutme .ability_list li {
+    position: relative;
+    float: left;
     width: 328px;
-    height: 328px; }
+    height: 328px;
+    background: url("../images/main/c-orange.svg") no-repeat center/cover; }
+    #aboutme .ability_list li + li {
+      margin-left: 152px; }
+    #aboutme .ability_list li::before {
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      position: absolute;
+      top: 50%;
+      left: 120px;
+      background: url("../images/main/c-black.svg") no-repeat center/cover; }
+    #aboutme .ability_list li .ability_txt {
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      position: absolute;
+      top: 50%;
+      left: 120px;
+      width: 100%; }
+      #aboutme .ability_list li .ability_txt strong {
+        font-family: LuxM;
+        font-size: 40px;
+        color: #333; }
+      #aboutme .ability_list li .ability_txt p {
+        font-size: 24px;
+        line-height: 36px;
+        color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
