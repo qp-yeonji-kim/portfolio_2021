@@ -99,13 +99,18 @@
   }
 }
 
+/* .change-site{
+  transform: scale(100, 100);
+  z-index: 1000;
+} 왜 안먹히는 것인가.. */
+
 /* 자기소개 페이지 */
 #aboutme {
   position: relative;
   padding-top: 100px;
   background: $b-pink;
 
-  .bottom-bg{
+  .bottom-bg {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -166,10 +171,12 @@
     >* {
       float: left;
     }
-    p{
+
+    p {
       position: static;
       margin-top: 700px;
     }
+
     .me {
       position: absolute;
       top: 0;
@@ -178,6 +185,22 @@
     }
   }
 
+  .ability_list {
+    strong {
+      font-family: LuxM;
+      font-size: 40px;
+      color: #333;
+    }
 
+    p {
+      font-size: 24px;
+      line-height: 36px;
+      color: #fff;
+    }
+    .orange-o, .black-o{
+      width: 328px;
+      height: 328px;
+    }
+  }
 
 }
