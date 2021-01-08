@@ -159,7 +159,8 @@
     position: relative;
     width: 100%;
     font-size: 40px;
-    line-height: 68px; }
+    line-height: 68px;
+    border: 1px solid hotpink; }
     #aboutme .my_feature p {
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
@@ -198,22 +199,27 @@
     right: 0; }
   #aboutme .happy .me::after {
     background: url("../images/main/making.png") no-repeat center; }
-  #aboutme .ability > * {
-    float: left; }
-  #aboutme .ability p {
-    position: static;
-    margin-top: 700px; }
-  #aboutme .ability .me {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
-    border-radius: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: none;
-    background-image: url("../images/main/flying.png"); }
+  #aboutme .ability {
+    height: 650px; }
+    #aboutme .ability > * {
+      float: left; }
+    #aboutme .ability p {
+      top: 500px; }
+    #aboutme .ability .me {
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      -ms-border-radius: 0;
+      -o-border-radius: 0;
+      border-radius: 0;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background: none;
+      background-image: url("../images/main/flying.png");
+      transition: all 1s; }
+      #aboutme .ability .me:hover {
+        bottom: 150px;
+        left: 750px; }
   #aboutme .ability_list {
     padding: 100px 0; }
     #aboutme .ability_list li {

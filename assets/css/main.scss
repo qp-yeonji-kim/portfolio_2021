@@ -171,6 +171,7 @@
     width: 100%;
     font-size: 40px;
     line-height: 68px;
+    border: 1px solid hotpink;
 
     p {
       @include t-form(translateY(-50%));
@@ -224,23 +225,28 @@
   }
 
   .ability {
+    height: 650px;
     >* {
       float: left;
     }
 
     p {
-      position: static;
-      margin-top: 700px;
+      top: 500px;
     }
 
     .me {
       @include b-radius(0);
       position: absolute;
-      top: 0;
+      bottom: 0;
       left: 0;
       background: none;
       background-image: url("../images/main/flying.png");
+      transition: all 1s;
       
+      &:hover{
+        bottom: 150px;
+        left: 750px;
+      }
     }
   }
 
