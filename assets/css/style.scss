@@ -194,6 +194,8 @@
   }
 
   .think {
+    opacity: 0;
+    top: 100px;
     >* {
       float: right;
     }

@@ -184,10 +184,13 @@
         left: 50%;
         width: 100%;
         height: 100%; }
-  #aboutme .think > * {
-    float: right; }
-  #aboutme .think .me::after {
-    background: url("../images/main/magic.png") no-repeat center; }
+  #aboutme .think {
+    opacity: 0;
+    top: 100px; }
+    #aboutme .think > * {
+      float: right; }
+    #aboutme .think .me::after {
+      background: url("../images/main/magic.png") no-repeat center; }
   #aboutme .happy > * {
     float: left; }
   #aboutme .happy p {

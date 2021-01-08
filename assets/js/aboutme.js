@@ -2,12 +2,14 @@ $(document).ready(function () {
   var timer = 0;
   var scrollY;
 
+  $('#aboutme .think').stop().animate({'opacity': 1, 'top': 0});
+
   $(window).on('scroll', function () {
     clearTimeout(timer);
 
     timer = setTimeout(function () {
       scrollY = $(this).scrollTop();
-      $('#aboutme .my_feature').each(function () {
+      $('#aboutme .my_feature').not('.think').each(function () {
         var cntY = $(this).offset().top;
         if (scrollY < cntY) $(this).stop().animate({
           'opacity': 0,
