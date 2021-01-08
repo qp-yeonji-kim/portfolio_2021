@@ -138,8 +138,23 @@
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  opacity: 0;
+  top: 100px;
   position: relative;
   background: url("../images/main/bg-pink.svg") no-repeat bottom center/100%; }
+  #aboutme.load {
+    opacity: 1;
+    top: 0; }
+  #aboutme .hide {
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    opacity: 0;
+    top: 100px; }
+    #aboutme .hide.fadein {
+      opacity: 1;
+      top: 0; }
   #aboutme .bottom-bg {
     position: absolute;
     bottom: 0;
@@ -148,14 +163,13 @@
   #aboutme h2 {
     padding-top: 100px;
     margin-left: 120px;
-    font-size: 50px;
-    /* font-weight: 400; */ }
+    font-size: 50px; }
   #aboutme .my_feature {
     position: relative;
     width: 100%;
+    padding-top: 150px;
     font-size: 40px;
-    line-height: 68px;
-    border: 1px solid hotpink; }
+    line-height: 68px; }
     #aboutme .my_feature p {
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
@@ -185,8 +199,7 @@
         width: 100%;
         height: 100%; }
   #aboutme .think {
-    opacity: 0;
-    top: 100px; }
+    padding-top: 0; }
     #aboutme .think > * {
       float: right; }
     #aboutme .think .me::after {
@@ -199,25 +212,53 @@
     background: url("../images/main/making.png") no-repeat center; }
   #aboutme .ability {
     height: 650px; }
+    #aboutme .ability.fadein .show {
+      opacity: 0; }
+    #aboutme .ability.fadein .appear {
+      opacity: 1 !important; }
+    #aboutme .ability.fadein .me {
+      bottom: 150px;
+      left: 670px; }
     #aboutme .ability > * {
       float: left; }
-    #aboutme .ability p {
-      top: 500px; }
+    #aboutme .ability > div:first-child {
+      position: relative;
+      top: 50%; }
+      #aboutme .ability > div:first-child .show-magic {
+        position: relative;
+        display: inline-block;
+        color: #ed6d46;
+        background: #fff;
+        border: 2px solid #ed6d46; }
+        #aboutme .ability > div:first-child .show-magic .show {
+          -webkit-transition: opacity 0.5s 1.5s;
+          -moz-transition: opacity 0.5s 1.5s;
+          -o-transition: opacity 0.5s 1.5s;
+          transition: opacity 0.5s 1.5s; }
+        #aboutme .ability > div:first-child .show-magic .appear {
+          -webkit-transition: opacity 0.5s 2s;
+          -moz-transition: opacity 0.5s 2s;
+          -o-transition: opacity 0.5s 2s;
+          transition: opacity 0.5s 2s;
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0; }
     #aboutme .ability .me {
       -webkit-border-radius: 0;
       -moz-border-radius: 0;
       -ms-border-radius: 0;
       -o-border-radius: 0;
       border-radius: 0;
+      -webkit-transition: all 1.5s cubic-bezier(0.41, 0.01, 1, 1);
+      -moz-transition: all 1.5s cubic-bezier(0.41, 0.01, 1, 1);
+      -o-transition: all 1.5s cubic-bezier(0.41, 0.01, 1, 1);
+      transition: all 1.5s cubic-bezier(0.41, 0.01, 1, 1);
       position: absolute;
       bottom: 0;
       left: 0;
       background: none;
-      background-image: url("../images/main/flying.png");
-      transition: all 1s; }
-      #aboutme .ability .me:hover {
-        bottom: 150px;
-        left: 750px; }
+      background-image: url("../images/main/flying.png"); }
   #aboutme .ability_list li {
     position: relative;
     float: left;

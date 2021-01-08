@@ -142,8 +142,26 @@
 
 #aboutme {
   @include t-sition(all .5s);
+  opacity: 0;
+  top: 100px;
   position: relative;
   background: url("../images/main/bg-pink.svg") no-repeat bottom center / 100%;
+
+  &.load {
+    opacity: 1;
+    top: 0;
+  }
+
+    .hide {
+    @include t-sition(all .5s);
+    opacity: 0;
+    top: 100px;
+
+    &.fadein {
+      opacity: 1;
+      top: 0;
+    } 
+  }
 
   .bottom-bg {
     position: absolute;
@@ -156,15 +174,14 @@
     padding-top: 100px;
     margin-left: 120px;
     font-size: 50px;
-    /* font-weight: 400; */
   }
 
   .my_feature {
     position: relative;
     width: 100%;
+    padding-top: 150px;
     font-size: 40px;
     line-height: 68px;
-    border: 1px solid hotpink;
 
     p {
       @include t-form(translateY(-50%));
@@ -194,8 +211,8 @@
   }
 
   .think {
-    opacity: 0;
-    top: 100px;
+    padding-top: 0;
+
     >* {
       float: right;
     }
@@ -206,6 +223,7 @@
   }
 
   .happy {
+
     >* {
       float: left;
     }
@@ -221,27 +239,59 @@
 
   .ability {
     height: 650px;
+
+    &.fadein {
+      .show {
+        opacity: 0;
+      }
+
+      .appear {
+        opacity: 1 !important;
+      }
+
+      .me {
+        bottom: 150px;
+        left: 670px;
+      }
+    }
+
     >* {
       float: left;
     }
 
-    p {
-      top: 500px;
+    >div:first-child {
+      position: relative;
+      top: 50%;
+
+      .show-magic {
+        position: relative;
+        display: inline-block;
+        color: #ed6d46;
+        background: #fff;
+        border: 2px solid #ed6d46;
+
+        .show {
+          @include t-sition (opacity 0.5s 1.5s);
+        }
+
+        .appear {
+          @include t-sition (opacity 0.5s 2s);
+          position: absolute;
+          top: 0;
+          left: 0;
+          opacity: 0;
+        }
+      }
     }
 
     .me {
       @include b-radius(0);
+      @include t-sition(all 1.5s cubic-bezier(0.41, 0.01, 1, 1));
       position: absolute;
       bottom: 0;
       left: 0;
       background: none;
       background-image: url("../images/main/flying.png");
-      transition: all 1s;
-      
-      &:hover{
-        bottom: 150px;
-        left: 750px;
-      }
     }
   }
 
