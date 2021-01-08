@@ -1,13 +1,14 @@
-@mixin t-form($value...) {
-  -webkit-transform: $value;
-  transform: $value;
-}
-
 @mixin t-sition($value...) {
   -webkit-transition: $value;
   -moz-transition: $value;
   -o-transition: $value;
   transition: $value;
+}
+
+@mixin ani($value...) {
+  -webkit-animation: $value;
+  -moz-animation: $value;
+  animation: $value;
 }
 
 @mixin bg-size($value...) {
@@ -29,8 +30,7 @@
   border-radius: $value;
 }
 
-@mixin ani($value...) {
-  -webkit-animation: $value;
-  -moz-animation: $value;
-  animation: $value;
+@mixin t-form($value...) {
+  -webkit-transform: $value;
+  transform: $value;
 }

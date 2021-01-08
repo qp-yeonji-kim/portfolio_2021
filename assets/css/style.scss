@@ -142,15 +142,8 @@
 
 #aboutme {
   @include t-sition(all .5s);
-  opacity: 0;
   position: relative;
-  top: 100px;
   background: url("../images/main/bg-pink.svg") no-repeat bottom center / 100%;
-
-  &.appear {
-    opacity: 1;
-    top: 0px;
-  }
 
   .bottom-bg {
     position: absolute;
@@ -251,7 +244,6 @@
   }
 
   .ability_list {
-    padding: 100px 0;
 
     li {
       position: relative;
