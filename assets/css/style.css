@@ -330,9 +330,8 @@
       left: 50%;
       width: 600px;
       height: 578px;
-      background: url("../images/main/thinking.png") no-repeat center;
-      transition: all 10s; }
-    #aboutme #main-project.right::after {
+      background: url("../images/main/thinking.png") no-repeat center; }
+    #aboutme #main-project.left::after {
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
       transform-origin: 25% 50%; }
@@ -365,6 +364,20 @@
         width: 208px;
         height: 208px;
         border: 3px solid #000; }
+      #aboutme #main-project .link svg,
+      #aboutme #main-project .link path {
+        position: absolute;
+        top: 80px;
+        z-index: 10; }
+      #aboutme #main-project .link svg {
+        width: 280px;
+        height: 280px;
+        color: #ed6d46; }
+      #aboutme #main-project .link path {
+        fill: #ec6d48;
+        stroke-dasharray: 1453.2303466796875px;
+        stroke-dashoffset: 1453.2303466796875px;
+        animation: checking 0.5s ease forwards; }
       #aboutme #main-project .link span {
         position: relative;
         display: block;
@@ -405,7 +418,19 @@
         width: 100%; }
     #aboutme #main-project .link-main {
       float: left; }
+      #aboutme #main-project .link-main svg,
+      #aboutme #main-project .link-main path {
+        left: 2%; }
     #aboutme #main-project .link-project {
       float: right; }
+      #aboutme #main-project .link-project svg,
+      #aboutme #main-project .link-project path {
+        right: 2%; }
+
+@keyframes checking {
+  0% {
+    stroke-dashoffset: 1453.2303466796875px; }
+  100% {
+    stroke-dashoffset: 0; } }
 
 /*# sourceMappingURL=style.css.map */

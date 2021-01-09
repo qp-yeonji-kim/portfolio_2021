@@ -375,10 +375,9 @@
       width: 600px;
       height: 578px;
       background: url("../images/main/thinking.png") no-repeat center;
-      transition: all 10s;
     }
 
-    &.right {
+    &.left {
       &::after {
         @include t-form(scaleX(-1));
         transform-origin: 25% 50%;
@@ -408,6 +407,26 @@
         width: 208px;
         height: 208px;
         border: 3px solid #000;
+      }
+
+      svg,
+      path {
+        position: absolute;
+        top: 80px;
+        z-index: 10;
+      }
+
+      svg {
+        width: 280px;
+        height: 280px;
+        color: $orange;
+      }
+
+      path {
+        fill: #ec6d48;
+        stroke-dasharray: 1453.2303466796875px;
+        stroke-dashoffset: 1453.2303466796875px;
+        animation: checking 0.5s ease forwards;
       }
 
       span {
@@ -468,10 +487,30 @@
 
     .link-main {
       float: left;
+
+      svg,
+      path {
+        left: 2%;
+      }
     }
 
     .link-project {
       float: right;
+
+      svg,
+      path {
+        right: 2%;
+      }
     }
+  }
+}
+
+@keyframes checking {
+  0% {
+    stroke-dashoffset: 1453.2303466796875px;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
   }
 }

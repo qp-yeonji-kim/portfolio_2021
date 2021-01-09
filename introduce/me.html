@@ -10,6 +10,13 @@
   <script src="../assets/js/jquery-1.12.4.min.js"></script>
   <script src="../assets/js/common.js"></script>
   <script src="../assets/js/aboutme.js"></script>
+  <script>
+    /* svg의 총 길이를 측정하는 스크립트 */
+    window.onload = function () {
+      var size = document.getElementById('check').getTotalLength()
+      console.log(size); //1453.2303466796875
+    }
+  </script>
 </head>
 
 <body class="bg-bpink">
@@ -76,10 +83,14 @@
     <div id="main-project" class="clearfix">
       <p>다음엔 어디로 가볼까요?</p>
       <div class="link link-main">
-        <a href="../index.html"></a><span>메인화면 보기</span>
+        <a href="../index.html"></a>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+        <span>메인화면 보기</span>
       </div>
       <div class="link link-project">
-        <a href="../project/project.html"></a><span>프로젝트 보기</span>
+        <a href="../project/project.html"></a>
+        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="check" class="check" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+        <span>프로젝트 보기</span>
       </div>
     </div>
   </section>
