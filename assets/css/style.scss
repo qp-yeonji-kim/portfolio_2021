@@ -410,23 +410,21 @@
       }
 
       svg,
-      path {
+      polyline {
         position: absolute;
-        top: 80px;
+        top: 20px;
         z-index: 10;
       }
 
       svg {
-        width: 280px;
-        height: 280px;
+        width: 380px;
+        height: 380px;
+        stroke: #ec6d48;
+        stroke-width: 1.44;
+        stroke-linecap: round;
+        stroke-linejoin: miter;
+        fill: none;
         color: $orange;
-      }
-
-      path {
-        fill: #ec6d48;
-        stroke-dasharray: 1453.2303466796875px;
-        stroke-dashoffset: 1453.2303466796875px;
-        animation: checking 0.5s ease forwards;
       }
 
       span {
@@ -488,29 +486,17 @@
     .link-main {
       float: left;
 
-      svg,
-      path {
-        left: 2%;
+      svg {
+        left: 0;
       }
     }
 
     .link-project {
       float: right;
 
-      svg,
-      path {
-        right: 2%;
+      svg {
+        right: -30px;
       }
     }
-  }
-}
-
-@keyframes checking {
-  0% {
-    stroke-dashoffset: 1453.2303466796875px;
-  }
-
-  100% {
-    stroke-dashoffset: 0;
   }
 }

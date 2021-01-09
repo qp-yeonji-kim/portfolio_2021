@@ -365,19 +365,19 @@
         height: 208px;
         border: 3px solid #000; }
       #aboutme #main-project .link svg,
-      #aboutme #main-project .link path {
+      #aboutme #main-project .link polyline {
         position: absolute;
-        top: 80px;
+        top: 20px;
         z-index: 10; }
       #aboutme #main-project .link svg {
-        width: 280px;
-        height: 280px;
+        width: 380px;
+        height: 380px;
+        stroke: #ec6d48;
+        stroke-width: 1.44;
+        stroke-linecap: round;
+        stroke-linejoin: miter;
+        fill: none;
         color: #ed6d46; }
-      #aboutme #main-project .link path {
-        fill: #ec6d48;
-        stroke-dasharray: 1453.2303466796875px;
-        stroke-dashoffset: 1453.2303466796875px;
-        animation: checking 0.5s ease forwards; }
       #aboutme #main-project .link span {
         position: relative;
         display: block;
@@ -418,19 +418,11 @@
         width: 100%; }
     #aboutme #main-project .link-main {
       float: left; }
-      #aboutme #main-project .link-main svg,
-      #aboutme #main-project .link-main path {
-        left: 2%; }
+      #aboutme #main-project .link-main svg {
+        left: 0; }
     #aboutme #main-project .link-project {
       float: right; }
-      #aboutme #main-project .link-project svg,
-      #aboutme #main-project .link-project path {
-        right: 2%; }
-
-@keyframes checking {
-  0% {
-    stroke-dashoffset: 1453.2303466796875px; }
-  100% {
-    stroke-dashoffset: 0; } }
+      #aboutme #main-project .link-project svg {
+        right: -30px; }
 
 /*# sourceMappingURL=style.css.map */
