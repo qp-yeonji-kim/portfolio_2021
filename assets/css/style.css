@@ -545,4 +545,10 @@
         #project-list ul li a:hover::after, #project-list ul li a:focus::after {
           width: 100%; }
 
+/* project-detail */
+#cgv-info .summary-info {
+  background: #b34744; }
+  #cgv-info .summary-info .pic-area {
+    background: url("../images/project/main-cgv1.png"); }
+
 /*# sourceMappingURL=style.css.map */

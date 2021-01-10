@@ -133,3 +133,62 @@ body {
   font-weight: 400;
   color: $b-brown;
 }
+
+.summary-info {
+  width: 100%;
+  height: 808px;
+  color: #fff;
+
+  .txt-area {
+    h2 {
+      display: inline-block;
+      font-size: 60px;
+
+      span {
+        font-size: 110px;
+      }
+    }
+
+    ul {
+      max-width: 700px;
+      li {
+        margin-bottom: 32px;
+        font-size: 24px;
+
+        >* {
+          display: inline-block;
+          width: 208px;
+        }
+
+        .sum-title {
+          height: 30px;
+          font-size: 30px;
+          text-align: center;
+          margin-right: 32px;
+        }
+
+        .sum-info {
+          display: inline-block;
+          font-size: 24px;
+          line-height: 1.25;
+        }
+      }
+    }
+
+    a {
+      @include bg-size(cover);
+      display: block;
+      width: 328px;
+      height: 101px;
+      background: url("../images/project/island-mini.svg") no-repeat center;
+    }
+  }
+
+  .pic-area {
+    @include bg-size(cover);
+    float: right;
+    width: 808px;
+    height: 808px;
+    background: no-repeat center;
+  }
+}
