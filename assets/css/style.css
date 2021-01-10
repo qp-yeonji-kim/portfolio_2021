@@ -138,14 +138,11 @@
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
-  opacity: 0;
+  opacity: 1;
   position: relative;
-  top: 100px;
+  top: 0;
   padding-bottom: 400px;
   background: url("../images/main/bg-pink.svg") no-repeat bottom center/100%; }
-  #aboutme.load {
-    opacity: 1;
-    top: 0; }
   #aboutme .hide {
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
@@ -430,5 +427,14 @@
   100% {
     opacity: 1;
     width: 200px; } }
+/* project */
+#project-list {
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 1;
+  position: relative;
+  top: 0; }
 
 /*# sourceMappingURL=style.css.map */

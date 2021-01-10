@@ -2,7 +2,7 @@ $(document).ready(function () {
   var timer = 0;
   var scrollY;
 
-  $('#aboutme').addClass('load');
+  $('#aboutme').removeClass('load');
 
   $(window).on('scroll', function () {
     clearTimeout(timer);
@@ -28,7 +28,15 @@ $(document).ready(function () {
 
   $('#main-project .link a').on('click', function (e) {
     e.preventDefault();
+    var $clickedA = $(this);
     $(this).parent().addClass('click');
-
+    setTimeout(function () {
+      if ($clickedA.parent().hasClass('link-main'))
+        location.href = '../index.html';
+      else if ($clickedA.parent().hasClass('link-project'))
+        location.href = '../project/project.html';
+    }, 1000);
   });
+
+
 });

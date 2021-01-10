@@ -139,19 +139,13 @@
 }
 
 /* 자기소개 페이지 */
-
 #aboutme {
   @include t-sition(all .5s);
-  opacity: 0;
+  opacity: 1;
   position: relative;
-  top: 100px;
+  top: 0;
   padding-bottom: 400px;
   background: url("../images/main/bg-pink.svg") no-repeat bottom center / 100%;
-
-  &.load {
-    opacity: 1;
-    top: 0;
-  }
 
   .hide {
     @include t-sition(all .5s);
@@ -508,4 +502,13 @@
     opacity: 1;
     width: 200px;
   }
+}
+
+/* project */
+#project-list {
+  @include t-sition(all .5s);
+  opacity: 1;
+  position: relative;
+  top: 0;
+
 }
