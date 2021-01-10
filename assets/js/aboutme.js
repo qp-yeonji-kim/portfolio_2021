@@ -2,7 +2,7 @@ $(document).ready(function () {
   var timer = 0;
   var scrollY;
 
-  $('#aboutme').removeClass('load');
+  $('#aboutme').addClass('load');
 
   $(window).on('scroll', function () {
     clearTimeout(timer);

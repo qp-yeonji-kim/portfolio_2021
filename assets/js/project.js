@@ -1,3 +1,3 @@
 $(document).ready(function(){
-  $('#project-list').removeClass('load');
+  $('#project-list').addClass('load');
 });
