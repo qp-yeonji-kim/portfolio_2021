@@ -34,8 +34,3 @@
   -webkit-transform: $value;
   transform: $value;
 }
-
-@mixin filter($value...){
-  -ms-filter: $value;
-  filter: $value;
-}
