@@ -174,4 +174,55 @@ body {
     height: 808px;
     background: no-repeat center; }
 
+.core-info {
+  margin-top: 160px; }
+  .core-info > p {
+    margin-bottom: 110px;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: center; }
+  .core-info .device-pc {
+    width: 1024px;
+    height: 820px;
+    margin: 0 auto;
+    -webkit-background-size: contain !important;
+    background-size: contain !important;
+    background: no-repeat center; }
+  .core-info h2 {
+    margin: 200px 0 50px;
+    font-size: 60px;
+    text-align: center; }
+  .core-info ul li {
+    float: left; }
+  .core-info ul strong {
+    display: block;
+    font-size: 48px;
+    font-weight: 300;
+    text-align: center; }
+  .core-info ul .core-pic,
+  .core-info ul .site-pic {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-background-size: cover !important;
+    background-size: cover !important;
+    background: no-repeat center; }
+  .core-info .point li {
+    width: 684px; }
+    .core-info .point li + li {
+      margin-left: 32px; }
+  .core-info .point .core-pic {
+    width: 684px;
+    height: 464px; }
+  .core-info .point strong {
+    margin: 30px 0; }
+  .core-info .point .core-txt {
+    width: 688px;
+    height: 400px;
+    font-size: 40px;
+    line-height: 68px;
+    word-break: break-all; }
+
 /*# sourceMappingURL=common.css.map */

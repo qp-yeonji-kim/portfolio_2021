@@ -142,6 +142,7 @@ body {
 
   .txt-area {
     float: left;
+
     h2 {
       display: inline-block;
       font-size: 60px;
@@ -206,7 +207,9 @@ body {
       text-indent: 20px;
       background: url("../images/project/island-mini.svg") no-repeat center;
       transform-origin: left bottom;
-      &:hover, &:focus{
+
+      &:hover,
+      &:focus {
         @include t-form(scale(1.2));
         @include t-sition(all .3s);
       }
@@ -220,5 +223,75 @@ body {
     height: 808px;
     background: no-repeat center;
   }
-  
+}
+
+.core-info {
+  margin-top: 160px;
+
+  >p {
+    margin-bottom: 110px;
+    font-size: 40px;
+    line-height: 68px;
+    text-align: center;
+  }
+
+  .device-pc {
+    width: 1024px;
+    height: 820px;
+    margin: 0 auto;
+    @include bg-size(contain);
+    background: no-repeat center;
+  }
+
+  h2 {
+    margin: 200px 0 50px;
+    font-size: 60px;
+    text-align: center;
+  }
+
+  ul {
+    li {
+      float: left;
+    }
+
+    strong {
+      display: block;
+      font-size: 48px;
+      font-weight: 300;
+      text-align: center;
+    }
+
+    .core-pic,
+    .site-pic {
+      @include b-radius(4px);
+      @include bg-size(cover);
+      background: no-repeat center;
+    }
+  }
+
+  .point {
+    li {
+      width: 684px;
+      +li {
+        margin-left: 32px;
+      }
+    }
+
+    .core-pic {
+      width: 684px;
+      height: 464px;
+    }
+
+    strong{
+      margin: 30px 0;
+    }
+
+    .core-txt {
+      width: 688px;
+      height: 400px;
+      font-size: 40px;
+      line-height: 68px;
+      word-break: break-all;
+    }
+  }
 }
