@@ -153,42 +153,38 @@ body {
       }
     }
 
-    ul {
-      max-width: 700px;
+    li {
+      margin-bottom: 32px;
 
-      li {
-        margin-bottom: 32px;
+      >* {
+        float: left;
+      }
 
-        >* {
-          float: left;
+      .sum-title {
+        position: relative;
+        display: inline-block;
+        width: 208px;
+        vertical-align: top;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 32px;
+
+        &::after {
+          @include t-form(translateY(-50%));
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 2px;
+          height: 22px;
+          background: rgba(255, 255, 255, .4);
         }
+      }
 
-        .sum-title {
-          position: relative;
-          display: inline-block;
-          width: 208px;
-          vertical-align: top;
-          font-size: 30px;
-          line-height: 30px;
-          text-align: center;
-          margin-right: 32px;
-
-          &::after {
-            @include t-form(translateY(-50%));
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 2px;
-            height: 22px;
-            background: rgba(255, 255, 255, .4);
-          }
-        }
-
-        .sum-info {
-          font-size: 24px;
-          line-height: 30px;
-        }
+      .sum-info {
+        font-size: 24px;
+        line-height: 30px;
       }
     }
 
@@ -236,10 +232,10 @@ body {
   }
 
   .device-pc {
+    @include bg-size(contain);
     width: 1024px;
     height: 820px;
     margin: 0 auto;
-    @include bg-size(contain);
     background: no-repeat center;
   }
 
@@ -272,6 +268,7 @@ body {
   .point {
     li {
       width: 684px;
+
       +li {
         margin-left: 32px;
       }
@@ -282,7 +279,7 @@ body {
       height: 464px;
     }
 
-    strong{
+    strong {
       margin: 30px 0;
     }
 
@@ -292,6 +289,42 @@ body {
       font-size: 40px;
       line-height: 68px;
       word-break: break-all;
+    }
+  }
+
+  .report {
+    >* {
+      width: 448px;
+      height: 652px;
+    }
+    .site-a11y {
+      font-size: 24px;
+      line-height: 54px;
+      text-align: center;
+      word-break: break-all;
+      p:nth-of-type(1){
+        position: relative;
+        margin: 24px 0 120px;
+        font-size: 20px;
+        &::after{
+          @include t-form(translateX(-50%));
+          content: "";
+          position: absolute;
+          bottom: -30px;
+          left: 50%;
+          width: 208px;
+          height: 4px;
+          background: $b-brown;
+        }
+      }
+    }
+    .site-pic{
+      @include bg-size(contain);
+      background: no-repeat center;
+    }
+    .site-code{
+      @include b-radius(4px);
+      background: #807f89;
     }
   }
 }

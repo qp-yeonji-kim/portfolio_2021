@@ -115,34 +115,32 @@ body {
       margin-bottom: 60px; }
       .summary-info .txt-area h2 span {
         font-size: 110px; }
-    .summary-info .txt-area ul {
-      max-width: 700px; }
-      .summary-info .txt-area ul li {
-        margin-bottom: 32px; }
-        .summary-info .txt-area ul li > * {
-          float: left; }
-        .summary-info .txt-area ul li .sum-title {
-          position: relative;
-          display: inline-block;
-          width: 208px;
-          vertical-align: top;
-          font-size: 30px;
-          line-height: 30px;
-          text-align: center;
-          margin-right: 32px; }
-          .summary-info .txt-area ul li .sum-title::after {
-            -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 2px;
-            height: 22px;
-            background: rgba(255, 255, 255, 0.4); }
-        .summary-info .txt-area ul li .sum-info {
-          font-size: 24px;
-          line-height: 30px; }
+    .summary-info .txt-area li {
+      margin-bottom: 32px; }
+      .summary-info .txt-area li > * {
+        float: left; }
+      .summary-info .txt-area li .sum-title {
+        position: relative;
+        display: inline-block;
+        width: 208px;
+        vertical-align: top;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        margin-right: 32px; }
+        .summary-info .txt-area li .sum-title::after {
+          -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+          content: "";
+          position: absolute;
+          top: 50%;
+          right: 0;
+          width: 2px;
+          height: 22px;
+          background: rgba(255, 255, 255, 0.4); }
+      .summary-info .txt-area li .sum-info {
+        font-size: 24px;
+        line-height: 30px; }
     .summary-info .txt-area a {
       -webkit-background-size: cover !important;
       background-size: cover !important;
@@ -182,11 +180,11 @@ body {
     line-height: 68px;
     text-align: center; }
   .core-info .device-pc {
+    -webkit-background-size: contain !important;
+    background-size: contain !important;
     width: 1024px;
     height: 820px;
     margin: 0 auto;
-    -webkit-background-size: contain !important;
-    background-size: contain !important;
     background: no-repeat center; }
   .core-info h2 {
     margin: 200px 0 50px;
@@ -224,5 +222,38 @@ body {
     font-size: 40px;
     line-height: 68px;
     word-break: break-all; }
+  .core-info .report > * {
+    width: 448px;
+    height: 652px; }
+  .core-info .report .site-a11y {
+    font-size: 24px;
+    line-height: 54px;
+    text-align: center;
+    word-break: break-all; }
+    .core-info .report .site-a11y p:nth-of-type(1) {
+      position: relative;
+      margin: 24px 0 120px;
+      font-size: 20px; }
+      .core-info .report .site-a11y p:nth-of-type(1)::after {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 50%;
+        width: 208px;
+        height: 4px;
+        background: #3e2a26; }
+  .core-info .report .site-pic {
+    -webkit-background-size: contain !important;
+    background-size: contain !important;
+    background: no-repeat center; }
+  .core-info .report .site-code {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    background: #807f89; }
 
 /*# sourceMappingURL=common.css.map */
