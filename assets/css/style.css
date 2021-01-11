@@ -571,6 +571,11 @@
   background: #b34744; }
 #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2) {
   background-image: url("../images/project/cgv-detail-circle1.png"); }
+  #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
+    background-image: url("../images/project/cgv-detail-circle1.png");
+    clip-path: circle(100px at 230px 110px);
+    clip: rect(10px, 330px, 210px, 130px);
+    z-index: 100; }
 #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(3) {
   background-image: url("../images/project/cgv-detail-under1.png"); }
 #cgv-info .core-info .report li:nth-of-type(2) .site-pic {

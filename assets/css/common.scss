@@ -199,8 +199,8 @@ body {
       font-size: 20px;
       font-weight: 700;
       line-height: 130px;
-      text-align: center;
       text-indent: 20px;
+      text-align: center;
       background: url("../images/project/island-mini.svg") no-repeat center;
       transform-origin: left bottom;
 
@@ -258,7 +258,9 @@ body {
     }
 
     .core-pic,
-    .site-pic {
+    .site-pic,
+    .site-pic::before,
+    .site-pic::after {
       @include b-radius(10px);
       @include bg-size(cover);
       background: no-repeat center;
@@ -351,14 +353,34 @@ body {
 
     .site-pic {
       @include bg-size(contain);
-      background: no-repeat center;
+      position: relative;
       border: 1px solid;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .8);
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
     }
 
     .site-code {
-      *{
+      * {
         @include borderbox;
       }
+
       .gist {
         width: 100%;
       }
@@ -366,8 +388,10 @@ body {
       .gist .blob-code-inner {
         font-size: 20px;
       }
+
       .gist-data {
-        height: 616px;
+        height: calc(652px - 36px);
+        padding-top: 50px;
       }
     }
   }

@@ -671,6 +671,8 @@
     .point {
       li:nth-of-type(1) .core-pic {
         background-image: url("../images/project/cgv-detail-toggle1.png");
+        &::before{}
+        &::after{}
       }
 
       li:nth-of-type(2) .core-pic {
@@ -694,6 +696,12 @@
       li:nth-of-type(1) {
         .site-pic:nth-of-type(2) {
           background-image: url("../images/project/cgv-detail-circle1.png");
+          &::after {
+            background-image: url("../images/project/cgv-detail-circle1.png");
+            clip-path: circle(100px at 230px 110px);
+            clip: rect(10px, 330px, 210px, 130px);
+            z-index: 100;
+          }
         }
 
         .site-pic:nth-of-type(3) {
