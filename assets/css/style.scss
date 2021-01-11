@@ -638,7 +638,8 @@
           z-index: -10;
         }
 
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           &::after {
             width: 100%;
           }
@@ -649,27 +650,71 @@
 }
 
 /* project-detail */
-#cgv-info{
-  .summary-info{
-    background: #b34744;
-    
-    a{
-      color: #b34744;
+#cgv-info {
+  .summary-info {
+    background: $colcgv;
+
+    a {
+      color: $colcgv;
     }
-    .pic-area{
+
+    .pic-area {
       background-image: url("../images/project/main-cgv1.png");
     }
   }
-  .core-info{
-    .device-pc{
+
+  .core-info {
+    .device-pc {
       background-image: url("../images/project/pc-cgv1.png");
     }
-    .point{
-      li:nth-of-type(1) .core-pic{
+
+    .point {
+      li:nth-of-type(1) .core-pic {
         background-image: url("../images/project/cgv-detail-toggle1.png");
       }
-      li:nth-of-type(2) .core-pic{
+
+      li:nth-of-type(2) .core-pic {
         background-image: url("../images/project/cgv-detail-tab1.png");
+      }
+    }
+
+    .report {
+      .site-a11y {
+        strong {
+          color: $colcgv;
+        }
+
+        p:nth-of-type(1) {
+          &::after {
+            background: $colcgv;
+          }
+        }
+      }
+
+      li:nth-of-type(1) {
+        .site-pic:nth-of-type(2) {
+          background-image: url("../images/project/cgv-detail-circle1.png");
+        }
+
+        .site-pic:nth-of-type(3) {
+          background-image: url("../images/project/cgv-detail-under1.png");
+        }
+      }
+
+      li:nth-of-type(2) {
+        .site-pic {
+          background-image: url("../images/project/cgv-detail-a1.png");
+        }
+      }
+
+      .site-pic {
+        border-color: $colcgv;
+      }
+
+      .site-code {
+        .gist-file {
+          border-color: $colcgv;
+        }
       }
     }
   }

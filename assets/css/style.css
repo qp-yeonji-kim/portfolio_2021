@@ -565,5 +565,19 @@
   background-image: url("../images/project/cgv-detail-toggle1.png"); }
 #cgv-info .core-info .point li:nth-of-type(2) .core-pic {
   background-image: url("../images/project/cgv-detail-tab1.png"); }
+#cgv-info .core-info .report .site-a11y strong {
+  color: #b34744; }
+#cgv-info .core-info .report .site-a11y p:nth-of-type(1)::after {
+  background: #b34744; }
+#cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2) {
+  background-image: url("../images/project/cgv-detail-circle1.png"); }
+#cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(3) {
+  background-image: url("../images/project/cgv-detail-under1.png"); }
+#cgv-info .core-info .report li:nth-of-type(2) .site-pic {
+  background-image: url("../images/project/cgv-detail-a1.png"); }
+#cgv-info .core-info .report .site-pic {
+  border-color: #b34744; }
+#cgv-info .core-info .report .site-code .gist-file {
+  border-color: #b34744; }
 
 /*# sourceMappingURL=style.css.map */

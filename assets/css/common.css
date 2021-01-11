@@ -187,7 +187,7 @@ body {
     margin: 0 auto;
     background: no-repeat center; }
   .core-info h2 {
-    margin: 200px 0 50px;
+    margin: 200px 0 80px;
     font-size: 60px;
     text-align: center; }
   .core-info ul li {
@@ -199,11 +199,11 @@ body {
     text-align: center; }
   .core-info ul .core-pic,
   .core-info ul .site-pic {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
     -webkit-background-size: cover !important;
     background-size: cover !important;
     background: no-repeat center; }
@@ -219,12 +219,26 @@ body {
   .core-info .point .core-txt {
     width: 688px;
     height: 400px;
-    font-size: 40px;
+    font-size: 30px;
     line-height: 68px;
-    word-break: break-all; }
-  .core-info .report > * {
-    width: 448px;
-    height: 652px; }
+    word-break: keep-all;
+    text-align: center; }
+  .core-info .report li {
+    margin-bottom: 180px; }
+    .core-info .report li > div {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 448px;
+      height: 652px; }
+    .core-info .report li:nth-child(odd) > * {
+      float: left; }
+      .core-info .report li:nth-child(odd) > * + div {
+        margin-left: 28px; }
+    .core-info .report li:nth-child(even) > * {
+      float: right; }
+      .core-info .report li:nth-child(even) > * + div {
+        margin-right: 28px; }
   .core-info .report .site-a11y {
     font-size: 24px;
     line-height: 54px;
@@ -242,18 +256,25 @@ body {
         bottom: -30px;
         left: 50%;
         width: 208px;
-        height: 4px;
-        background: #3e2a26; }
+        height: 4px; }
+    .core-info .report .site-a11y p:nth-of-type(2) {
+      font-size: 24px;
+      word-break: keep-all;
+      text-align: center; }
   .core-info .report .site-pic {
     -webkit-background-size: contain !important;
     background-size: contain !important;
-    background: no-repeat center; }
-  .core-info .report .site-code {
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    -ms-border-radius: 4px;
-    -o-border-radius: 4px;
-    border-radius: 4px;
-    background: #807f89; }
+    background: no-repeat center;
+    border: 1px solid; }
+  .core-info .report .site-code * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+  .core-info .report .site-code .gist {
+    width: 100%; }
+  .core-info .report .site-code .gist .blob-code-inner {
+    font-size: 20px; }
+  .core-info .report .site-code .gist-data {
+    height: 616px; }
 
 /*# sourceMappingURL=common.css.map */
