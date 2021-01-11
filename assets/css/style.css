@@ -573,13 +573,20 @@
   background-image: url("../images/project/cgv-detail-circle1.png"); }
   #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
     background-image: url("../images/project/cgv-detail-circle1.png");
-    clip-path: circle(100px at 230px 110px);
     clip: rect(10px, 330px, 210px, 130px);
-    z-index: 100; }
+    clip-path: circle(100px at 230px 110px); }
 #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(3) {
   background-image: url("../images/project/cgv-detail-under1.png"); }
+  #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(3)::after {
+    background-image: url("../images/project/cgv-detail-under1.png");
+    clip: rect(180px, 300px, 380px, 100px);
+    clip-path: circle(100px at 200px 280px); }
 #cgv-info .core-info .report li:nth-of-type(2) .site-pic {
   background-image: url("../images/project/cgv-detail-a1.png"); }
+  #cgv-info .core-info .report li:nth-of-type(2) .site-pic::after {
+    background-image: url("../images/project/cgv-detail-a1.png");
+    clip: rect(270px, 240px, 470px, 40px);
+    clip-path: circle(100px at 140px 370px); }
 #cgv-info .core-info .report .site-pic {
   border-color: #b34744; }
 #cgv-info .core-info .report .site-code .gist-file {
