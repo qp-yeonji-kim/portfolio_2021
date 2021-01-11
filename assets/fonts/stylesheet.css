@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'D2Coding';
+    src: url('D2Coding.eot');
+    src: url('D2Coding.eot?#iefix') format('embedded-opentype'),
+        url('D2Coding.woff2') format('woff2'),
+        url('D2Coding.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

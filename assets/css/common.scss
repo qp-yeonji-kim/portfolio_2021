@@ -23,6 +23,17 @@
     url("../fonts/THELuxMj2B.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: D2Code;
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/D2Coding.eot");
+  src: url("../fonts/D2Coding.eot#iefix") format("embedded-opentype"),
+    url("../fonts/D2Coding.woff2") format("woff2"),
+    url("../fonts/D2Coding.woff") format("woff"),
+    url("../fonts/D2Coding.ttf") format("truetype");
+}
+
 /* tag reset */
 body,
 h1,
@@ -386,13 +397,32 @@ body {
       }
 
       .gist .blob-code-inner {
-        font-size: 20px;
+        font-family: D2Code;
+        font-size: 18px;
+        line-height: 1.2;
+      }
+
+      .gist .blob-code,
+      .gist .blob-num {
+        background-color: #f1f1f1;
       }
 
       .gist-data {
         height: calc(652px - 36px);
-        padding-top: 50px;
+        padding-top: 30px;
+        background-color: #f1f1f1;
       }
+
+      /*       .gist .pl-pds,
+      .gist .pl-s,
+      .gist .pl-s .pl-pse .pl-s1,
+      .gist .pl-sr,
+      .gist .pl-sr .pl-cce,
+      .gist .pl-sr .pl-sra,
+      .gist .pl-sr .pl-sre,
+      .gist .blob-code-inner {
+        color: #fff;
+      } */
     }
   }
 }
