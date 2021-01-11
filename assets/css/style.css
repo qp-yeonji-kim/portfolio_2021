@@ -467,11 +467,18 @@
           transform: translate(-50%, 50%);
           -webkit-background-size: 70% !important;
           background-size: 70% !important;
-          -webkit-border-radius: 42% 58% 60% 30%/45% 45% 55% 55%;
-          -moz-border-radius: 42% 58% 60% 30%/45% 45% 55% 55%;
-          -ms-border-radius: 42% 58% 60% 30%/45% 45% 55% 55%;
-          -o-border-radius: 42% 58% 60% 30%/45% 45% 55% 55%;
-          border-radius: 42% 58% 60% 30%/45% 45% 55% 55%;
+          -webkit-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+          -moz-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+          -ms-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+          -o-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+          border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
+          -webkit-animation: morph 3s ease-in-out infinite;
+          -moz-animation: morph 3s ease-in-out infinite;
+          animation: morph 3s ease-in-out infinite;
+          -webkit-transition: all 1s ease-in-out;
+          -moz-transition: all 1s ease-in-out;
+          -o-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out;
           content: "";
           position: absolute;
           left: 50%;
@@ -540,7 +547,7 @@
           top: 0;
           width: 0;
           height: 50px;
-          background: white;
+          background: #fff;
           z-index: -10; }
         #project-list ul li a:hover::after, #project-list ul li a:focus::after {
           width: 100%; }
@@ -548,6 +555,8 @@
 /* project-detail */
 #cgv-info .summary-info {
   background: #b34744; }
+  #cgv-info .summary-info a {
+    color: #b34744; }
   #cgv-info .summary-info .pic-area {
     background: url("../images/project/main-cgv1.png"); }
 

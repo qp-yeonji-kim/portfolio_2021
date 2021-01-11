@@ -103,38 +103,69 @@ body {
   color: #3e2a26; }
 
 .summary-info {
+  position: relative;
   width: 100%;
   height: 808px;
   color: #fff; }
-  .summary-info .txt-area h2 {
-    display: inline-block;
-    font-size: 60px; }
-    .summary-info .txt-area h2 span {
-      font-size: 110px; }
-  .summary-info .txt-area ul {
-    max-width: 700px; }
-    .summary-info .txt-area ul li {
-      margin-bottom: 32px;
-      font-size: 24px; }
-      .summary-info .txt-area ul li > * {
-        display: inline-block;
-        width: 208px; }
-      .summary-info .txt-area ul li .sum-title {
-        height: 30px;
-        font-size: 30px;
-        text-align: center;
-        margin-right: 32px; }
-      .summary-info .txt-area ul li .sum-info {
-        display: inline-block;
-        font-size: 24px;
-        line-height: 1.25; }
-  .summary-info .txt-area a {
-    -webkit-background-size: cover !important;
-    background-size: cover !important;
-    display: block;
-    width: 328px;
-    height: 101px;
-    background: url("../images/project/island-mini.svg") no-repeat center; }
+  .summary-info .txt-area {
+    float: left; }
+    .summary-info .txt-area h2 {
+      display: inline-block;
+      font-size: 60px;
+      margin-bottom: 60px; }
+      .summary-info .txt-area h2 span {
+        font-size: 110px; }
+    .summary-info .txt-area ul {
+      max-width: 700px; }
+      .summary-info .txt-area ul li {
+        margin-bottom: 32px; }
+        .summary-info .txt-area ul li > * {
+          float: left; }
+        .summary-info .txt-area ul li .sum-title {
+          position: relative;
+          display: inline-block;
+          width: 208px;
+          vertical-align: top;
+          font-size: 30px;
+          line-height: 30px;
+          text-align: center;
+          margin-right: 32px; }
+          .summary-info .txt-area ul li .sum-title::after {
+            -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 2px;
+            height: 22px;
+            background: rgba(255, 255, 255, 0.4); }
+        .summary-info .txt-area ul li .sum-info {
+          font-size: 24px;
+          line-height: 30px; }
+    .summary-info .txt-area a {
+      -webkit-background-size: cover !important;
+      background-size: cover !important;
+      display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 15%;
+      width: 328px;
+      height: 101px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 130px;
+      text-align: center;
+      text-indent: 20px;
+      background: url("../images/project/island-mini.svg") no-repeat center;
+      transform-origin: left bottom; }
+      .summary-info .txt-area a:hover, .summary-info .txt-area a:focus {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s; }
   .summary-info .pic-area {
     -webkit-background-size: cover !important;
     background-size: cover !important;

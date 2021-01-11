@@ -135,14 +135,17 @@ body {
 }
 
 .summary-info {
+  position: relative;
   width: 100%;
   height: 808px;
   color: #fff;
 
   .txt-area {
+    float: left;
     h2 {
       display: inline-block;
       font-size: 60px;
+      margin-bottom: 60px;
 
       span {
         font-size: 110px;
@@ -151,26 +154,39 @@ body {
 
     ul {
       max-width: 700px;
+
       li {
         margin-bottom: 32px;
-        font-size: 24px;
 
         >* {
-          display: inline-block;
-          width: 208px;
+          float: left;
         }
 
         .sum-title {
-          height: 30px;
+          position: relative;
+          display: inline-block;
+          width: 208px;
+          vertical-align: top;
           font-size: 30px;
+          line-height: 30px;
           text-align: center;
           margin-right: 32px;
+
+          &::after {
+            @include t-form(translateY(-50%));
+            content: "";
+            position: absolute;
+            top: 50%;
+            right: 0;
+            width: 2px;
+            height: 22px;
+            background: rgba(255, 255, 255, .4);
+          }
         }
 
         .sum-info {
-          display: inline-block;
           font-size: 24px;
-          line-height: 1.25;
+          line-height: 30px;
         }
       }
     }
@@ -178,9 +194,22 @@ body {
     a {
       @include bg-size(cover);
       display: block;
+      position: absolute;
+      bottom: -1px;
+      left: 15%;
       width: 328px;
       height: 101px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 130px;
+      text-align: center;
+      text-indent: 20px;
       background: url("../images/project/island-mini.svg") no-repeat center;
+      transform-origin: left bottom;
+      &:hover, &:focus{
+        @include t-form(scale(1.2));
+        @include t-sition(all .3s);
+      }
     }
   }
 
@@ -191,4 +220,5 @@ body {
     height: 808px;
     background: no-repeat center;
   }
+  
 }
