@@ -274,7 +274,7 @@ body {
     .site-pic::after {
       @include bg-size(cover);
       @include b-radius(10px);
-      background: no-repeat center;
+      background: no-repeat left top;
     }
   }
 
@@ -308,24 +308,30 @@ body {
 
   .report {
     li {
+      width: 100%;
       margin-bottom: 180px;
 
       >div {
         @include borderbox;
+        float: left;
         width: 448px;
         height: 652px;
+        cursor: pointer;
       }
 
       &:nth-child(odd)>* {
-        float: left;
-
         +div {
           margin-left: 28px;
         }
       }
 
       &:nth-child(even)>* {
-        float: right;
+        &.site-a11y {
+          float: right;
+        }
+        &:nth-child(2) {
+          float: right;
+        }
 
         +div {
           margin-right: 28px;
@@ -363,12 +369,12 @@ body {
     }
 
     .site-pic {
-      @include bg-size(contain);
+      @include bg-size(cover);
       position: relative;
       border: 1px solid;
 
       &::before {
-        @include t-sition (all .3s);
+        @include t-sition (all .8s);
         content: "";
         opacity: 0;
         position: absolute;
@@ -380,7 +386,7 @@ body {
       }
 
       &::after {
-        @include t-sition (all .3s);
+        @include t-sition (all .8s);
         content: "";
         opacity: 0;
         position: absolute;
@@ -397,7 +403,8 @@ body {
     }
 
     .site-code {
-      @include t-sition (all .3s);
+      @include t-sition (all 0.6s ease .1s);
+
       &.view {
         width: 924px;
         z-index: 1000;
