@@ -403,11 +403,10 @@ body {
     }
 
     .site-code {
-      @include t-sition (all 0.6s ease .1s);
+      @include t-sition (all .6s ease-out);
 
       &.view {
         width: 924px;
-        z-index: 1000;
       }
 
       * {

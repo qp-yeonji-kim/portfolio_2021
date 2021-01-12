@@ -305,13 +305,12 @@ body {
     .core-info .report .site-pic.view::before, .core-info .report .site-pic.view::after {
       opacity: 1; }
   .core-info .report .site-code {
-    -webkit-transition: all 0.6s ease 0.1s;
-    -moz-transition: all 0.6s ease 0.1s;
-    -o-transition: all 0.6s ease 0.1s;
-    transition: all 0.6s ease 0.1s; }
+    -webkit-transition: all 0.6s ease-out;
+    -moz-transition: all 0.6s ease-out;
+    -o-transition: all 0.6s ease-out;
+    transition: all 0.6s ease-out; }
     .core-info .report .site-code.view {
-      width: 924px;
-      z-index: 1000; }
+      width: 924px; }
     .core-info .report .site-code * {
       -webkit-box-sizing: border-box;
       -moz-box-sizing: border-box;
