@@ -671,10 +671,6 @@
     .point {
       li:nth-of-type(1) .core-pic {
         background-image: url("../images/project/cgv-detail-toggle1.png");
-
-        &::before {}
-
-        &::after {}
       }
 
       li:nth-of-type(2) .core-pic {
@@ -683,6 +679,11 @@
     }
 
     .report {
+      li{
+        div:focus{
+          outline: 4px solid #ff0000;
+        }
+      }
       .site-a11y {
         strong {
           color: $colcgv;
