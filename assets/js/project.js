@@ -3,9 +3,9 @@ $(document).ready(function () {
   $('.site-pic, .site-code').attr('tabindex', 0);
   $('.site-code').on({
     click: function () {
+      var $viewDiv = $(this);
+      var $siblingDiv = $(this).siblings('.site-code, .site-pic');
       if (!$(this).is('.view')) {
-        var $viewDiv = $(this);
-        var $siblingDiv = $(this).siblings('.site-code, .site-pic');
         
         $siblingDiv.removeClass('view').stop().animate({width: 0}, 500, function(){
           $(this).hide();
@@ -13,10 +13,11 @@ $(document).ready(function () {
         setTimeout(function(){
           $viewDiv.addClass('view');
         }, 90);
+
       } else {
         $(this).removeClass('view');
         setTimeout(function(){
-          $siblingDiv.show().animate({width: 448}, 800);
+          $siblingDiv.show().animate({width: 448}, 700);
         }, 90);
       }
     },
