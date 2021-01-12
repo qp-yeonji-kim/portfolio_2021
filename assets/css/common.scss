@@ -194,12 +194,28 @@ body {
       }
 
       .sum-info {
+        position: relative;
         font-size: 24px;
         line-height: 30px;
+
+        a{
+          border-bottom: 2px solid #fff;
+        }
       }
     }
 
-    a {
+    &:nth-of-type(3) .sum-info::before{
+      @include t-form(translateY(-50%));
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      width: 100px;
+      height: 30px;
+      background: pink no-repeat left center;
+    }
+    
+    >a {
       @include bg-size(cover);
       @include t-sition(all .3s);
       display: block;
@@ -220,6 +236,10 @@ body {
       &:focus {
         @include t-form(scale(1.2));
       }
+    }
+
+    .github-detail{
+      color: $b-brown;
     }
   }
 
@@ -328,6 +348,7 @@ body {
         &.site-a11y {
           float: right;
         }
+
         &:nth-child(2) {
           float: right;
         }
@@ -367,7 +388,8 @@ body {
       }
     }
 
-    .site-pic, .site-code{
+    .site-pic,
+    .site-code {
       cursor: pointer;
     }
 

@@ -145,9 +145,22 @@ body {
           height: 22px;
           background: rgba(255, 255, 255, 0.4); }
       .summary-info .txt-area li .sum-info {
+        position: relative;
         font-size: 24px;
         line-height: 30px; }
-    .summary-info .txt-area a {
+        .summary-info .txt-area li .sum-info a {
+          border-bottom: 2px solid #fff; }
+    .summary-info .txt-area:nth-of-type(3) .sum-info::before {
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+      content: "";
+      position: absolute;
+      top: 60px;
+      left: 10px;
+      width: 100px;
+      height: 30px;
+      background: pink no-repeat left center; }
+    .summary-info .txt-area > a {
       -webkit-background-size: cover !important;
       background-size: cover !important;
       -webkit-transition: all 0.3s;
@@ -167,9 +180,11 @@ body {
       text-align: center;
       background: url("../images/project/island-mini.svg") no-repeat center;
       transform-origin: left bottom; }
-      .summary-info .txt-area a:hover, .summary-info .txt-area a:focus {
+      .summary-info .txt-area > a:hover, .summary-info .txt-area > a:focus {
         -webkit-transform: scale(1.2);
         transform: scale(1.2); }
+    .summary-info .txt-area .github-detail {
+      color: #3e2a26; }
   .summary-info .pic-area {
     -webkit-background-size: cover !important;
     background-size: cover !important;
@@ -271,7 +286,8 @@ body {
       font-size: 24px;
       word-break: keep-all;
       text-align: center; }
-  .core-info .report .site-pic, .core-info .report .site-code {
+  .core-info .report .site-pic,
+  .core-info .report .site-code {
     cursor: pointer; }
   .core-info .report .site-pic {
     -webkit-background-size: cover !important;

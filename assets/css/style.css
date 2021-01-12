@@ -555,7 +555,7 @@
 /* project-detail */
 #cgv-info .summary-info {
   background: #b34744; }
-  #cgv-info .summary-info a {
+  #cgv-info .summary-info > a {
     color: #b34744; }
   #cgv-info .summary-info .pic-area {
     background-image: url("../images/project/main-cgv1.png"); }
@@ -566,7 +566,7 @@
 #cgv-info .core-info .point li:nth-of-type(2) .core-pic {
   background-image: url("../images/project/cgv-detail-tab1.png"); }
 #cgv-info .core-info .report li div:focus {
-  outline: 4px solid #ff0000; }
+  outline: 4px solid #f00; }
 #cgv-info .core-info .report .site-a11y strong {
   color: #b34744; }
 #cgv-info .core-info .report .site-a11y p:nth-of-type(1)::after {
