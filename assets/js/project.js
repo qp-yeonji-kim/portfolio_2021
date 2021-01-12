@@ -3,13 +3,21 @@ $(document).ready(function () {
   $('.site-pic, .site-code').attr('tabindex', 0);
   $('.site-code').on({
     click: function () {
-      if (! $(this).is('.view')) {
-        $(this).addClass('view').siblings('.site-code, .site-pic').removeClass('view').stop().animate({width: 0}, 500, function(){
+      if (!$(this).is('.view')) {
+        var $viewDiv = $(this);
+        var $siblingDiv = $(this).siblings('.site-code, .site-pic');
+        
+        $siblingDiv.removeClass('view').stop().animate({width: 0}, 500, function(){
           $(this).hide();
-          setTimeout
         });
+        setTimeout(function(){
+          $viewDiv.addClass('view');
+        }, 90);
       } else {
-        $(this).removeClass('view').siblings('.site-code, .site-pic').delay(100).show().stop().animate({width: 448}, 800);
+        $(this).removeClass('view');
+        setTimeout(function(){
+          $siblingDiv.show().animate({width: 448}, 800);
+        }, 90);
       }
     },
     hover: function () {
