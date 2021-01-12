@@ -316,7 +316,6 @@ body {
         float: left;
         width: 448px;
         height: 652px;
-        cursor: pointer;
       }
 
       &:nth-child(odd)>* {
@@ -366,6 +365,10 @@ body {
         word-break: keep-all;
         text-align: center;
       }
+    }
+
+    .site-pic, .site-code{
+      cursor: pointer;
     }
 
     .site-pic {

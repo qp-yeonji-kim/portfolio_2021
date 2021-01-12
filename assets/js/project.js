@@ -30,9 +30,4 @@ $(document).ready(function () {
       $(this).toggleClass('view');
     }
   })
-  /* 
-  -함수 바깥쪽에 만들고
-  안쪽에서 함수 소환하는데
-  함수에 지역변수를 미리 써도 동작하는지?   
-  */
 });

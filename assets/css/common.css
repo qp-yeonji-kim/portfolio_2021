@@ -240,8 +240,7 @@ body {
       box-sizing: border-box;
       float: left;
       width: 448px;
-      height: 652px;
-      cursor: pointer; }
+      height: 652px; }
     .core-info .report li:nth-child(odd) > * + div {
       margin-left: 28px; }
     .core-info .report li:nth-child(even) > *.site-a11y {
@@ -272,6 +271,8 @@ body {
       font-size: 24px;
       word-break: keep-all;
       text-align: center; }
+  .core-info .report .site-pic, .core-info .report .site-code {
+    cursor: pointer; }
   .core-info .report .site-pic {
     -webkit-background-size: cover !important;
     background-size: cover !important;
