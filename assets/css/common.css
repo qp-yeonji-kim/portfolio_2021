@@ -150,6 +150,10 @@ body {
     .summary-info .txt-area a {
       -webkit-background-size: cover !important;
       background-size: cover !important;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
       display: block;
       position: absolute;
       bottom: -1px;
@@ -165,11 +169,7 @@ body {
       transform-origin: left bottom; }
       .summary-info .txt-area a:hover, .summary-info .txt-area a:focus {
         -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-        -webkit-transition: all 0.3s;
-        -moz-transition: all 0.3s;
-        -o-transition: all 0.3s;
-        transition: all 0.3s; }
+        transform: scale(1.2); }
   .summary-info .pic-area {
     -webkit-background-size: cover !important;
     background-size: cover !important;

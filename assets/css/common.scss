@@ -201,6 +201,7 @@ body {
 
     a {
       @include bg-size(cover);
+      @include t-sition(all .3s);
       display: block;
       position: absolute;
       bottom: -1px;
@@ -218,7 +219,6 @@ body {
       &:hover,
       &:focus {
         @include t-form(scale(1.2));
-        @include t-sition(all .3s);
       }
     }
   }
