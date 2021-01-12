@@ -18,7 +18,7 @@ $(document).ready(function () {
   });
   $('.site-pic').on({
     click: function () {
-      alert();
+      $(this).toggleClass('view');
     }
   })
   /* 
