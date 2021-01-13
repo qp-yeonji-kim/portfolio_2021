@@ -654,7 +654,35 @@
   .summary-info {
     background: $colcgv;
 
-    > a {
+    li {
+      position: relative;
+    }
+
+    .tooltip {
+      top: 0;
+      right: -30px;
+
+      svg {
+        fill: #fff;
+      }
+
+      p {
+        color: #fff;
+      }
+
+      p::before {
+        border-bottom-color: #fff;
+      }
+
+      p::after {
+        content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
+        width: 310px;
+        color: $colcgv;
+        background-color: #fff;
+      }
+    }
+
+    >a {
       color: $colcgv;
     }
 
@@ -668,6 +696,37 @@
       background-image: url("../images/project/pc-cgv1.png");
     }
 
+    .tooltip {
+      top: 0;
+      left: 64%;
+      margin-top: -50px;
+
+      svg {
+        fill: $b-brown;
+      }
+
+      p {
+        color: $b-brown;
+      }
+
+      p::before {
+        border-bottom-color: $colcgv;
+      }
+
+      p::after {
+        content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
+        width: 320px;
+        color: #fff;
+        background-color: $colcgv;
+      }
+
+      &.tip {
+        p {
+          color: transparent;
+        }
+      }
+    }
+
     .point {
       li:nth-of-type(1) .core-pic {
         background-image: url("../images/project/cgv-detail-toggle1.png");
@@ -679,11 +738,13 @@
     }
 
     .report {
-      li{
-        div:focus{
+      margin-top: 60px;
+      li {
+        div:focus {
           outline: 4px solid #f00;
         }
       }
+
       .site-a11y {
         strong {
           color: $colcgv;
@@ -741,4 +802,5 @@
       }
     }
   }
+
 }

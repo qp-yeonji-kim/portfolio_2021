@@ -1,6 +1,10 @@
 $(document).ready(function () {
   $('#project-list').addClass('load');
-  $('.site-pic, .site-code').attr('tabindex', 0);
+  $('.tooltip, .site-pic, .site-code').attr('tabindex', 0);
+
+  $('.tooltip').on('click', function(){
+    $(this).toggleClass('tip');
+  });
 
   $('.site-code').on('click', function () {
     var $viewDiv = $(this);
