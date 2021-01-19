@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var projectSlide = new Swiper('#project-project .project-slide', {
+    spaceBetween: 30,
     effect: 'fade',
     loop: true,
     mousewheel: {

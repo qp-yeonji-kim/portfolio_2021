@@ -3,6 +3,7 @@ $(document).ready(function () {
   var scrollY;
 
   $('#aboutme').addClass('load');
+  $('#project-list').addClass('load');
 
   $(window).on('scroll', function () {
     clearTimeout(timer);
