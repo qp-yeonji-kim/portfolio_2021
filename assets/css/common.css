@@ -507,7 +507,8 @@ body {
       line-height: 20px;
       text-align: center;
       border: 3px solid #fff;
-      overflow: hidden; }
+      overflow: hidden;
+      z-index: 100; }
       #project-project .swiper-slide .slide-text a::after {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -583,21 +584,32 @@ body {
       font-size: 20px;
       text-align: center;
       background: url("../images/project/messagebox2.png") no-repeat left top; }
-    #project-project .announce .project-main {
-      /*       position: absolute;
-       */
-      display: inline-block;
-      right: 30px;
-      bottom: 0;
+  #project-project .project-main {
+    position: absolute;
+    display: inline-block;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    z-index: 100; }
+    #project-project .project-main img {
       width: 32px;
       height: 32px; }
-      #project-project .announce .project-main img {
-        width: 100%;
-        height: 100%; }
-    #project-project .announce::after {
-      -webkit-background-size: contain !important;
-      background-size: contain !important;
-      content: "처음화면으로";
-      border: 1px solid hotpink; }
+    #project-project .project-main span {
+      display: block; }
+      #project-project .project-main span::after {
+        content: "";
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        transition: all 0.4s;
+        position: absolute;
+        bottom: 10px;
+        display: block;
+        width: 0;
+        height: 5px;
+        background: rgba(217, 171, 179, 0.5);
+        z-index: -10; }
+    #project-project .project-main:hover span::after, #project-project .project-main:focus span::after {
+      width: 100%; }
 
 /*# sourceMappingURL=common.css.map */
