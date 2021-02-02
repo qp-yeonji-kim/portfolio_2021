@@ -629,4 +629,85 @@
   #cgv-info .core-info .report .site-code .gist-file {
     border-color: #b34744; }
 
+/* tab-detail */
+#tab-info .summary-info {
+  background: #735587; }
+  #tab-info .summary-info h2 {
+    padding-top: 30px; }
+    #tab-info .summary-info h2 span {
+      font-size: 80px; }
+  #tab-info .summary-info li {
+    position: relative; }
+  #tab-info .summary-info .tooltip {
+    top: 0;
+    right: -30px; }
+    #tab-info .summary-info .tooltip svg {
+      fill: #fff; }
+    #tab-info .summary-info .tooltip p {
+      color: #fff; }
+    #tab-info .summary-info .tooltip p::before {
+      border-bottom-color: #fff; }
+    #tab-info .summary-info .tooltip p::after {
+      content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
+      width: 310px;
+      color: #735587;
+      background-color: #fff; }
+  #tab-info .summary-info > a {
+    color: #735587; }
+  #tab-info .summary-info .pic-area {
+    background-image: url("../images/project/main-tab1.png"); }
+#tab-info .core-info .device-pc {
+  background-image: url("../images/project/mobile-tab1.png"); }
+#tab-info .core-info .tooltip {
+  top: 0;
+  left: 64%;
+  margin-top: -50px; }
+  #tab-info .core-info .tooltip svg {
+    fill: #3e2a26; }
+  #tab-info .core-info .tooltip p {
+    color: #3e2a26; }
+  #tab-info .core-info .tooltip p::before {
+    border-bottom-color: #735587; }
+  #tab-info .core-info .tooltip p::after {
+    content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
+    width: 320px;
+    color: #fff;
+    background-color: #735587; }
+  #tab-info .core-info .tooltip.tip p {
+    color: transparent; }
+#tab-info .core-info .point li:nth-of-type(1) .core-pic {
+  background-image: url("../images/project/cgv-detail-toggle1.png"); }
+#tab-info .core-info .point li:nth-of-type(2) .core-pic {
+  background-image: url("../images/project/cgv-detail-tab1.png"); }
+#tab-info .core-info .report {
+  margin-top: 60px; }
+  #tab-info .core-info .report li div:focus {
+    outline: 4px solid #f00; }
+  #tab-info .core-info .report .site-a11y strong {
+    color: #735587; }
+  #tab-info .core-info .report .site-a11y p:nth-of-type(1)::after {
+    background: #735587; }
+  #tab-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2) {
+    background-image: url("../images/project/cgv-detail-circle1.png"); }
+    #tab-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
+      background-image: url("../images/project/cgv-detail-circle1.png");
+      clip: rect(10px, 330px, 210px, 130px);
+      clip-path: circle(100px at 230px 110px); }
+  #tab-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(3) {
+    background-image: url("../images/project/cgv-detail-under1.png"); }
+    #tab-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(3)::after {
+      background-image: url("../images/project/cgv-detail-under1.png");
+      clip: rect(180px, 300px, 380px, 100px);
+      clip-path: circle(100px at 200px 280px); }
+  #tab-info .core-info .report li:nth-of-type(2) .site-pic {
+    background-image: url("../images/project/cgv-detail-a1.png"); }
+    #tab-info .core-info .report li:nth-of-type(2) .site-pic::after {
+      background-image: url("../images/project/cgv-detail-a1.png");
+      clip: rect(270px, 240px, 470px, 40px);
+      clip-path: circle(100px at 140px 370px); }
+  #tab-info .core-info .report .site-pic {
+    border-color: #735587; }
+  #tab-info .core-info .report .site-code .gist-file {
+    border-color: #735587; }
+
 /*# sourceMappingURL=style.css.map */

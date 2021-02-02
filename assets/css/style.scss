@@ -804,3 +804,167 @@
   }
 
 }
+
+
+/* tab-detail */
+#tab-info {
+  .summary-info {
+    background: $coltab;
+    
+    h2{
+      padding-top: 30px;
+      span {
+        font-size: 80px;
+      }
+    }
+
+    li {
+      position: relative;
+    }
+
+    .tooltip {
+      top: 0;
+      right: -30px;
+
+      svg {
+        fill: #fff;
+      }
+
+      p {
+        color: #fff;
+      }
+
+      p::before {
+        border-bottom-color: #fff;
+      }
+
+      p::after {
+        content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
+        width: 310px;
+        color: $coltab;
+        background-color: #fff;
+      }
+    }
+
+    >a {
+      color: $coltab;
+    }
+
+    .pic-area {
+      background-image: url("../images/project/main-tab1.png");
+    }
+  }
+
+  .core-info {
+    .device-pc {
+      background-image: url("../images/project/mobile-tab1.png");
+    }
+
+    .tooltip {
+      top: 0;
+      left: 64%;
+      margin-top: -50px;
+
+      svg {
+        fill: $b-brown;
+      }
+
+      p {
+        color: $b-brown;
+      }
+
+      p::before {
+        border-bottom-color: $coltab;
+      }
+
+      p::after {
+        content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
+        width: 320px;
+        color: #fff;
+        background-color: $coltab;
+      }
+
+      &.tip {
+        p {
+          color: transparent;
+        }
+      }
+    }
+
+    .point {
+      li:nth-of-type(1) .core-pic {
+        background-image: url("../images/project/cgv-detail-toggle1.png");
+      }
+
+      li:nth-of-type(2) .core-pic {
+        background-image: url("../images/project/cgv-detail-tab1.png");
+      }
+    }
+
+    .report {
+      margin-top: 60px;
+      li {
+        div:focus {
+          outline: 4px solid #f00;
+        }
+      }
+
+      .site-a11y {
+        strong {
+          color: $coltab;
+        }
+
+        p:nth-of-type(1) {
+          &::after {
+            background: $coltab;
+          }
+        }
+      }
+
+      li:nth-of-type(1) {
+        .site-pic:nth-of-type(2) {
+          background-image: url("../images/project/cgv-detail-circle1.png");
+
+          &::after {
+            background-image: url("../images/project/cgv-detail-circle1.png");
+            clip: rect(10px, 330px, 210px, 130px);
+            clip-path: circle(100px at 230px 110px);
+          }
+        }
+
+        .site-pic:nth-of-type(3) {
+          background-image: url("../images/project/cgv-detail-under1.png");
+
+          &::after {
+            background-image: url("../images/project/cgv-detail-under1.png");
+            clip: rect(180px, 300px, 380px, 100px);
+            clip-path: circle(100px at 200px 280px);
+          }
+        }
+      }
+
+      li:nth-of-type(2) {
+        .site-pic {
+          background-image: url("../images/project/cgv-detail-a1.png");
+
+          &::after {
+            background-image: url("../images/project/cgv-detail-a1.png");
+            clip: rect(270px, 240px, 470px, 40px);
+            clip-path: circle(100px at 140px 370px);
+          }
+        }
+      }
+
+      .site-pic {
+        border-color: $coltab;
+      }
+
+      .site-code {
+        .gist-file {
+          border-color: $coltab;
+        }
+      }
+    }
+  }
+
+}
