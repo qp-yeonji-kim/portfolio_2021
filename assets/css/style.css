@@ -552,11 +552,13 @@
         #project-list ul li a:hover::after, #project-list ul li a:focus::after {
           width: 100%; }
 
-/* project-detail */
+/* project-info */
+.project-info .summary-info li {
+  position: relative; }
+
+/* cgv-detail */
 #cgv-info .summary-info {
   background: #b34744; }
-  #cgv-info .summary-info li {
-    position: relative; }
   #cgv-info .summary-info .tooltip {
     top: 0;
     right: -30px; }
@@ -636,8 +638,6 @@
     padding-top: 30px; }
     #tab-info .summary-info h2 span {
       font-size: 80px; }
-  #tab-info .summary-info li {
-    position: relative; }
   #tab-info .summary-info .tooltip {
     top: 0;
     right: -30px; }
@@ -705,5 +705,76 @@
     border-color: #735587; }
   #tab-info .core-info .report .site-code .gist-file {
     border-color: #735587; }
+
+/* gs-detail */
+#gs-info .summary-info {
+  background: #349b94; }
+  #gs-info .summary-info .tooltip {
+    top: 0;
+    right: -30px; }
+    #gs-info .summary-info .tooltip svg {
+      fill: #fff; }
+    #gs-info .summary-info .tooltip p {
+      color: #fff; }
+    #gs-info .summary-info .tooltip p::before {
+      border-bottom-color: #fff; }
+    #gs-info .summary-info .tooltip p::after {
+      content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
+      width: 310px;
+      color: #b34744;
+      background-color: #fff; }
+  #gs-info .summary-info > a {
+    color: #349b94; }
+  #gs-info .summary-info .pic-area {
+    background-image: url("../images/project/main-gs1.png"); }
+#gs-info .core-info .device-pc {
+  background-image: url("../images/project/all-gs1.png"); }
+#gs-info .core-info .tooltip {
+  top: 0;
+  left: 64%;
+  margin-top: -50px; }
+  #gs-info .core-info .tooltip svg {
+    fill: #3e2a26; }
+  #gs-info .core-info .tooltip p {
+    color: #3e2a26; }
+  #gs-info .core-info .tooltip p::before {
+    border-bottom-color: #349b94; }
+  #gs-info .core-info .tooltip p::after {
+    content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
+    width: 320px;
+    color: #fff;
+    background-color: #349b94; }
+  #gs-info .core-info .tooltip.tip p {
+    color: transparent; }
+#gs-info .core-info .point li:nth-of-type(1) .core-pic {
+  background-image: url("../images/project/gs-detail-scroll1.png"); }
+#gs-info .core-info .point li:nth-of-type(2) .core-pic {
+  background-image: url("../images/project/gs-detail-scroll1.png"); }
+#gs-info .core-info .report {
+  margin-top: 60px; }
+  #gs-info .core-info .report li div:focus {
+    outline: 4px solid #f00; }
+  #gs-info .core-info .report .site-a11y strong {
+    color: #349b94; }
+  #gs-info .core-info .report .site-a11y p:nth-of-type(1) {
+    line-height: 1.8; }
+    #gs-info .core-info .report .site-a11y p:nth-of-type(1)::after {
+      background: #349b94; }
+  #gs-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2) {
+    background-image: url("../images/project/gs-detail-lang1.png"); }
+    #gs-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
+      background-image: url("../images/project/gs-detail-lang1.png");
+      clip: rect(10px, 330px, 210px, 130px);
+      clip-path: circle(100px at 230px 110px); }
+  #gs-info .core-info .report li:nth-of-type(2) .site-pic {
+    background-image: url("../images/project/gs-detail-family1.png"); }
+    #gs-info .core-info .report li:nth-of-type(2) .site-pic::after {
+      background-image: url("../images/project/gs-detail-family1.png");
+      clip: rect(270px, 240px, 470px, 40px);
+      clip-path: circle(100px at 140px 370px); }
+  #gs-info .core-info .report .site-pic {
+    border-color: #349b94; }
+  #gs-info .core-info .report .site-code .gist-file {
+    border-color: #349b94; }
 
 /*# sourceMappingURL=style.css.map */

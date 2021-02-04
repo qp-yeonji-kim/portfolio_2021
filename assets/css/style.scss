@@ -649,14 +649,19 @@
   }
 }
 
-/* project-detail */
-#cgv-info {
+/* project-info */
+.project-info{
   .summary-info {
-    background: $colcgv;
-
     li {
       position: relative;
     }
+  }
+}
+
+/* cgv-detail */
+#cgv-info {
+  .summary-info {
+    background: $colcgv;
 
     .tooltip {
       top: 0;
@@ -739,6 +744,7 @@
 
     .report {
       margin-top: 60px;
+
       li {
         div:focus {
           outline: 4px solid #f00;
@@ -805,21 +811,17 @@
 
 }
 
-
 /* tab-detail */
 #tab-info {
   .summary-info {
     background: $coltab;
-    
-    h2{
+
+    h2 {
       padding-top: 30px;
+
       span {
         font-size: 80px;
       }
-    }
-
-    li {
-      position: relative;
     }
 
     .tooltip {
@@ -903,6 +905,7 @@
 
     .report {
       margin-top: 60px;
+
       li {
         div:focus {
           outline: 4px solid #f00;
@@ -954,6 +957,151 @@
       .site-code {
         .gist-file {
           border-color: $coltab;
+        }
+      }
+    }
+  }
+
+}
+
+/* gs-detail */
+#gs-info {
+  .summary-info {
+    background: $colgs;
+
+    .tooltip {
+      top: 0;
+      right: -30px;
+
+      svg {
+        fill: #fff;
+      }
+
+      p {
+        color: #fff;
+      }
+
+      p::before {
+        border-bottom-color: #fff;
+      }
+
+      p::after {
+        content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
+        width: 310px;
+        color: $colcgv;
+        background-color: #fff;
+      }
+    }
+
+    >a {
+      color: $colgs;
+    }
+
+    .pic-area {
+      background-image: url("../images/project/main-gs1.png");
+    }
+  }
+
+  .core-info {
+    .device-pc {
+      background-image: url("../images/project/all-gs1.png");
+    }
+
+    .tooltip {
+      top: 0;
+      left: 64%;
+      margin-top: -50px;
+
+      svg {
+        fill: $b-brown;
+      }
+
+      p {
+        color: $b-brown;
+      }
+
+      p::before {
+        border-bottom-color: $colgs;
+      }
+
+      p::after {
+        content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
+        width: 320px;
+        color: #fff;
+        background-color: $colgs;
+      }
+
+      &.tip {
+        p {
+          color: transparent;
+        }
+      }
+    }
+
+    .point {
+      li:nth-of-type(1) .core-pic {
+        background-image: url("../images/project/gs-detail-scroll1.png");
+      }
+
+      li:nth-of-type(2) .core-pic {
+        background-image: url("../images/project/gs-detail-scroll1.png");
+      }
+    }
+
+    .report {
+      margin-top: 60px;
+
+      li {
+        div:focus {
+          outline: 4px solid #f00;
+        }
+      }
+
+      .site-a11y {
+        strong {
+          color: $colgs;
+        }
+
+        p:nth-of-type(1) {
+          line-height: 1.8;
+
+          &::after {
+            background: $colgs;
+          }
+        }
+      }
+
+      li:nth-of-type(1) {
+        .site-pic:nth-of-type(2) {
+          background-image: url("../images/project/gs-detail-lang1.png");
+
+          &::after {
+            background-image: url("../images/project/gs-detail-lang1.png");
+            clip: rect(10px, 330px, 210px, 130px);
+            clip-path: circle(100px at 230px 110px);
+          }
+        }
+      }
+
+      li:nth-of-type(2) {
+        .site-pic {
+          background-image: url("../images/project/gs-detail-family1.png");
+
+          &::after {
+            background-image: url("../images/project/gs-detail-family1.png");
+            clip: rect(270px, 240px, 470px, 40px);
+            clip-path: circle(100px at 140px 370px);
+          }
+        }
+      }
+
+      .site-pic {
+        border-color: $colgs;
+      }
+
+      .site-code {
+        .gist-file {
+          border-color: $colgs;
         }
       }
     }
