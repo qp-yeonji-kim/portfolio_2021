@@ -835,6 +835,7 @@
         width: 310px;
         color: $coltab;
         background-color: #fff;
+        z-index: 100;
       }
     }
 
@@ -977,8 +978,9 @@
       p::after {
         content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
         width: 310px;
-        color: $colcgv;
+        color: $colgs;
         background-color: #fff;
+        z-index: 100;
       }
     }
 

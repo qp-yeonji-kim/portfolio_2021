@@ -647,7 +647,8 @@
       content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
       width: 310px;
       color: #735587;
-      background-color: #fff; }
+      background-color: #fff;
+      z-index: 100; }
   #tab-info .summary-info > a {
     color: #735587; }
   #tab-info .summary-info .pic-area {
@@ -717,8 +718,9 @@
     #gs-info .summary-info .tooltip p::after {
       content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
       width: 310px;
-      color: #b34744;
-      background-color: #fff; }
+      color: #349b94;
+      background-color: #fff;
+      z-index: 100; }
   #gs-info .summary-info > a {
     color: #349b94; }
   #gs-info .summary-info .pic-area {
