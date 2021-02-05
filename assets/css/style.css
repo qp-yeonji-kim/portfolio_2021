@@ -552,10 +552,6 @@
         #project-list ul li a:hover::after, #project-list ul li a:focus::after {
           width: 100%; }
 
-/* project-info */
-.project-info .summary-info li {
-  position: relative; }
-
 /* cgv-detail */
 #cgv-info .summary-info {
   background: #b34744; }
@@ -764,14 +760,14 @@
     background-image: url("../images/project/gs-detail-lang1.png"); }
     #gs-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
       background-image: url("../images/project/gs-detail-lang1.png");
-      clip: rect(10px, 330px, 210px, 130px);
-      clip-path: circle(100px at 230px 110px); }
+      clip: rect(0px, 448px, 200px, 248px);
+      clip-path: circle(100px at 348px 100px); }
   #gs-info .core-info .report li:nth-of-type(2) .site-pic {
     background-image: url("../images/project/gs-detail-family1.png"); }
     #gs-info .core-info .report li:nth-of-type(2) .site-pic::after {
       background-image: url("../images/project/gs-detail-family1.png");
-      clip: rect(270px, 240px, 470px, 40px);
-      clip-path: circle(100px at 140px 370px); }
+      clip: rect(452px, 387px, 652px, 187px);
+      clip-path: circle(100px at 287px 552px); }
   #gs-info .core-info .report .site-pic {
     border-color: #349b94; }
   #gs-info .core-info .report .site-code .gist-file {
