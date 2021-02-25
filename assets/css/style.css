@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* 0.8? 0.6배 함수 넣기 */
 #main-cnt {
   position: relative;
   width: 100%;
@@ -596,6 +597,8 @@
   background-image: url("../images/project/cgv-detail-toggle1.png"); }
 #cgv-info .core-info .point li:nth-of-type(2) .core-pic {
   background-image: url("../images/project/cgv-detail-tab1.png"); }
+#cgv-info .core-info .point .core-pic {
+  border-color: #b34744; }
 #cgv-info .core-info .report {
   margin-top: 60px; }
   #cgv-info .core-info .report li div:focus {
@@ -676,6 +679,8 @@
   background-image: url("../images/project/tab-detail-tab1.png"); }
 #tab-info .core-info .point li:nth-of-type(2) .core-pic {
   background-image: url("../images/project/tab-detail-scroll1.png"); }
+#tab-info .core-info .point .core-pic {
+  border-color: #735587; }
 #tab-info .core-info .report {
   margin-top: 60px; }
   #tab-info .core-info .report li div:focus {
@@ -745,9 +750,11 @@
   #gs-info .core-info .tooltip.tip p {
     color: transparent; }
 #gs-info .core-info .point li:nth-of-type(1) .core-pic {
-  background-image: url("../images/project/gs-detail-scroll1.png"); }
+  background-image: url("../images/project/gs-detail-video1.png"); }
 #gs-info .core-info .point li:nth-of-type(2) .core-pic {
   background-image: url("../images/project/gs-detail-scroll1.png"); }
+#gs-info .core-info .point .core-pic {
+  border-color: #349b94; }
 #gs-info .core-info .report {
   margin-top: 60px; }
   #gs-info .core-info .report li div:focus {
@@ -768,8 +775,8 @@
     background-image: url("../images/project/gs-detail-family1.png"); }
     #gs-info .core-info .report li:nth-of-type(2) .site-pic::after {
       background-image: url("../images/project/gs-detail-family1.png");
-      clip: rect(452px, 387px, 652px, 187px);
-      clip-path: circle(100px at 287px 552px); }
+      clip: rect(425px, 350px, 625px, 150px);
+      clip-path: circle(100px at 250px 525px); }
   #gs-info .core-info .report .site-pic {
     border-color: #349b94; }
   #gs-info .core-info .report .site-code .gist-file {

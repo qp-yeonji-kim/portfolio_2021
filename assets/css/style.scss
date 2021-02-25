@@ -731,6 +731,10 @@
       li:nth-of-type(2) .core-pic {
         background-image: url("../images/project/cgv-detail-tab1.png");
       }
+
+      .core-pic {
+        border-color: $colcgv;
+      }
     }
 
     .report {
@@ -892,6 +896,10 @@
       li:nth-of-type(2) .core-pic {
         background-image: url("../images/project/tab-detail-scroll1.png");
       }
+
+      .core-pic {
+        border-color: $coltab;
+      }
     }
 
     .report {
@@ -1031,11 +1039,15 @@
 
     .point {
       li:nth-of-type(1) .core-pic {
-        background-image: url("../images/project/gs-detail-scroll1.png");
+        background-image: url("../images/project/gs-detail-video1.png");
       }
 
       li:nth-of-type(2) .core-pic {
         background-image: url("../images/project/gs-detail-scroll1.png");
+      }
+
+      .core-pic {
+        border-color: $colgs;
       }
     }
 
@@ -1080,8 +1092,8 @@
 
           &::after {
             background-image: url("../images/project/gs-detail-family1.png");
-            clip: rect(452px, 387px, 652px, 187px);
-            clip-path: circle(100px at 287px 552px);
+            clip: rect(425px, 350px, 625px, 150px);
+            clip-path: circle(100px at 250px 525px);
           }
         }
       }

@@ -122,7 +122,9 @@ footer {
 }
 
 .max1400 {
+  @include borderbox;
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -175,7 +177,6 @@ footer {
     position: absolute;
     left: 0;
     top: 0;
-
     padding: 6px;
     text-align: left;
   }
@@ -230,11 +231,11 @@ body {
       .sum-title {
         display: inline-block;
         width: 208px;
+        margin-right: 32px;
         vertical-align: top;
         font-size: 30px;
-        line-height: 30px;
+        line-height: 1;
         text-align: center;
-        margin-right: 32px;
 
         &::after {
           @include t-form(translateY(-50%));
@@ -250,7 +251,7 @@ body {
 
       .sum-info {
         font-size: 24px;
-        line-height: 30px;
+        line-height: 1.25;
 
         a {
           border-bottom: 2px solid #fff;
@@ -368,6 +369,7 @@ body {
     .core-pic {
       width: 684px;
       height: 464px;
+      border: 1px solid;
     }
 
     strong {
@@ -729,6 +731,132 @@ body {
       span::after{
         width: 100%;
       }
+    }
+  }
+}
+
+/* PC: 144Opx~1280px */
+@media screen and (max-width: 1440px){
+  .max1400 {
+    max-width: vw-calc1920(1440);
+  }
+
+  .tooltip {
+    font-size: 12px;
+  
+    svg {
+      width: 26px;
+      height: 26px;
+    }
+  
+    p {
+      margin-top: 5px;
+    }
+  
+    p::before {
+      top: -5px;
+      border-bottom: 5px solid;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent;
+    }
+  }
+
+  .summary-info {
+    height: vw-calc1920(808);
+
+    .txt-area {
+      float: left;
+  
+      h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+
+        span {
+          font-size: 80px;
+        }
+      }
+      li {
+        .sum-title {
+          width: vw-calc1920(208);
+          font-size: 26px;
+
+          &::after {
+            height: 16px;
+          }
+        }
+        .sum-info {
+          font-size: 20px;
+        }
+      }
+      &:nth-of-type(3) .sum-info::before {
+        width: vw-calc1920(100);
+        height: vw-calc1920(30);
+      }
+      
+      >a {
+        width: vw-calc1920(300);
+        height: vw-calc1920(92.3780487804878);
+        font-size: 16px;
+        line-height: vw-calc1920(130);
+        text-indent: vw-calc1920(20);
+      }
+    }
+    .pic-area {
+      width: vw-calc1920(808);
+      height: vw-calc1920(808);
+    }
+  }
+}
+
+/* PC: 1280~1024px */
+@media screen and (max-width: 1280px){
+  .max1400 {
+    max-width: vw-calc1280(1024);
+  }
+
+  .summary-info {
+    height: vw-calc1920(808);
+
+    .txt-area {
+      float: left;
+  
+      h2 {
+        font-size: 36px;
+        margin-bottom: 20px;
+
+        span {
+          font-size: 80px;
+        }
+      }
+      li {
+        .sum-title {
+          width: vw-calc1920(208);
+          font-size: 26px;
+
+          &::after {
+            height: 16px;
+          }
+        }
+        .sum-info {
+          font-size: 20px;
+        }
+      }
+      &:nth-of-type(3) .sum-info::before {
+        width: vw-calc1920(100);
+        height: vw-calc1920(30);
+      }
+      
+      >a {
+        width: vw-calc1920(300);
+        height: vw-calc1920(92.3780487804878);
+        font-size: 16px;
+        line-height: vw-calc1920(130);
+        text-indent: vw-calc1920(20);
+      }
+    }
+    .pic-area {
+      width: vw-calc1920(808);
+      height: vw-calc1920(808);
     }
   }
 }

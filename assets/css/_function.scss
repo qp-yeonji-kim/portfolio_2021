@@ -1,4 +1,11 @@
-@function vw-calc($px) {
+@function vw-calc1920($px) {
   $vwSize: $px / (1920 / 100);
   @return #{$vwSize}vw;
 }
+
+@function vw-calc1280($px) {
+  $vwSize: $px / (1280 / 100);
+  @return #{$vwSize}vw;
+}
+
+/* 0.8? 0.6배 함수 넣기 */

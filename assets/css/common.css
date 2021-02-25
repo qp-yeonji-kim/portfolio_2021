@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* 0.8? 0.6배 함수 넣기 */
 @font-face {
   font-family: PnM;
   font-weight: 400;
@@ -91,7 +92,11 @@ footer {
   float: right; }
 
 .max1400 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   max-width: 1400px;
+  width: 100%;
   margin: 0 auto; }
 
 .bg-bpink {
@@ -180,11 +185,11 @@ body {
       .summary-info .txt-area li .sum-title {
         display: inline-block;
         width: 208px;
+        margin-right: 32px;
         vertical-align: top;
         font-size: 30px;
-        line-height: 30px;
-        text-align: center;
-        margin-right: 32px; }
+        line-height: 1;
+        text-align: center; }
         .summary-info .txt-area li .sum-title::after {
           -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -197,7 +202,7 @@ body {
           background: rgba(255, 255, 255, 0.4); }
       .summary-info .txt-area li .sum-info {
         font-size: 24px;
-        line-height: 30px; }
+        line-height: 1.25; }
         .summary-info .txt-area li .sum-info a {
           border-bottom: 2px solid #fff; }
     .summary-info .txt-area:nth-of-type(3) .sum-info::before {
@@ -288,7 +293,8 @@ body {
       margin-left: 32px; }
   .core-info .point .core-pic {
     width: 684px;
-    height: 464px; }
+    height: 464px;
+    border: 1px solid; }
   .core-info .point strong {
     margin: 30px 0; }
   .core-info .point .core-txt {
@@ -611,5 +617,85 @@ body {
         z-index: -10; }
     #project-project .project-main:hover span::after, #project-project .project-main:focus span::after {
       width: 100%; }
+
+/* PC: 144Opx~1280px */
+@media screen and (max-width: 1440px) {
+  .max1400 {
+    max-width: 75vw; }
+
+  .tooltip {
+    font-size: 12px; }
+    .tooltip svg {
+      width: 26px;
+      height: 26px; }
+    .tooltip p {
+      margin-top: 5px; }
+    .tooltip p::before {
+      top: -5px;
+      border-bottom: 5px solid;
+      border-left: 4px solid transparent;
+      border-right: 4px solid transparent; }
+
+  .summary-info {
+    height: 42.0833333333vw; }
+    .summary-info .txt-area {
+      float: left; }
+      .summary-info .txt-area h2 {
+        font-size: 36px;
+        margin-bottom: 20px; }
+        .summary-info .txt-area h2 span {
+          font-size: 80px; }
+      .summary-info .txt-area li .sum-title {
+        width: 10.8333333333vw;
+        font-size: 26px; }
+        .summary-info .txt-area li .sum-title::after {
+          height: 16px; }
+      .summary-info .txt-area li .sum-info {
+        font-size: 20px; }
+      .summary-info .txt-area:nth-of-type(3) .sum-info::before {
+        width: 5.2083333333vw;
+        height: 1.5625vw; }
+      .summary-info .txt-area > a {
+        width: 15.625vw;
+        height: 4.8113567073vw;
+        font-size: 16px;
+        line-height: 6.7708333333vw;
+        text-indent: 1.0416666667vw; }
+    .summary-info .pic-area {
+      width: 42.0833333333vw;
+      height: 42.0833333333vw; } }
+/* PC: 1280~1024px */
+@media screen and (max-width: 1280px) {
+  .max1400 {
+    max-width: 80vw; }
+
+  .summary-info {
+    height: 42.0833333333vw; }
+    .summary-info .txt-area {
+      float: left; }
+      .summary-info .txt-area h2 {
+        font-size: 36px;
+        margin-bottom: 20px; }
+        .summary-info .txt-area h2 span {
+          font-size: 80px; }
+      .summary-info .txt-area li .sum-title {
+        width: 10.8333333333vw;
+        font-size: 26px; }
+        .summary-info .txt-area li .sum-title::after {
+          height: 16px; }
+      .summary-info .txt-area li .sum-info {
+        font-size: 20px; }
+      .summary-info .txt-area:nth-of-type(3) .sum-info::before {
+        width: 5.2083333333vw;
+        height: 1.5625vw; }
+      .summary-info .txt-area > a {
+        width: 15.625vw;
+        height: 4.8113567073vw;
+        font-size: 16px;
+        line-height: 6.7708333333vw;
+        text-indent: 1.0416666667vw; }
+    .summary-info .pic-area {
+      width: 42.0833333333vw;
+      height: 42.0833333333vw; } }
 
 /*# sourceMappingURL=common.css.map */
