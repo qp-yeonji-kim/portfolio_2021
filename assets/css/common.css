@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* 0.8? 0.6배 함수 넣기 */
 @font-face {
   font-family: PnM;
   font-weight: 400;
@@ -638,64 +637,85 @@ body {
 
   .summary-info {
     height: 42.0833333333vw; }
-    .summary-info .txt-area {
-      float: left; }
-      .summary-info .txt-area h2 {
-        font-size: 36px;
-        margin-bottom: 20px; }
-        .summary-info .txt-area h2 span {
-          font-size: 80px; }
-      .summary-info .txt-area li .sum-title {
-        width: 10.8333333333vw;
-        font-size: 26px; }
-        .summary-info .txt-area li .sum-title::after {
-          height: 16px; }
-      .summary-info .txt-area li .sum-info {
-        font-size: 20px; }
-      .summary-info .txt-area:nth-of-type(3) .sum-info::before {
-        width: 5.2083333333vw;
-        height: 1.5625vw; }
-      .summary-info .txt-area > a {
-        width: 15.625vw;
-        height: 4.8113567073vw;
-        font-size: 16px;
-        line-height: 6.7708333333vw;
-        text-indent: 1.0416666667vw; }
+    .summary-info .txt-area h2 {
+      font-size: 36px;
+      margin-bottom: 20px; }
+      .summary-info .txt-area h2 span {
+        font-size: 80px; }
+    .summary-info .txt-area li .sum-title {
+      width: 10.8333333333vw;
+      font-size: 26px; }
+      .summary-info .txt-area li .sum-title::after {
+        height: 16px; }
+    .summary-info .txt-area li .sum-info {
+      font-size: 20px; }
+    .summary-info .txt-area:nth-of-type(3) .sum-info::before {
+      width: 5.2083333333vw;
+      height: 1.5625vw; }
+    .summary-info .txt-area > a {
+      left: 12%;
+      width: 15.625vw;
+      height: 4.8113567073vw;
+      font-size: 16px;
+      line-height: 6.7708333333vw;
+      text-indent: 1.0416666667vw; }
     .summary-info .pic-area {
       width: 42.0833333333vw;
       height: 42.0833333333vw; } }
-/* PC: 1280~1024px */
+/* PC: 1280px~1024px */
 @media screen and (max-width: 1280px) {
   .max1400 {
-    max-width: 80vw; }
+    max-width: 75vw; }
 
   .summary-info {
-    height: 42.0833333333vw; }
+    height: 37.875vw; }
+    .summary-info .txt-area h2 {
+      font-size: 26px;
+      margin-bottom: 0; }
+      .summary-info .txt-area h2 span {
+        font-size: 52px; }
+    .summary-info .txt-area li .sum-title {
+      width: 9.75vw;
+      font-size: 20px; }
+      .summary-info .txt-area li .sum-title::after {
+        height: 14px; }
+    .summary-info .txt-area li .sum-info {
+      font-size: 18px; }
+    .summary-info .txt-area:nth-of-type(3) .sum-info::before {
+      width: 4.6875vw;
+      height: 1.40625vw; }
+    .summary-info .txt-area > a {
+      left: 10%;
+      width: 14.0625vw;
+      height: 4.3302210366vw;
+      font-size: 16px;
+      line-height: 6.09375vw;
+      text-indent: 0.9375vw; }
+    .summary-info .pic-area {
+      width: 37.875vw;
+      height: 37.875vw; } }
+/* Tablet: 1024px~600px */
+@media screen and (max-width: 1024px) {
+  .max1400 {
+    max-width: none; }
+
+  .summary-info {
+    height: 50vw; }
     .summary-info .txt-area {
-      float: left; }
+      position: absolute;
+      left: 10%;
+      height: 100%; }
       .summary-info .txt-area h2 {
-        font-size: 36px;
-        margin-bottom: 20px; }
+        font-size: 36px; }
         .summary-info .txt-area h2 span {
           font-size: 80px; }
-      .summary-info .txt-area li .sum-title {
-        width: 10.8333333333vw;
-        font-size: 26px; }
-        .summary-info .txt-area li .sum-title::after {
-          height: 16px; }
-      .summary-info .txt-area li .sum-info {
-        font-size: 20px; }
-      .summary-info .txt-area:nth-of-type(3) .sum-info::before {
-        width: 5.2083333333vw;
-        height: 1.5625vw; }
-      .summary-info .txt-area > a {
-        width: 15.625vw;
-        height: 4.8113567073vw;
-        font-size: 16px;
-        line-height: 6.7708333333vw;
-        text-indent: 1.0416666667vw; }
     .summary-info .pic-area {
-      width: 42.0833333333vw;
-      height: 42.0833333333vw; } }
+      width: 50vw;
+      height: 50vw; } }
+/* Mobile: 600px~ */
+@media screen and (max-width: 600px) {
+  .summary-info .pic-area {
+    width: 35vw;
+    height: 50vw; } }
 
 /*# sourceMappingURL=common.css.map */

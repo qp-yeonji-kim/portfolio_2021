@@ -678,7 +678,8 @@ body {
       }
     }
   }
-  .announce{
+
+  .announce {
     @include bg-size(cover);
     position: absolute;
     left: 55%;
@@ -687,7 +688,7 @@ body {
     height: 340px;
     background: url("../images/project/finding.png") no-repeat center;
 
-    &::before{
+    &::before {
       @include bg-size(contain);
       content: "원하는 페이지를 선택해주세요.";
       position: absolute;
@@ -700,22 +701,25 @@ body {
       text-align: center;
       background: url("../images/project/messagebox2.png") no-repeat left top;
     }
-
   }
-  .project-main{
+
+  .project-main {
     position: absolute;
     display: inline-block;
     right: 30px;
     bottom: 30px;
     text-align: center;
     z-index: 100;
-    img{
+
+    img {
       width: 32px;
-      height: 32px;  
+      height: 32px;
     }
-    span{
+
+    span {
       display: block;
-      &::after{
+
+      &::after {
         content: "";
         @include t-sition(all .4s);
         position: absolute;
@@ -727,8 +731,10 @@ body {
         z-index: -10;
       }
     }
-    &:hover, &:focus{
-      span::after{
+
+    &:hover,
+    &:focus {
+      span::after {
         width: 100%;
       }
     }
@@ -736,23 +742,23 @@ body {
 }
 
 /* PC: 144Opx~1280px */
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
   .max1400 {
     max-width: vw-calc1920(1440);
   }
 
   .tooltip {
     font-size: 12px;
-  
+
     svg {
       width: 26px;
       height: 26px;
     }
-  
+
     p {
       margin-top: 5px;
     }
-  
+
     p::before {
       top: -5px;
       border-bottom: 5px solid;
@@ -765,8 +771,7 @@ body {
     height: vw-calc1920(808);
 
     .txt-area {
-      float: left;
-  
+
       h2 {
         font-size: 36px;
         margin-bottom: 20px;
@@ -775,6 +780,7 @@ body {
           font-size: 80px;
         }
       }
+
       li {
         .sum-title {
           width: vw-calc1920(208);
@@ -784,16 +790,19 @@ body {
             height: 16px;
           }
         }
+
         .sum-info {
           font-size: 20px;
         }
       }
+
       &:nth-of-type(3) .sum-info::before {
         width: vw-calc1920(100);
         height: vw-calc1920(30);
       }
-      
+
       >a {
+        left: 12%;
         width: vw-calc1920(300);
         height: vw-calc1920(92.3780487804878);
         font-size: 16px;
@@ -801,6 +810,7 @@ body {
         text-indent: vw-calc1920(20);
       }
     }
+
     .pic-area {
       width: vw-calc1920(808);
       height: vw-calc1920(808);
@@ -808,55 +818,99 @@ body {
   }
 }
 
-/* PC: 1280~1024px */
-@media screen and (max-width: 1280px){
+/* PC: 1280px~1024px */
+@media screen and (max-width: 1280px) {
   .max1400 {
-    max-width: vw-calc1280(1024);
+    max-width: vw-calc1280(1600);
   }
 
   .summary-info {
-    height: vw-calc1920(808);
+    height: vw-calc1280(808);
 
     .txt-area {
-      float: left;
-  
+
+      h2 {
+        font-size: 26px;
+        margin-bottom: 0;
+
+        span {
+          font-size: 52px;
+        }
+      }
+
+      li {
+        .sum-title {
+          width: vw-calc1280(208);
+          font-size: 20px;
+
+          &::after {
+            height: 14px;
+          }
+        }
+
+        .sum-info {
+          font-size: 18px;
+        }
+      }
+
+      &:nth-of-type(3) .sum-info::before {
+        width: vw-calc1280(100);
+        height: vw-calc1280(30);
+      }
+
+      >a {
+        left: 10%;
+        width: vw-calc1280(300);
+        height: vw-calc1280(92.3780487804878);
+        font-size: 16px;
+        line-height: vw-calc1280(130);
+        text-indent: vw-calc1280(20);
+      }
+    }
+
+    .pic-area {
+      width: vw-calc1280(808);
+      height: vw-calc1280(808);
+    }
+  }
+}
+
+/* Tablet: 1024px~600px */
+@media screen and (max-width: 1024px) {
+  .max1400 {
+    max-width: none;
+  }
+
+  .summary-info {
+    height: 50vw;
+
+    .txt-area {
+      position: absolute;
+      left: 10%;
+      height: 100%;
+
       h2 {
         font-size: 36px;
-        margin-bottom: 20px;
 
         span {
           font-size: 80px;
         }
       }
-      li {
-        .sum-title {
-          width: vw-calc1920(208);
-          font-size: 26px;
-
-          &::after {
-            height: 16px;
-          }
-        }
-        .sum-info {
-          font-size: 20px;
-        }
-      }
-      &:nth-of-type(3) .sum-info::before {
-        width: vw-calc1920(100);
-        height: vw-calc1920(30);
-      }
-      
-      >a {
-        width: vw-calc1920(300);
-        height: vw-calc1920(92.3780487804878);
-        font-size: 16px;
-        line-height: vw-calc1920(130);
-        text-indent: vw-calc1920(20);
-      }
     }
+
     .pic-area {
-      width: vw-calc1920(808);
-      height: vw-calc1920(808);
+      width: 50vw;
+      height: 50vw;
+    }
+  }
+}
+
+/* Mobile: 600px~ */
+@media screen and (max-width: 600px) {
+  .summary-info {
+    .pic-area {
+      width: 35vw;
+      height: 50vw;
     }
   }
 }

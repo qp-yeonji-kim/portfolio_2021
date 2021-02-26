@@ -3,9 +3,12 @@
   @return #{$vwSize}vw;
 }
 
-@function vw-calc1280($px) {
-  $vwSize: $px / (1280 / 100);
+@function vw-calc1280($px, $ratio: 0.6, $viewport: 1280) {
+  $vwSize: $px * $ratio / ($viewport / 100);
   @return #{$vwSize}vw;
 }
 
-/* 0.8? 0.6배 함수 넣기 */
+@function vw-calc1024($px) {
+  $vwSize: $px / (1024 / 100);
+  @return #{$vwSize}vw;
+}
