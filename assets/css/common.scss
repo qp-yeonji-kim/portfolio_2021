@@ -309,12 +309,12 @@ body {
 
 .core-info {
   margin: 160px auto 500px;
+  text-align: center;
 
   >p {
     margin-bottom: 110px;
     font-size: 40px;
     line-height: 68px;
-    text-align: center;
   }
 
   .device-pc {
@@ -328,7 +328,6 @@ body {
   h2 {
     margin: 200px auto 80px;
     font-size: 60px;
-    text-align: center;
 
     &:nth-of-type(2) {
       margin-bottom: 0;
@@ -336,15 +335,19 @@ body {
   }
 
   ul {
+    display: inline-block;
+    width: auto;
+    background: red;
+
     li {
       float: left;
+      background: orange;
     }
 
     strong {
       display: block;
       font-size: 48px;
       font-weight: 300;
-      text-align: center;
     }
 
     .core-pic,
@@ -380,55 +383,49 @@ body {
       width: 688px;
       height: 400px;
       font-size: 30px;
-      line-height: 68px;
+      line-height: 2.25;
       word-break: keep-all;
-      text-align: center;
+      background: gold;
     }
   }
 
   .report {
-    li {
-      width: 100%;
-      margin-bottom: 180px;
+    width: 100%;
+    height: auto;
+    background: hotpink;
 
-      >div {
+    li {
+      float: none;
+      margin: 0 auto 180px;
+      background: gold;
+
+      > div {
         @include borderbox;
         float: left;
         width: 448px;
         height: 652px;
-      }
+        background: greenyellow;
 
-      &:nth-child(odd)>* {
-        +div {
-          margin-left: 28px;
+        &:nth-child(2){
+          margin: 0 28px;
         }
       }
 
       &:nth-child(even)>* {
-        &.site-a11y {
-          float: right;
-        }
-
-        &:nth-child(2) {
-          float: right;
-        }
-
-        +div {
-          margin-right: 28px;
-        }
+        float: right;
       }
     }
 
     .site-a11y {
       font-size: 24px;
-      line-height: 54px;
-      text-align: center;
+      line-height: 2.25;
       word-break: break-all;
 
       p:nth-of-type(1) {
         position: relative;
         margin: 24px 0 120px;
         font-size: 20px;
+        background: skyblue;
 
         &::after {
           @include t-form(translateX(-50%));
@@ -444,7 +441,7 @@ body {
       p:nth-of-type(2) {
         font-size: 24px;
         word-break: keep-all;
-        text-align: center;
+        background: plum;
       }
     }
 
@@ -622,7 +619,7 @@ body {
         padding: 16px 50px;
         font-size: 20px;
         line-height: 20px;
-        text-align: center;
+  
         border: 3px solid #fff;
         overflow: hidden;
         z-index: 100;
@@ -698,7 +695,7 @@ body {
       height: 234px;
       line-height: 160px;
       font-size: 20px;
-      text-align: center;
+
       background: url("../images/project/messagebox2.png") no-repeat left top;
     }
   }
@@ -708,7 +705,6 @@ body {
     display: inline-block;
     right: 30px;
     bottom: 30px;
-    text-align: center;
     z-index: 100;
 
     img {
@@ -814,6 +810,95 @@ body {
     .pic-area {
       width: vw-calc1920(808);
       height: vw-calc1920(808);
+    }
+  }
+
+  .core-info {
+    margin: 140px auto 400px;
+
+    >p {
+      margin-bottom: 70px;
+    }
+
+    .device-pc {
+      width: vw-calc1920(1024);
+      height: vw-calc1920(820);
+    }
+  
+    h2 {
+      margin: 180px auto 60px;
+      font-size: 50px;
+    }
+  
+    ul {
+      strong {
+        font-size: 40px;
+      }
+    }
+  
+    .point {
+      li {
+        width: vw-calc1920(684);
+  
+        +li {
+          margin-left: 32px;
+        }
+      }
+  
+      .core-pic {
+        width: vw-calc1920(684);
+        height: vw-calc1920(464);
+      }
+  
+      strong {
+        margin: 14px 0;
+      }
+  
+      .core-txt {
+        width: vw-calc1920(684);
+        height: vw-calc1920(300);
+        font-size: 22px;
+      }
+    }
+  
+    .report {
+
+      li {
+        width: 922px;
+        
+        &:nth-child(even)>* {
+          float: none;
+        }
+
+        > div {
+          float: none;
+
+          &:nth-child(1){
+            width: 100%;
+            height: auto;
+          }
+
+          &:nth-child(2){
+            float: left;
+            margin: 0;
+          }
+
+          &:nth-child(3){
+            float: right;
+          }
+        }
+
+        .site-a11y {
+          p:nth-of-type(1) {
+            margin: 0 0 60px;
+          }
+    
+          p:nth-of-type(2) {
+            width: 80%;
+            margin: 0 auto 40px;
+          }
+        }
+      }
     }
   }
 }
