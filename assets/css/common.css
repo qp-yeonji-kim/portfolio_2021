@@ -670,8 +670,8 @@ body {
     .core-info > p {
       margin-bottom: 70px; }
     .core-info .device-pc {
-      width: 53.3333333333vw;
-      height: 42.7083333333vw; }
+      width: 71.1111111111vw;
+      height: 56.9444444444vw; }
     .core-info h2 {
       margin: 180px auto 60px;
       font-size: 50px; }
@@ -740,7 +740,25 @@ body {
       text-indent: 0.9375vw; }
     .summary-info .pic-area {
       width: 37.875vw;
-      height: 37.875vw; } }
+      height: 37.875vw; }
+
+  .core-info {
+    margin: 120px auto 600px; }
+    .core-info.max1400 {
+      width: 100%;
+      max-width: none; }
+    .core-info > p {
+      margin-bottom: 30px;
+      font-size: 30px; }
+    .core-info h2 {
+      margin: 140px auto 40px;
+      font-size: 50px; }
+    .core-info ul strong {
+      font-size: 30px; }
+    .core-info .point strong {
+      margin: 10px 0; }
+    .core-info .point .core-txt {
+      font-size: 18px; } }
 /* Tablet: 1024px~600px */
 @media screen and (max-width: 1024px) {
   .max1400 {

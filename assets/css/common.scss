@@ -821,8 +821,8 @@ body {
     }
 
     .device-pc {
-      width: vw-calc1920(1024);
-      height: vw-calc1920(820);
+      width: vw-calc1440(1024);
+      height: vw-calc1440(820);
     }
   
     h2 {
@@ -958,6 +958,42 @@ body {
       height: vw-calc1280(808);
     }
   }
+
+  .core-info {
+    margin: 120px auto 600px;
+
+    &.max1400 {
+      width: 100%;
+      max-width: none;
+    }
+
+    >p {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+  
+    h2 {
+      margin: 140px auto 40px;
+      font-size: 50px;
+    }
+  
+    ul {
+      strong {
+        font-size: 30px;
+      }
+    }
+
+    .point {
+      strong {
+        margin: 10px 0;
+      }
+  
+      .core-txt {
+        font-size: 18px;
+      }
+    }
+  }
+
 }
 
 /* Tablet: 1024px~600px */
