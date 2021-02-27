@@ -12,7 +12,6 @@
     @include b-radius(42% 58% 70% 30% / 45% 45% 55% 55%);
     @include ani(morph 5s ease-in-out infinite);
     @include t-sition(all 1s ease-in-out);
-
     position: relative;
     top: 50%;
     left: 50%;
@@ -223,7 +222,6 @@
   }
 
   .happy {
-
     >* {
       float: left;
     }
@@ -699,7 +697,6 @@
     }
 
     .report {
-
       li {
         div:focus {
           outline: 4px solid #f00;
@@ -823,7 +820,6 @@
     }
 
     .report {
-
       li {
         div:focus {
           outline: 4px solid #800080;
@@ -929,7 +925,6 @@
     }
 
     .report {
-
       li {
         div:focus {
           outline: 4px solid #008000;
@@ -984,4 +979,86 @@
     }
   }
 
+}
+
+/* Mobile: 600px~425px */
+@media screen and (max-width: 600px) {
+  #cgv-info {
+    .core-info {
+      .report{
+        li:nth-of-type(1) {
+          .site-pic:nth-of-type(2) {
+            &::after {
+              clip: rect(vw-calc600(10), vw-calc600(330), vw-calc600(210), vw-calc600(130));
+              clip-path: circle(vw-calc600(100) at vw-calc600(230) vw-calc600(110));
+            }
+          }
+
+          .site-pic:nth-of-type(3) {
+            &::after {
+              clip: rect(vw-calc600(180), vw-calc600(300), vw-calc600(380), vw-calc600(100));
+              clip-path: circle(vw-calc600(100) at vw-calc600(200) vw-calc600(280));
+            }
+          }
+        }
+
+        li:nth-of-type(2) {
+          .site-pic {
+            &::after {
+              clip: rect(vw-calc600(270), vw-calc600(240), vw-calc600(470), vw-calc600(40));
+              clip-path: circle(vw-calc600(100) at vw-calc600(140) vw-calc600(370));
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #tab-info {
+    .core-info {
+      .report{
+        li:nth-of-type(1) {
+          .site-pic:nth-of-type(2) {
+            &::after {
+              clip: rect(vw-calc600(224), vw-calc600(445), vw-calc600(424), vw-calc600(245));
+              clip-path: circle(vw-calc600(100) at vw-calc600(345) vw-calc600(324));
+            }
+          }
+        }
+  
+        li:nth-of-type(2) {
+          .site-pic {    
+            &::after {
+              clip: rect(vw-calc600(231), vw-calc600(149), vw-calc600(431), vw-calc600(-50));
+              clip-path: circle(vw-calc600(100) at 0px 331px);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #gs-info {
+    .core-info {
+      .report{
+        li:nth-of-type(1) {
+          .site-pic:nth-of-type(2) {    
+            &::after {
+              clip: rect(vw-calc600(0), vw-calc600(448), vw-calc600(200), vw-calc600(248));
+              clip-path: circle(vw-calc600(100) at vw-calc600(348) vw-calc600(100));
+            }
+          }
+        }
+  
+        li:nth-of-type(2) {
+          .site-pic {    
+            &::after {
+              clip: rect(vw-calc600(425), vw-calc600(350), vw-calc600(625), vw-calc600(150));
+              clip-path: circle(vw-calc600(100) at vw-calc600(250) vw-calc600(525));
+            }
+          }
+        }
+      }
+    }
+  }
 }

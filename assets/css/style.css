@@ -694,4 +694,30 @@
 #gs-info .core-info .report .site-code .gist-file {
   border-color: #349b94; }
 
+/* Mobile: 600px~425px */
+@media screen and (max-width: 600px) {
+  #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
+    clip: rect(1.6666666667vw, 55vw, 35vw, 21.6666666667vw);
+    clip-path: circle(16.6666666667vw at 38.3333333333vw 18.3333333333vw); }
+  #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(3)::after {
+    clip: rect(30vw, 50vw, 63.3333333333vw, 16.6666666667vw);
+    clip-path: circle(16.6666666667vw at 33.3333333333vw 46.6666666667vw); }
+  #cgv-info .core-info .report li:nth-of-type(2) .site-pic::after {
+    clip: rect(45vw, 40vw, 78.3333333333vw, 6.6666666667vw);
+    clip-path: circle(16.6666666667vw at 23.3333333333vw 61.6666666667vw); }
+
+  #tab-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
+    clip: rect(37.3333333333vw, 74.1666666667vw, 70.6666666667vw, 40.8333333333vw);
+    clip-path: circle(16.6666666667vw at 57.5vw 54vw); }
+  #tab-info .core-info .report li:nth-of-type(2) .site-pic::after {
+    clip: rect(38.5vw, 24.8333333333vw, 71.8333333333vw, -8.3333333333vw);
+    clip-path: circle(16.6666666667vw at 0px 331px); }
+
+  #gs-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
+    clip: rect(0vw, 74.6666666667vw, 33.3333333333vw, 41.3333333333vw);
+    clip-path: circle(16.6666666667vw at 58vw 16.6666666667vw); }
+  #gs-info .core-info .report li:nth-of-type(2) .site-pic::after {
+    clip: rect(70.8333333333vw, 58.3333333333vw, 104.1666666667vw, 25vw);
+    clip-path: circle(16.6666666667vw at 41.6666666667vw 87.5vw); } }
+
 /*# sourceMappingURL=style.css.map */

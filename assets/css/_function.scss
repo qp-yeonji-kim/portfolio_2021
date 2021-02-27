@@ -17,3 +17,14 @@
   $vwSize: $px / (1024 / 100);
   @return #{$vwSize}vw;
 }
+
+@function vw-calc768($px) {
+  $vwSize: $px / (768 / 100);
+  @return #{$vwSize}vw;
+}
+
+@function vw-calc600($px) {
+  $vwSize: $px / (600 / 100);
+  @return #{$vwSize}vw;
+}
+

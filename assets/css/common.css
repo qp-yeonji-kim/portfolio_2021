@@ -112,7 +112,8 @@ footer {
   display: inline-block;
   font-family: D2Code;
   font-size: 16px;
-  cursor: pointer; }
+  cursor: pointer;
+  z-index: 1000; }
   .tooltip svg {
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
@@ -190,7 +191,8 @@ body {
       .summary-info .txt-area h2 span {
         font-size: 110px; }
     .summary-info .txt-area li {
-      margin-bottom: 32px; }
+      margin-bottom: 32px;
+      background: hotpink; }
       .summary-info .txt-area li > * {
         float: left;
         position: relative; }
@@ -242,7 +244,7 @@ body {
       height: 101px;
       font-size: 20px;
       font-weight: 700;
-      line-height: 130px;
+      line-height: 1.3;
       text-indent: 20px;
       text-align: center;
       background: url("../images/project/island-mini.svg") no-repeat center;
@@ -263,7 +265,7 @@ body {
 .core-info {
   margin: 160px auto 500px;
   text-align: center;
-  background: peachpuff; }
+  background: hotpink; }
   .core-info > p {
     margin-bottom: 110px;
     font-size: 40px;
@@ -328,8 +330,8 @@ body {
   .core-info .point strong {
     margin: 30px 0; }
   .core-info .point .core-txt {
-    width: 688px;
-    height: 400px;
+    width: 684px;
+    height: auto;
     font-size: 30px;
     line-height: 2.25;
     word-break: keep-all;
@@ -338,7 +340,7 @@ body {
     width: 100%;
     height: auto;
     margin-top: 60px;
-    background: hotpink; }
+    background: pink; }
     .core-info .report li {
       float: none;
       margin: 0 auto 180px;
@@ -722,7 +724,6 @@ body {
       margin: 14px 0; }
     .core-info .point .core-txt {
       width: 35.625vw;
-      height: 15.625vw;
       font-size: 22px; }
     .core-info .report {
       margin-top: 20px; }
@@ -787,21 +788,20 @@ body {
       margin-bottom: 30px;
       font-size: 30px; }
     .core-info h2 {
-      margin: 140px auto 40px;
-      font-size: 50px; }
+      margin: 140px auto 40px; }
     .core-info ul strong {
       font-size: 30px; }
     .core-info .point strong {
       margin: 10px 0; }
     .core-info .point .core-txt {
       font-size: 18px; } }
-/* Tablet: 1024px~600px */
+/* Tablet: 1024px~768px */
 @media screen and (max-width: 1024px) {
   .max1400 {
     max-width: none; }
 
   .summary-info {
-    height: 50vw; }
+    height: 500px; }
     .summary-info .txt-area {
       position: absolute;
       left: 10%;
@@ -809,14 +809,163 @@ body {
       .summary-info .txt-area h2 {
         font-size: 36px; }
         .summary-info .txt-area h2 span {
-          font-size: 80px; }
+          font-size: 60px; }
+      .summary-info .txt-area li .sum-title {
+        width: 140px;
+        margin-right: 28px;
+        font-size: 26px; }
+      .summary-info .txt-area li .sum-info {
+        font-size: 22px; }
+      .summary-info .txt-area > a {
+        width: 170px;
+        height: 52px;
+        font-size: 18px;
+        line-height: 70px; }
     .summary-info .pic-area {
-      width: 50vw;
-      height: 50vw; } }
-/* Mobile: 600px~ */
+      width: 40%;
+      height: 500px; }
+
+  .core-info > p {
+    margin-bottom: 20px;
+    font-size: 26px; }
+  .core-info h2 {
+    margin: 140px auto 20px;
+    font-size: 36px; }
+  .core-info ul strong {
+    font-size: 26px; }
+  .core-info .point li {
+    width: auto; }
+    .core-info .point li + li {
+      margin-left: 24px; }
+  .core-info .point .core-pic {
+    width: 360px;
+    height: 240px; }
+  .core-info .point strong {
+    margin: 6px 0; }
+  .core-info .point .core-txt {
+    width: 360px; }
+  .core-info .report li {
+    width: 100%; }
+    .core-info .report li > div:nth-child(2) {
+      float: none;
+      margin: 0 auto; }
+    .core-info .report li > div:nth-child(3) {
+      float: none;
+      margin: 40px auto 0; }
+  .core-info .report .site-a11y {
+    font-size: 24px; }
+    .core-info .report .site-a11y p:nth-of-type(2) {
+      width: 70%;
+      font-size: 20px; }
+  .core-info .report .site-code.view {
+    width: 90%; } }
+/* Tablet: 768px~600px */
+@media screen and (max-width: 768px) {
+  .summary-info {
+    height: 400px; }
+    .summary-info .txt-area {
+      left: 8%; }
+      .summary-info .txt-area h2 {
+        font-size: 28px; }
+        .summary-info .txt-area h2 span {
+          font-size: 52px; }
+      .summary-info .txt-area li .sum-title {
+        font-size: 22px; }
+      .summary-info .txt-area li .sum-info {
+        font-size: 18px; }
+    .summary-info .pic-area {
+      width: 34%;
+      height: 400px; }
+
+  .core-info {
+    margin: 100px auto 800px; }
+    .core-info > p {
+      margin-bottom: 10px;
+      font-size: 22px; }
+    .core-info .point li {
+      float: none; }
+      .core-info .point li + li {
+        margin-left: 0;
+        margin-top: 80px; }
+    .core-info .point .core-pic {
+      width: 89.0625vw;
+      height: 60.4166666667vw; }
+    .core-info .point .core-txt {
+      width: 89.0625vw; } }
+/* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
-  .summary-info .pic-area {
-    width: 35vw;
-    height: 50vw; } }
+  .summary-info {
+    height: 300px; }
+    .summary-info .txt-area {
+      left: 5%; }
+      .summary-info .txt-area h2 {
+        font-size: 22px; }
+        .summary-info .txt-area h2 span {
+          font-size: 40px; }
+      .summary-info .txt-area li {
+        margin-bottom: 18px; }
+        .summary-info .txt-area li .sum-title {
+          width: 120px;
+          font-size: 18px; }
+        .summary-info .txt-area li .sum-info {
+          font-size: 14px; }
+      .summary-info .txt-area > a {
+        left: 5%;
+        width: 111.52px;
+        height: 34px;
+        font-size: 14px;
+        line-height: 50px; }
+    .summary-info .pic-area {
+      width: 30%;
+      height: 300px; }
+
+  .core-info > p {
+    font-size: 18px; }
+  .core-info ul strong {
+    font-size: 26px; }
+  .core-info .point .core-txt {
+    width: 89.0625vw;
+    font-size: 18px;
+    line-height: 1.8; }
+  .core-info .report li > div {
+    width: 74.6666666667vw;
+    height: 108.6666666667vw; }
+  .core-info .report .site-a11y {
+    font-size: 22px; }
+    .core-info .report .site-a11y p:nth-of-type(2) {
+      font-size: 18px; }
+  .core-info .report .site-code .gist-data {
+    height: 102.6666666667vw;
+    padding-top: 0; }
+  .core-info .report .site-code .gist .blob-code-inner {
+    font-size: 16px; } }
+/* Mobile: 425px~ */
+/* 가운데 정렬 */
+@media screen and (max-width: 425px) {
+  .summary-info {
+    height: 300px; }
+    .summary-info .txt-area {
+      -webkit-transform: translateX(-50%);
+      transform: translateX(-50%);
+      left: 50%; }
+      .summary-info .txt-area h2 {
+        font-size: 22px; }
+        .summary-info .txt-area h2 span {
+          font-size: 40px; }
+      .summary-info .txt-area li {
+        margin-bottom: 18px; }
+        .summary-info .txt-area li .sum-title {
+          width: 120px;
+          font-size: 18px; }
+        .summary-info .txt-area li .sum-info {
+          font-size: 14px; }
+      .summary-info .txt-area > a {
+        left: 5%;
+        width: 111.52px;
+        height: 34px;
+        font-size: 14px;
+        line-height: 50px; }
+    .summary-info .pic-area {
+      display: none; } }
 
 /*# sourceMappingURL=common.css.map */
