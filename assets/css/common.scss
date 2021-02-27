@@ -207,6 +207,29 @@ body {
   height: 808px;
   color: #fff;
 
+  .tooltip {
+    top: 0;
+    right: -30px;
+
+    svg {
+      fill: #fff;
+    }
+
+    p {
+      color: #fff;
+    }
+
+    p::before {
+      border-bottom-color: #fff;
+    }
+
+    p::after {
+      content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
+      width: 310px;
+      background-color: #fff;
+    }
+  }
+
   .txt-area {
     float: left;
 
@@ -310,11 +333,12 @@ body {
 .core-info {
   margin: 160px auto 500px;
   text-align: center;
+  background: peachpuff;
 
   >p {
     margin-bottom: 110px;
     font-size: 40px;
-    line-height: 68px;
+    line-height: 1.8;
   }
 
   .device-pc {
@@ -323,6 +347,31 @@ body {
     height: 820px;
     margin: 0 auto;
     background: no-repeat center;
+  }
+
+  .tooltip {
+    @include t-form(translateX(16vw));
+    margin-top: -50px;
+
+    svg {
+      fill: $b-brown;
+    }
+
+    p {
+      color: $b-brown;
+    }
+
+    p::after {
+      content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
+      width: 320px;
+      color: #fff;
+    }
+
+    &.tip {
+      p {
+        color: transparent;
+      }
+    }
   }
 
   h2 {
@@ -392,6 +441,7 @@ body {
   .report {
     width: 100%;
     height: auto;
+    margin-top: 60px;
     background: hotpink;
 
     li {
@@ -399,14 +449,14 @@ body {
       margin: 0 auto 180px;
       background: gold;
 
-      > div {
+      >div {
         @include borderbox;
         float: left;
         width: 448px;
         height: 652px;
         background: greenyellow;
 
-        &:nth-child(2){
+        &:nth-child(2) {
           margin: 0 28px;
         }
       }
@@ -425,6 +475,7 @@ body {
         position: relative;
         margin: 24px 0 120px;
         font-size: 20px;
+        line-height: 1.8;
         background: skyblue;
 
         &::after {
@@ -618,8 +669,8 @@ body {
         width: auto;
         padding: 16px 50px;
         font-size: 20px;
-        line-height: 20px;
-  
+        line-height: 1;
+
         border: 3px solid #fff;
         overflow: hidden;
         z-index: 100;
@@ -766,6 +817,12 @@ body {
   .summary-info {
     height: vw-calc1920(808);
 
+    .tooltip {
+      p::after {
+        width: 230px;
+      }
+    }
+
     .txt-area {
 
       h2 {
@@ -824,66 +881,73 @@ body {
       width: vw-calc1440(1024);
       height: vw-calc1440(820);
     }
-  
+
+    .tooltip {
+      p::after {
+        width: 240px;
+      }
+    }
+
     h2 {
       margin: 180px auto 60px;
       font-size: 50px;
     }
-  
+
     ul {
       strong {
         font-size: 40px;
       }
     }
-  
+
     .point {
       li {
         width: vw-calc1920(684);
-  
+
         +li {
           margin-left: 32px;
         }
       }
-  
+
       .core-pic {
         width: vw-calc1920(684);
         height: vw-calc1920(464);
       }
-  
+
       strong {
         margin: 14px 0;
       }
-  
+
       .core-txt {
         width: vw-calc1920(684);
         height: vw-calc1920(300);
         font-size: 22px;
       }
     }
-  
+
     .report {
+      margin-top: 20px;
 
       li {
         width: 922px;
-        
+
         &:nth-child(even)>* {
           float: none;
         }
 
-        > div {
+        >div {
           float: none;
 
-          &:nth-child(1){
+          &:nth-child(1) {
             width: 100%;
             height: auto;
           }
 
-          &:nth-child(2){
+          &:nth-child(2) {
             float: left;
             margin: 0;
           }
 
-          &:nth-child(3){
+          &:nth-child(3) {
             float: right;
           }
         }
@@ -892,7 +956,7 @@ body {
           p:nth-of-type(1) {
             margin: 0 0 60px;
           }
-    
+
           p:nth-of-type(2) {
             width: 80%;
             margin: 0 auto 40px;
@@ -971,12 +1035,12 @@ body {
       margin-bottom: 30px;
       font-size: 30px;
     }
-  
+
     h2 {
       margin: 140px auto 40px;
       font-size: 50px;
     }
-  
+
     ul {
       strong {
         font-size: 30px;
@@ -987,7 +1051,7 @@ body {
       strong {
         margin: 10px 0;
       }
-  
+
       .core-txt {
         font-size: 18px;
       }

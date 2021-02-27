@@ -168,6 +168,19 @@ body {
   width: 100%;
   height: 808px;
   color: #fff; }
+  .summary-info .tooltip {
+    top: 0;
+    right: -30px; }
+    .summary-info .tooltip svg {
+      fill: #fff; }
+    .summary-info .tooltip p {
+      color: #fff; }
+    .summary-info .tooltip p::before {
+      border-bottom-color: #fff; }
+    .summary-info .tooltip p::after {
+      content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
+      width: 310px;
+      background-color: #fff; }
   .summary-info .txt-area {
     float: left; }
     .summary-info .txt-area h2 {
@@ -249,11 +262,12 @@ body {
 
 .core-info {
   margin: 160px auto 500px;
-  text-align: center; }
+  text-align: center;
+  background: peachpuff; }
   .core-info > p {
     margin-bottom: 110px;
     font-size: 40px;
-    line-height: 68px; }
+    line-height: 1.8; }
   .core-info .device-pc {
     -webkit-background-size: contain !important;
     background-size: contain !important;
@@ -261,6 +275,20 @@ body {
     height: 820px;
     margin: 0 auto;
     background: no-repeat center; }
+  .core-info .tooltip {
+    -webkit-transform: translateX(16vw);
+    transform: translateX(16vw);
+    margin-top: -50px; }
+    .core-info .tooltip svg {
+      fill: #3e2a26; }
+    .core-info .tooltip p {
+      color: #3e2a26; }
+    .core-info .tooltip p::after {
+      content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
+      width: 320px;
+      color: #fff; }
+    .core-info .tooltip.tip p {
+      color: transparent; }
   .core-info h2 {
     margin: 200px auto 80px;
     font-size: 60px; }
@@ -309,6 +337,7 @@ body {
   .core-info .report {
     width: 100%;
     height: auto;
+    margin-top: 60px;
     background: hotpink; }
     .core-info .report li {
       float: none;
@@ -334,6 +363,7 @@ body {
         position: relative;
         margin: 24px 0 120px;
         font-size: 20px;
+        line-height: 1.8;
         background: skyblue; }
         .core-info .report .site-a11y p:nth-of-type(1)::after {
           -webkit-transform: translateX(-50%);
@@ -514,7 +544,7 @@ body {
       width: auto;
       padding: 16px 50px;
       font-size: 20px;
-      line-height: 20px;
+      line-height: 1;
       border: 3px solid #fff;
       overflow: hidden;
       z-index: 100; }
@@ -639,6 +669,8 @@ body {
 
   .summary-info {
     height: 42.0833333333vw; }
+    .summary-info .tooltip p::after {
+      width: 230px; }
     .summary-info .txt-area h2 {
       font-size: 36px;
       margin-bottom: 20px; }
@@ -672,6 +704,8 @@ body {
     .core-info .device-pc {
       width: 71.1111111111vw;
       height: 56.9444444444vw; }
+    .core-info .tooltip p::after {
+      width: 240px; }
     .core-info h2 {
       margin: 180px auto 60px;
       font-size: 50px; }
@@ -690,25 +724,27 @@ body {
       width: 35.625vw;
       height: 15.625vw;
       font-size: 22px; }
-    .core-info .report li {
-      width: 922px; }
-      .core-info .report li:nth-child(even) > * {
-        float: none; }
-      .core-info .report li > div {
-        float: none; }
-        .core-info .report li > div:nth-child(1) {
-          width: 100%;
-          height: auto; }
-        .core-info .report li > div:nth-child(2) {
-          float: left;
-          margin: 0; }
-        .core-info .report li > div:nth-child(3) {
-          float: right; }
-      .core-info .report li .site-a11y p:nth-of-type(1) {
-        margin: 0 0 60px; }
-      .core-info .report li .site-a11y p:nth-of-type(2) {
-        width: 80%;
-        margin: 0 auto 40px; } }
+    .core-info .report {
+      margin-top: 20px; }
+      .core-info .report li {
+        width: 922px; }
+        .core-info .report li:nth-child(even) > * {
+          float: none; }
+        .core-info .report li > div {
+          float: none; }
+          .core-info .report li > div:nth-child(1) {
+            width: 100%;
+            height: auto; }
+          .core-info .report li > div:nth-child(2) {
+            float: left;
+            margin: 0; }
+          .core-info .report li > div:nth-child(3) {
+            float: right; }
+        .core-info .report li .site-a11y p:nth-of-type(1) {
+          margin: 0 0 60px; }
+        .core-info .report li .site-a11y p:nth-of-type(2) {
+          width: 80%;
+          margin: 0 auto 40px; } }
 /* PC: 1280px~1024px */
 @media screen and (max-width: 1280px) {
   .max1400 {

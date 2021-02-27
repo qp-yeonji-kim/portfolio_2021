@@ -655,26 +655,8 @@
     background: $colcgv;
 
     .tooltip {
-      top: 0;
-      right: -30px;
-
-      svg {
-        fill: #fff;
-      }
-
-      p {
-        color: #fff;
-      }
-
-      p::before {
-        border-bottom-color: #fff;
-      }
-
       p::after {
-        content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
-        width: 310px;
         color: $colcgv;
-        background-color: #fff;
       }
     }
 
@@ -693,33 +675,12 @@
     }
 
     .tooltip {
-      top: 0;
-      left: 64%;
-      margin-top: -50px;
-
-      svg {
-        fill: $b-brown;
-      }
-
-      p {
-        color: $b-brown;
-      }
-
       p::before {
         border-bottom-color: $colcgv;
       }
 
       p::after {
-        content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
-        width: 320px;
-        color: #fff;
         background-color: $colcgv;
-      }
-
-      &.tip {
-        p {
-          color: transparent;
-        }
       }
     }
 
@@ -738,7 +699,6 @@
     }
 
     .report {
-      margin-top: 60px;
 
       li {
         div:focus {
@@ -819,27 +779,8 @@
     }
 
     .tooltip {
-      top: 0;
-      right: -30px;
-
-      svg {
-        fill: #fff;
-      }
-
-      p {
-        color: #fff;
-      }
-
-      p::before {
-        border-bottom-color: #fff;
-      }
-
       p::after {
-        content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
-        width: 310px;
         color: $coltab;
-        background-color: #fff;
-        z-index: 100;
       }
     }
 
@@ -858,33 +799,12 @@
     }
 
     .tooltip {
-      top: 0;
-      left: 64%;
-      margin-top: -50px;
-
-      svg {
-        fill: $b-brown;
-      }
-
-      p {
-        color: $b-brown;
-      }
-
       p::before {
         border-bottom-color: $coltab;
       }
 
       p::after {
-        content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
-        width: 320px;
-        color: #fff;
         background-color: $coltab;
-      }
-
-      &.tip {
-        p {
-          color: transparent;
-        }
       }
     }
 
@@ -903,11 +823,10 @@
     }
 
     .report {
-      margin-top: 60px;
 
       li {
         div:focus {
-          outline: 4px solid #f00;
+          outline: 4px solid #800080;
         }
       }
 
@@ -917,8 +836,6 @@
         }
 
         p:nth-of-type(1) {
-          line-height: 1.8;
-
           &::after {
             background: $coltab;
           }
@@ -968,27 +885,8 @@
     background: $colgs;
 
     .tooltip {
-      top: 0;
-      right: -30px;
-
-      svg {
-        fill: #fff;
-      }
-
-      p {
-        color: #fff;
-      }
-
-      p::before {
-        border-bottom-color: #fff;
-      }
-
       p::after {
-        content: "밑줄 친 페이지는 제가 제작한 페이지로,\A누르면 새창으로 열립니다.";
-        width: 310px;
         color: $colgs;
-        background-color: #fff;
-        z-index: 100;
       }
     }
 
@@ -1007,33 +905,12 @@
     }
 
     .tooltip {
-      top: 0;
-      left: 64%;
-      margin-top: -50px;
-
-      svg {
-        fill: $b-brown;
-      }
-
-      p {
-        color: $b-brown;
-      }
-
       p::before {
         border-bottom-color: $colgs;
       }
 
       p::after {
-        content: "사진이나 코드가 들어있는 박스를 클릭하면\A 더 정확히 볼 수 있습니다.";
-        width: 320px;
-        color: #fff;
         background-color: $colgs;
-      }
-
-      &.tip {
-        p {
-          color: transparent;
-        }
       }
     }
 
@@ -1052,11 +929,10 @@
     }
 
     .report {
-      margin-top: 60px;
 
       li {
         div:focus {
-          outline: 4px solid #f00;
+          outline: 4px solid #008000;
         }
       }
 
@@ -1066,8 +942,6 @@
         }
 
         p:nth-of-type(1) {
-          line-height: 1.8;
-
           &::after {
             background: $colgs;
           }
