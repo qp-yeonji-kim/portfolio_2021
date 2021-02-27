@@ -236,17 +236,22 @@ body {
 
     h2 {
       display: inline-block;
-      font-size: 60px;
       margin-bottom: 60px;
+      font-size: 60px;
+      background: red;
 
       span {
         font-size: 110px;
       }
     }
 
+    ul{
+      background: orange;
+    }
+
     li {
       margin-bottom: 32px;
-      background: hotpink;
+      background: green;
 
       >* {
         float: left;
@@ -595,7 +600,7 @@ body {
     padding: 25px;
     margin: 0 auto;
     overflow: visible;
-    background: $l-pink;
+    background: /* $l-pink */red;
   }
 
   .swiper-slide {
@@ -649,6 +654,7 @@ body {
         @include t-sition(all .4s);
         @include t-form(translateY(25px));
         opacity: 0;
+        background: orange;
       }
 
       strong {
@@ -746,6 +752,7 @@ body {
       height: 234px;
       line-height: 160px;
       font-size: 20px;
+      text-align: center;
       background: url("../images/project/messagebox2.png") no-repeat left top;
     }
   }
@@ -755,6 +762,7 @@ body {
     display: inline-block;
     right: 30px;
     bottom: 30px;
+    text-align: center;
     z-index: 100;
 
     img {
@@ -1021,7 +1029,7 @@ body {
   }
 
   .core-info {
-    margin: 120px auto 600px;
+    margin: 120px auto 450px;
 
     &.max1400 {
       width: 100%;
@@ -1051,6 +1059,14 @@ body {
       .core-txt {
         font-size: 18px;
       }
+    }
+  }
+
+  #project-project {
+    .announce {
+    left: 50%;
+    width: 300px;
+    height: 300px;
     }
   }
 
@@ -1177,6 +1193,122 @@ body {
       }
     }
   }
+
+  #project-project {
+    height: 500px;
+  
+    .swiper-container {
+      @include t-form(translateY(-400px));
+      max-width: none;
+      width: 70%;
+      height: 700px;
+    }
+  
+    .swiper-slide {
+      >* {
+        top: auto;
+      }
+  
+      .slide-image {
+        @include t-form(translate(-50%, -50%));
+        left: 50%;
+        top: 0;
+      }
+  
+      .slide-text {
+        @include t-form(translate(-50%, -30%));
+        left: 50%;
+        top: 50%;
+        right: auto;
+        width: 80%;
+        padding-right: 0;
+  
+        >* {
+          @include t-form(translateY(0));
+          text-align: center;
+        }
+  
+        strong {
+          display: inline-block;
+          width: 100%;
+          font-size: 48px;
+        }
+  
+        p {
+          margin-bottom: 50px;
+        }
+  
+        a {
+          display: block;
+          width: 200px;
+          margin: 0 auto;
+        }
+      }
+    }
+  
+    .swiper-pagination {
+      @include t-form(translateX(-50%));
+      left: 50% !important;
+      right: auto;
+      top: 28%;
+      width: auto;
+  
+      .swiper-pagination-bullet {
+        @include b-radius(10px);
+        @include t-sition(all .3s);
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        margin: 0 4px;
+        border: 3px solid #fff;
+  
+        &-active {
+          width: 30px;
+          background: $b-pink;
+        }
+      }
+    }
+  
+    .announce {
+      display: none;
+    }
+  
+    .project-main {
+      position: absolute;
+      display: inline-block;
+      right: 30px;
+      bottom: 30px;
+      z-index: 100;
+  
+      img {
+        width: 32px;
+        height: 32px;
+      }
+  
+      span {
+        display: block;
+  
+        &::after {
+          content: "";
+          @include t-sition(all .4s);
+          position: absolute;
+          bottom: 10px;
+          display: block;
+          width: 0;
+          height: 5px;
+          background: rgba(217, 171, 179, .5);
+          z-index: -10;
+        }
+      }
+  
+      &:hover,
+      &:focus {
+        span::after {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 /* Tablet: 768px~600px */
@@ -1213,7 +1345,7 @@ body {
   }
 
   .core-info {
-    margin: 100px auto 800px;
+    margin: 100px auto 320px;
 
     >p {
       margin-bottom: 10px;
@@ -1333,10 +1465,42 @@ body {
       }
     }
   }
+
+  #project-project {
+    height: 650px;
+  
+    .swiper-container {
+      @include t-form(translateY(-300px));
+      width: 80%;
+      height: 700px;
+    }
+  
+    .swiper-slide {
+      .slide-image {
+        width: 280px;
+        height: 280px;
+      }
+
+      .slide-text {
+        width: 90%;
+  
+        strong {
+          font-size: 34px;
+        }
+
+        p{
+          font-size: 20px;
+        }
+  
+        a {
+          font-size: 18px;
+        }
+      }
+    }
+  }
 }
 
 /* Mobile: 425px~ */
-/* 가운데 정렬 */
 @media screen and (max-width: 425px) {
   .summary-info {
     height: 300px;
@@ -1344,39 +1508,103 @@ body {
     .txt-area {
       @include t-form(translateX(-50%));
       left: 50%;
+      width: 100%;
 
       h2 {
         font-size: 22px;
+        width: 100%;
+        text-align: center;
 
         span {
           font-size: 40px;
         }
       }
 
-      li {
-        margin-bottom: 18px;
-
-        .sum-title {
-          width: 120px;
-          font-size: 18px;
-        }
-  
-        .sum-info {
-          font-size: 14px;
-        }
-      }
-
-      >a {
-        left: 5%;
-        width: 111.52px;
-        height: 34px;
-        font-size: 14px;
-        line-height: 50px;
+      ul{
+        width: 300px;
+        margin: 0 auto;
       }
     }
 
     .pic-area {
       display: none;
+    }
+  }
+
+  .core-info {
+    margin: 100px auto 200px;
+
+    >p {
+      font-size: 16px;
+    }
+
+    h2 {
+      font-size: 30px;
+    }
+
+    ul{
+      strong{
+        font-size: 18px;
+      }
+    }
+
+    .point {
+      .core-txt {
+        font-size: 14px;
+      }
+    }
+
+    .report{
+      .site-a11y {
+        font-size: 22px;
+
+        p:nth-of-type(1) {
+          font-size: 16px;
+        }
+  
+        p:nth-of-type(2) {
+          font-size: 14px;
+        }
+      }
+
+      .site-code {
+        .gist .blob-code-inner {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  #project-project {
+    height: 550px;
+  
+    .swiper-container {
+      @include t-form(translateY(-200px));
+      width: 80%;
+      height: 580px;
+    }
+  
+    .swiper-slide {
+      .slide-image {
+        width: 260px;
+        height: 260px;
+      }
+
+      .slide-text {
+        width: 95%;
+  
+        strong {
+          font-size: 22px;
+        }
+
+        p{
+          font-size: 16px;
+        }
+  
+        a {
+          font-size: 16px;
+        }
+      }
     }
   }
 }
