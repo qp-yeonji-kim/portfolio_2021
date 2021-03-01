@@ -981,6 +981,67 @@
 
 }
 
+/* PC: 144Opx~1280px */
+@media screen and (max-width: 1440px) {
+  #tab-info {
+    .summary-info {
+  
+      h2 {
+        padding-top: 0;
+  
+        span {
+          font-size: 70px;
+        }
+      }
+    }
+  }
+}
+
+/* PC: 1280px~1024px */
+@media screen and (max-width: 1280px) {
+  #tab-info {
+    .summary-info {
+
+      h2 {
+
+        span {
+          font-size: 52px;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet: 1024px~768px */
+@media screen and (max-width: 1024px) {
+  #tab-info {
+    .summary-info {
+
+      h2 {
+
+        span {
+          font-size: 60px;
+        }
+      }
+    }
+  }
+}
+
+/* Tablet: 768px~600px */
+@media screen and (max-width: 768px) {
+  #tab-info {
+    .summary-info {
+
+      h2 {
+
+        span {
+          font-size: 52px;
+        }
+      }
+    }
+  }
+}
+
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
   #cgv-info {
@@ -1015,6 +1076,16 @@
   }
 
   #tab-info {
+      .summary-info {
+  
+        h2 {
+  
+          span {
+            font-size: 40px;
+          }
+        }
+      }
+
     .core-info {
       .report{
         li:nth-of-type(1) {
@@ -1057,6 +1128,21 @@
               clip-path: circle(vw-calc600(100) at vw-calc600(250) vw-calc600(525));
             }
           }
+        }
+      }
+    }
+  }
+}
+
+/* Mobile: 425px~ */
+@media screen and (max-width: 425px) {
+  #tab-info {
+    .summary-info {
+
+      h2 {
+
+        span {
+          font-size: 40px;
         }
       }
     }

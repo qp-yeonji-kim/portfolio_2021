@@ -694,6 +694,24 @@
 #gs-info .core-info .report .site-code .gist-file {
   border-color: #349b94; }
 
+/* PC: 144Opx~1280px */
+@media screen and (max-width: 1440px) {
+  #tab-info .summary-info h2 {
+    padding-top: 0; }
+    #tab-info .summary-info h2 span {
+      font-size: 70px; } }
+/* PC: 1280px~1024px */
+@media screen and (max-width: 1280px) {
+  #tab-info .summary-info h2 span {
+    font-size: 52px; } }
+/* Tablet: 1024px~768px */
+@media screen and (max-width: 1024px) {
+  #tab-info .summary-info h2 span {
+    font-size: 60px; } }
+/* Tablet: 768px~600px */
+@media screen and (max-width: 768px) {
+  #tab-info .summary-info h2 span {
+    font-size: 52px; } }
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
   #cgv-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
@@ -706,6 +724,8 @@
     clip: rect(45vw, 40vw, 78.3333333333vw, 6.6666666667vw);
     clip-path: circle(16.6666666667vw at 23.3333333333vw 61.6666666667vw); }
 
+  #tab-info .summary-info h2 span {
+    font-size: 40px; }
   #tab-info .core-info .report li:nth-of-type(1) .site-pic:nth-of-type(2)::after {
     clip: rect(37.3333333333vw, 74.1666666667vw, 70.6666666667vw, 40.8333333333vw);
     clip-path: circle(16.6666666667vw at 57.5vw 54vw); }
@@ -719,5 +739,9 @@
   #gs-info .core-info .report li:nth-of-type(2) .site-pic::after {
     clip: rect(70.8333333333vw, 58.3333333333vw, 104.1666666667vw, 25vw);
     clip-path: circle(16.6666666667vw at 41.6666666667vw 87.5vw); } }
+/* Mobile: 425px~ */
+@media screen and (max-width: 425px) {
+  #tab-info .summary-info h2 span {
+    font-size: 40px; } }
 
 /*# sourceMappingURL=style.css.map */
