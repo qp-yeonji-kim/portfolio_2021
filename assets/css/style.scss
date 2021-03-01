@@ -140,11 +140,13 @@
 /* 자기소개 페이지 */
 #aboutme {
   @include t-sition(all .5s);
+  @include bg-size(100%);
   opacity: 0;
   position: relative;
   top: 100px;
+  width: 100%;
   padding-bottom: 400px;
-  background: url("../images/main/bg-pink.svg") no-repeat bottom center / 100%;
+  background: url("../images/main/bg-pink.svg") no-repeat bottom center;
 
   &.load {
     opacity: 1;
@@ -166,26 +168,29 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
   }
 
   h2 {
     padding-top: 100px;
     margin-left: 120px;
     font-size: 50px;
+    background-color: red;
   }
 
   .my_feature {
     position: relative;
     width: 100%;
     padding-top: 150px;
-    font-size: 40px;
-    line-height: 68px;
+    font-size: 38px;
+    line-height: 1.8;
+    background-color: rgba(255, 166, 0, 0.4);
 
     p {
       @include t-form(translateY(-50%));
       position: absolute;
       top: 50%;
+      background-color: gold;
     }
 
     .me {
@@ -194,7 +199,9 @@
       position: relative;
       width: 650px;
       height: 650px;
-      background: $l-pink no-repeat center;
+      background:
+        /* $l-pink */
+        yellow no-repeat center;
 
       &::after {
         @include bg-size(contain);
@@ -237,6 +244,7 @@
 
   .ability {
     height: 650px;
+    background: rgba(127, 255, 212, 0.572);
 
     &.fadein {
       .show {
@@ -290,18 +298,19 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background: none;
-      background-image: url("../images/main/flying.png");
+      background: url("../images/main/flying.png") no-repeat center;
     }
   }
 
   .ability_list {
+    background-color: yellowgreen;
 
     li {
       position: relative;
       float: left;
       width: 328px;
       height: 328px;
+      background-color: skyblue;
 
       +li {
         margin-left: 152px;
@@ -338,9 +347,10 @@
         left: 120px;
         width: 100%;
         font-size: 24px;
-        line-height: 36px;
+        line-height: 1.5;
         color: #fff;
         z-index: 1000;
+        background-color: plum;
 
         strong {
           display: block;
@@ -371,7 +381,7 @@
       left: 50%;
       width: 600px;
       height: 578px;
-      background: url("../images/main/thinking.png") no-repeat center;
+      background: transparent url("../images/main/thinking.png") no-repeat center;
     }
 
     &.left {
@@ -386,13 +396,14 @@
       position: relative;
       top: -100px;
       left: 50%;
-      width: 500px;
+      width: 100%;
       font-size: 40px;
       text-align: center;
     }
 
     .link {
       margin: 40px 60px;
+      background: hotpink;
 
       a {
         @include b-radius(40px);
@@ -415,7 +426,6 @@
         border: 30px solid $orange;
         width: 200px;
         height: 100px;
-
         border-top: none;
         border-right: none;
         transform-origin: top left;
@@ -514,7 +524,6 @@
   position: relative;
   top: 100px;
   text-align: center;
-  background: hotpink;
 
   &.load {
     opacity: 1;
@@ -522,7 +531,7 @@
   }
 
   h1 {
-    margin-top: 140px;
+    padding-top: 140px;
     font-size: 90px;
     font-weight: 400;
     text-align: center;
@@ -533,12 +542,10 @@
     max-width: 1400px;
     width: auto;
     margin: 80px auto;
-    background: lightpink;
 
     li {
       float: left;
       width: 445px;
-      background: orange;
 
       +li {
         margin-left: 32px;
@@ -606,7 +613,6 @@
         font-weight: 400;
         letter-spacing: 1.5;
         text-align: center;
-        background: gold;
       }
 
       p {
@@ -617,7 +623,6 @@
         font-size: 24px;
         word-break: keep-all;
         color: #000;
-        background: yellowgreen;
       }
 
       a {
@@ -993,25 +998,174 @@
 
 /* PC: 144Opx~1280px */
 @media screen and (max-width: 1440px) {
-  #project-list {
+  #aboutme {
+    @include bg-size(150%, 100%);
 
+    .max1400 {
+      max-width: none;
+      width: 100%;
+    }
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .my_feature {
+      font-size: 30px;
+
+      .me {
+        width: vw-calc1440(650);
+        height: vw-calc1440(650);
+      }
+    }
+
+    .think {
+      >* {
+        float: right;
+      }
+
+      p {
+        left: 4%;
+      }
+
+      .me {
+        right: 4%;
+      }
+    }
+
+    .happy {
+      >* {
+        float: left;
+      }
+
+      p {
+        right: 4%;
+      }
+
+      .me {
+        left: 4%;
+      }
+    }
+
+    .ability {
+      height: 650px;
+
+      &.fadein {
+        .me {
+          bottom: vw-calc1440(150);
+          left: vw-calc1440(600);
+          width: 700px;
+          height: 700px;
+        }
+      }
+
+      >div:first-child {
+        left: 4%;
+      }
+    }
+
+    .ability_list {
+
+      li {
+        width: vw-calc1440(328);
+        height: vw-calc1440(328);
+
+        +li {
+          margin-left: vw-calc1440(152);
+        }
+
+        &::after {
+          width: vw-calc1440(328);
+          height: vw-calc1440(328);
+        }
+
+        &::before {
+          left: vw-calc1440(120);
+          width: vw-calc1440(328);
+          height: vw-calc1440(328);
+        }
+
+        .ability_txt {
+          left: vw-calc1440(120);
+          width: 90%;
+          font-size: 20px;
+
+          strong {
+            margin-bottom: 14px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    #main-project {
+      width: vw-calc1440(840);
+      height: vw-calc1440(610);
+      margin: vw-calc1440(300) auto 0;
+
+      &::after {
+        bottom: vw-calc1440(-340);
+        width: vw-calc1440(600);
+        height: vw-calc1440(578);
+      }
+
+      p {
+        top: vw-calc1440(-100);
+        width: vw-calc1440(500);
+        font-size: 38px;
+      }
+
+      .link {
+        margin: vw-calc1440(40) vw-calc1440(60);
+
+        a {
+          width: vw-calc1440(208);
+          height: vw-calc1440(208);
+        }
+
+        .check {
+          border: vw-calc1440(30) solid $orange;
+          width: vw-calc1440(200);
+          height: vw-calc1440(100);
+          border-top: none;
+          border-right: none;
+        }
+
+        span {
+          font-size: 26px;
+
+          &::before {
+            height: 26px;
+          }
+        }
+      }
+
+      .link-project {
+        svg {
+          right: -vw-calc1440(30);
+        }
+      }
+    }
+  }
+
+  #project-list {
     h1 {
-      margin-top: 100px;
+      padding-top: 100px;
       font-size: 60px;
     }
-  
+
     ul {
       max-width: none;
       width: auto;
       margin: 60px auto 120px;
-  
+
       li {
         width: vw-calc1920(445);
-  
+
         +li {
           margin-left: 32px;
         }
-  
+
         div {
           width: vw-calc1920(445);
           height: vw-calc1920(300);
@@ -1026,7 +1180,7 @@
           margin: 60px 0 0;
           font-size: 26px;
         }
-  
+
         p {
           font-size: 22px;
         }
@@ -1034,7 +1188,7 @@
       }
     }
   }
-  
+
   #tab-info {
     .summary-info {
 
@@ -1051,22 +1205,85 @@
 
 /* PC: 1280px~1024px */
 @media screen and (max-width: 1280px) {
+  #aboutme {
+    @include bg-size(150%, 100%);
+
+    h2 {
+      font-size: 40px;
+    }
+
+    .my_feature {
+      font-size: 26px;
+    }
+
+    .ability {
+      height: 550px;
+
+      &.fadein {
+        .me {
+          width: 580px;
+          height: 580px;
+        }
+      }
+    }
+
+    .ability_list {
+
+      li {
+        width: vw-calc1440(328);
+        height: vw-calc1440(328);
+
+        +li {
+          margin-left: vw-calc1440(152);
+        }
+
+        &::after {
+          width: vw-calc1440(328);
+          height: vw-calc1440(328);
+        }
+
+        &::before {
+          left: vw-calc1440(120);
+          width: vw-calc1440(328);
+          height: vw-calc1440(328);
+        }
+
+        .ability_txt {
+          left: vw-calc1440(120);
+          width: 100%;
+          font-size: 18px;
+
+          strong {
+            margin-bottom: 10px;
+            font-size: 26px;
+          }
+        }
+      }
+    }
+
+    #main-project {
+      p {
+        font-size: 34px;
+      }
+    }
+  }
+
   #project-list {
 
     h1 {
-      margin-top: 80px;
+      padding-top: 80px;
       font-size: 50px;
     }
-  
+
     ul {
       margin: 50px auto 110px;
-  
+
       li {
         strong {
           margin: 60px 0 0;
           font-size: 26px;
         }
-  
+
         p {
           height: 160px;
           font-size: 18px;
@@ -1093,41 +1310,41 @@
   #project-list {
 
     h1 {
-      margin-top: 100px;
+      padding-top: 100px;
       font-size: 60px;
     }
-  
+
     ul {
       width: 90%;
       margin: 60px auto 120px;
-  
+
       li {
         float: none;
         position: relative;
         width: 100%;
         margin: 0 auto;
-  
+
         +li {
           margin-left: auto;
           margin-top: 100px;
         }
 
-        >*{
+        >* {
           position: absolute;
         }
 
-        div{
+        div {
           left: 0;
           top: 50%;
           width: vw-calc1024(450);
           height: vw-calc1024(300);
 
-          &::after{
+          &::after {
             width: vw-calc1024(120);
             height: vw-calc1024(120);
           }
         }
-  
+
         strong {
           @include t-form(translateX(50%));
           right: 25%;
@@ -1135,7 +1352,7 @@
           margin: 0;
           font-size: 30px;
         }
-  
+
         p {
           @include t-form(translate(50%, -50%));
           right: 25%;
@@ -1145,7 +1362,7 @@
           padding: 0;
           font-size: 18px;
         }
-  
+
         a {
           @include t-form(translateX(50%));
           right: 25%;
@@ -1176,22 +1393,21 @@
 @media screen and (max-width: 768px) {
   #project-list {
     h1 {
-      margin-top: 80px;
+      padding-top: 80px;
       font-size: 50px;
     }
-  
+
     ul {
       li {
         strong {
           font-size: 26px;
         }
-  
+
         p {
           width: 50%;
           line-height: 1.4;
-
         }
-  
+
         a {
           width: 120px;
           height: 40px;
@@ -1219,36 +1435,36 @@
   #project-list {
 
     h1 {
-      margin-top: 60px;
+      padding-top: 60px;
       font-size: 40px;
     }
-  
+
     ul {
       margin: 50px auto 80px;
-  
+
       li {
-        height: vw-calc600(800);
-  
+        height: vw-calc600(780);
+
         div {
           @include t-form(translateX(-50%));
           left: 50%;
           top: 0;
           width: vw-calc600(445);
           height: vw-calc600(300);
-  
+
           &::after {
             width: vw-calc600(120);
             height: vw-calc600(120);
           }
         }
-  
+
         strong {
           @include t-form(translateX(50%));
           right: 50%;
           top: vw-calc600(400);
           font-size: 40px;
         }
-  
+
         p {
           @include t-form(translateX(50%));
           right: 50%;
@@ -1257,7 +1473,7 @@
           font-size: 24px;
           line-height: 1.6;
         }
-  
+
         a {
           @include t-form(translateX(50%));
           right: 50%;
@@ -1363,22 +1579,22 @@
 
 /* Mobile: 425px~ */
 @media screen and (max-width: 425px) {
-  #project-list{
+  #project-list {
     ul {
       margin: 30px auto 40px;
-  
+
       li {
-        height: vw-calc600(900);
+        height: vw-calc600(880);
 
         strong {
           font-size: 30px;
         }
-  
+
         p {
-          font-size: 22px;
+          font-size: 20px;
           line-height: 1.6;
         }
-  
+
         a {
           width: 160px;
           height: 50px;

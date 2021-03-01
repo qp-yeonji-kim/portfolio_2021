@@ -138,11 +138,14 @@
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-background-size: 100% !important;
+  background-size: 100% !important;
   opacity: 0;
   position: relative;
   top: 100px;
+  width: 100%;
   padding-bottom: 400px;
-  background: url("../images/main/bg-pink.svg") no-repeat bottom center/100%; }
+  background: url("../images/main/bg-pink.svg") no-repeat bottom center; }
   #aboutme.load {
     opacity: 1;
     top: 0; }
@@ -160,22 +163,25 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100vw; }
+    width: 100%; }
   #aboutme h2 {
     padding-top: 100px;
     margin-left: 120px;
-    font-size: 50px; }
+    font-size: 50px;
+    background-color: red; }
   #aboutme .my_feature {
     position: relative;
     width: 100%;
     padding-top: 150px;
-    font-size: 40px;
-    line-height: 68px; }
+    font-size: 38px;
+    line-height: 1.8;
+    background-color: rgba(255, 166, 0, 0.4); }
     #aboutme .my_feature p {
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
       position: absolute;
-      top: 50%; }
+      top: 50%;
+      background-color: gold; }
     #aboutme .my_feature .me {
       -webkit-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
       -moz-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
@@ -187,7 +193,7 @@
       position: relative;
       width: 650px;
       height: 650px;
-      background: #e5dedd no-repeat center; }
+      background: yellow no-repeat center; }
       #aboutme .my_feature .me::after {
         -webkit-background-size: contain !important;
         background-size: contain !important;
@@ -212,7 +218,8 @@
   #aboutme .happy .me::after {
     background: url("../images/main/making.png") no-repeat center; }
   #aboutme .ability {
-    height: 650px; }
+    height: 650px;
+    background: rgba(127, 255, 212, 0.572); }
     #aboutme .ability.fadein .show {
       opacity: 0; }
     #aboutme .ability.fadein .appear {
@@ -260,54 +267,57 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      background: none;
-      background-image: url("../images/main/flying.png"); }
-  #aboutme .ability_list li {
-    position: relative;
-    float: left;
-    width: 328px;
-    height: 328px; }
-    #aboutme .ability_list li + li {
-      margin-left: 152px; }
-    #aboutme .ability_list li::after {
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 0;
+      background: url("../images/main/flying.png") no-repeat center; }
+  #aboutme .ability_list {
+    background-color: yellowgreen; }
+    #aboutme .ability_list li {
+      position: relative;
+      float: left;
       width: 328px;
       height: 328px;
-      background: url("../images/main/c-orange.svg") no-repeat center/cover;
-      z-index: 100; }
-    #aboutme .ability_list li::before {
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      content: "";
-      position: absolute;
-      top: 50%;
-      left: 120px;
-      width: 328px;
-      height: 328px;
-      background: url("../images/main/c-black.svg") no-repeat center/cover;
-      z-index: 10; }
-    #aboutme .ability_list li .ability_txt {
-      -webkit-transform: translateY(-50%);
-      transform: translateY(-50%);
-      position: absolute;
-      top: 50%;
-      left: 120px;
-      width: 100%;
-      font-size: 24px;
-      line-height: 36px;
-      color: #fff;
-      z-index: 1000; }
-      #aboutme .ability_list li .ability_txt strong {
-        display: block;
-        margin-bottom: 20px;
-        font-family: LuxM;
-        font-size: 40px;
-        color: #333; }
+      background-color: skyblue; }
+      #aboutme .ability_list li + li {
+        margin-left: 152px; }
+      #aboutme .ability_list li::after {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 328px;
+        height: 328px;
+        background: url("../images/main/c-orange.svg") no-repeat center/cover;
+        z-index: 100; }
+      #aboutme .ability_list li::before {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 120px;
+        width: 328px;
+        height: 328px;
+        background: url("../images/main/c-black.svg") no-repeat center/cover;
+        z-index: 10; }
+      #aboutme .ability_list li .ability_txt {
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        position: absolute;
+        top: 50%;
+        left: 120px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #fff;
+        z-index: 1000;
+        background-color: plum; }
+        #aboutme .ability_list li .ability_txt strong {
+          display: block;
+          margin-bottom: 20px;
+          font-family: LuxM;
+          font-size: 40px;
+          color: #333; }
   #aboutme #main-project {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -330,7 +340,7 @@
       left: 50%;
       width: 600px;
       height: 578px;
-      background: url("../images/main/thinking.png") no-repeat center; }
+      background: transparent url("../images/main/thinking.png") no-repeat center; }
     #aboutme #main-project.left::after {
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1);
@@ -341,11 +351,12 @@
       position: relative;
       top: -100px;
       left: 50%;
-      width: 500px;
+      width: 100%;
       font-size: 40px;
       text-align: center; }
     #aboutme #main-project .link {
-      margin: 40px 60px; }
+      margin: 40px 60px;
+      background: hotpink; }
       #aboutme #main-project .link a {
         -webkit-border-radius: 40px;
         -moz-border-radius: 40px;
@@ -439,13 +450,12 @@
   opacity: 0;
   position: relative;
   top: 100px;
-  text-align: center;
-  background: hotpink; }
+  text-align: center; }
   #project-list.load {
     opacity: 1;
     top: 0; }
   #project-list h1 {
-    margin-top: 140px;
+    padding-top: 140px;
     font-size: 90px;
     font-weight: 400;
     text-align: center; }
@@ -453,12 +463,10 @@
     display: inline-block;
     max-width: 1400px;
     width: auto;
-    margin: 80px auto;
-    background: lightpink; }
+    margin: 80px auto; }
     #project-list ul li {
       float: left;
-      width: 445px;
-      background: orange; }
+      width: 445px; }
       #project-list ul li + li {
         margin-left: 32px; }
       #project-list ul li div {
@@ -516,8 +524,7 @@
         font-size: 30px;
         font-weight: 400;
         letter-spacing: 1.5;
-        text-align: center;
-        background: gold; }
+        text-align: center; }
       #project-list ul li p {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
@@ -527,8 +534,7 @@
         padding: 16px;
         font-size: 24px;
         word-break: keep-all;
-        color: #000;
-        background: yellowgreen; }
+        color: #000; }
       #project-list ul li a {
         -webkit-border-radius: 4px;
         -moz-border-radius: 4px;
@@ -710,8 +716,91 @@
 
 /* PC: 144Opx~1280px */
 @media screen and (max-width: 1440px) {
+  #aboutme {
+    -webkit-background-size: 150%, 100% !important;
+    background-size: 150%, 100% !important; }
+    #aboutme .max1400 {
+      max-width: none;
+      width: 100%; }
+    #aboutme h2 {
+      font-size: 40px; }
+    #aboutme .my_feature {
+      font-size: 30px; }
+      #aboutme .my_feature .me {
+        width: 45.1388888889vw;
+        height: 45.1388888889vw; }
+    #aboutme .think > * {
+      float: right; }
+    #aboutme .think p {
+      left: 4%; }
+    #aboutme .think .me {
+      right: 4%; }
+    #aboutme .happy > * {
+      float: left; }
+    #aboutme .happy p {
+      right: 4%; }
+    #aboutme .happy .me {
+      left: 4%; }
+    #aboutme .ability {
+      height: 650px; }
+      #aboutme .ability.fadein .me {
+        bottom: 10.4166666667vw;
+        left: 41.6666666667vw;
+        width: 700px;
+        height: 700px; }
+      #aboutme .ability > div:first-child {
+        left: 4%; }
+    #aboutme .ability_list li {
+      width: 22.7777777778vw;
+      height: 22.7777777778vw; }
+      #aboutme .ability_list li + li {
+        margin-left: 10.5555555556vw; }
+      #aboutme .ability_list li::after {
+        width: 22.7777777778vw;
+        height: 22.7777777778vw; }
+      #aboutme .ability_list li::before {
+        left: 8.3333333333vw;
+        width: 22.7777777778vw;
+        height: 22.7777777778vw; }
+      #aboutme .ability_list li .ability_txt {
+        left: 8.3333333333vw;
+        width: 90%;
+        font-size: 20px; }
+        #aboutme .ability_list li .ability_txt strong {
+          margin-bottom: 14px;
+          font-size: 30px; }
+    #aboutme #main-project {
+      width: 58.3333333333vw;
+      height: 42.3611111111vw;
+      margin: 20.8333333333vw auto 0; }
+      #aboutme #main-project::after {
+        bottom: -23.6111111111vw;
+        width: 41.6666666667vw;
+        height: 40.1388888889vw; }
+      #aboutme #main-project p {
+        top: -6.9444444444vw;
+        width: 34.7222222222vw;
+        font-size: 38px; }
+      #aboutme #main-project .link {
+        margin: 2.7777777778vw 4.1666666667vw; }
+        #aboutme #main-project .link a {
+          width: 14.4444444444vw;
+          height: 14.4444444444vw; }
+        #aboutme #main-project .link .check {
+          border: 2.0833333333vw solid #ed6d46;
+          width: 13.8888888889vw;
+          height: 6.9444444444vw;
+          border-top: none;
+          border-right: none; }
+        #aboutme #main-project .link span {
+          font-size: 26px; }
+          #aboutme #main-project .link span::before {
+            height: 26px; }
+      #aboutme #main-project .link-project svg {
+        right: -vw-calc1440(30); }
+
   #project-list h1 {
-    margin-top: 100px;
+    padding-top: 100px;
     font-size: 60px; }
   #project-list ul {
     max-width: none;
@@ -739,8 +828,42 @@
       font-size: 70px; } }
 /* PC: 1280px~1024px */
 @media screen and (max-width: 1280px) {
+  #aboutme {
+    -webkit-background-size: 150%, 100% !important;
+    background-size: 150%, 100% !important; }
+    #aboutme h2 {
+      font-size: 40px; }
+    #aboutme .my_feature {
+      font-size: 26px; }
+    #aboutme .ability {
+      height: 550px; }
+      #aboutme .ability.fadein .me {
+        width: 580px;
+        height: 580px; }
+    #aboutme .ability_list li {
+      width: 22.7777777778vw;
+      height: 22.7777777778vw; }
+      #aboutme .ability_list li + li {
+        margin-left: 10.5555555556vw; }
+      #aboutme .ability_list li::after {
+        width: 22.7777777778vw;
+        height: 22.7777777778vw; }
+      #aboutme .ability_list li::before {
+        left: 8.3333333333vw;
+        width: 22.7777777778vw;
+        height: 22.7777777778vw; }
+      #aboutme .ability_list li .ability_txt {
+        left: 8.3333333333vw;
+        width: 100%;
+        font-size: 18px; }
+        #aboutme .ability_list li .ability_txt strong {
+          margin-bottom: 10px;
+          font-size: 26px; }
+    #aboutme #main-project p {
+      font-size: 34px; }
+
   #project-list h1 {
-    margin-top: 80px;
+    padding-top: 80px;
     font-size: 50px; }
   #project-list ul {
     margin: 50px auto 110px; }
@@ -756,7 +879,7 @@
 /* Tablet: 1024px~768px */
 @media screen and (max-width: 1024px) {
   #project-list h1 {
-    margin-top: 100px;
+    padding-top: 100px;
     font-size: 60px; }
   #project-list ul {
     width: 90%;
@@ -810,7 +933,7 @@
 /* Tablet: 768px~600px */
 @media screen and (max-width: 768px) {
   #project-list h1 {
-    margin-top: 80px;
+    padding-top: 80px;
     font-size: 50px; }
   #project-list ul li strong {
     font-size: 26px; }
@@ -827,12 +950,12 @@
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
   #project-list h1 {
-    margin-top: 60px;
+    padding-top: 60px;
     font-size: 40px; }
   #project-list ul {
     margin: 50px auto 80px; }
     #project-list ul li {
-      height: 133.3333333333vw; }
+      height: 130vw; }
       #project-list ul li div {
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%);
@@ -897,11 +1020,11 @@
   #project-list ul {
     margin: 30px auto 40px; }
     #project-list ul li {
-      height: 150vw; }
+      height: 146.6666666667vw; }
       #project-list ul li strong {
         font-size: 30px; }
       #project-list ul li p {
-        font-size: 22px;
+        font-size: 20px;
         line-height: 1.6; }
       #project-list ul li a {
         width: 160px;
