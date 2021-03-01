@@ -238,20 +238,14 @@ body {
       display: inline-block;
       margin-bottom: 60px;
       font-size: 60px;
-      background: red;
 
       span {
         font-size: 110px;
       }
     }
 
-    ul{
-      background: orange;
-    }
-
     li {
       margin-bottom: 32px;
-      background: green;
 
       >* {
         float: left;
@@ -316,6 +310,7 @@ body {
       text-align: center;
       background: url("../images/project/island-mini.svg") no-repeat center;
       transform-origin: left bottom;
+
       &:hover,
       &:focus {
         @include t-form(scale(1.2));
@@ -339,7 +334,6 @@ body {
 .core-info {
   margin: 160px auto 500px;
   text-align: center;
-  background: hotpink;
 
   >p {
     margin-bottom: 110px;
@@ -357,7 +351,6 @@ body {
 
   .tooltip {
     @include t-form(translateX(16vw));
-    margin-top: -50px;
 
     svg {
       fill: $b-brown;
@@ -392,11 +385,9 @@ body {
   ul {
     display: inline-block;
     width: auto;
-    background: red;
 
     li {
       float: left;
-      background: orange;
     }
 
     strong {
@@ -440,7 +431,6 @@ body {
       font-size: 30px;
       line-height: 2.25;
       word-break: keep-all;
-      background: gold;
     }
   }
 
@@ -448,19 +438,16 @@ body {
     width: 100%;
     height: auto;
     margin-top: 60px;
-    background: pink;
 
     li {
       float: none;
       margin: 0 auto 180px;
-      background: gold;
 
       >div {
         @include borderbox;
         float: left;
         width: 448px;
         height: 652px;
-        background: greenyellow;
 
         &:nth-child(2) {
           margin: 0 28px;
@@ -482,7 +469,6 @@ body {
         margin: 24px 0 120px;
         font-size: 20px;
         line-height: 1.8;
-        background: skyblue;
 
         &::after {
           @include t-form(translateX(-50%));
@@ -498,7 +484,6 @@ body {
       p:nth-of-type(2) {
         font-size: 24px;
         word-break: keep-all;
-        background: plum;
       }
     }
 
@@ -600,7 +585,7 @@ body {
     padding: 25px;
     margin: 0 auto;
     overflow: visible;
-    background: /* $l-pink */red;
+    background: $l-pink;
   }
 
   .swiper-slide {
@@ -654,7 +639,6 @@ body {
         @include t-sition(all .4s);
         @include t-form(translateY(25px));
         opacity: 0;
-        background: orange;
       }
 
       strong {
@@ -899,8 +883,8 @@ body {
       font-size: 50px;
     }
 
-    ul{
-      strong{
+    ul {
+      strong {
         font-size: 40px;
       }
     }
@@ -1045,8 +1029,8 @@ body {
       margin: 140px auto 40px;
     }
 
-    ul{
-      strong{
+    ul {
+      strong {
         font-size: 30px;
       }
     }
@@ -1060,13 +1044,17 @@ body {
         font-size: 18px;
       }
     }
+
+    .report {
+      margin-top: 0;
+    }
   }
 
   #project-project {
     .announce {
-    left: 50%;
-    width: 300px;
-    height: 300px;
+      left: 50%;
+      width: 300px;
+      height: 300px;
     }
   }
 
@@ -1076,6 +1064,13 @@ body {
 @media screen and (max-width: 1024px) {
   .max1400 {
     max-width: none;
+  }
+
+  .tooltip {
+    svg {
+      width: 34px;
+      height: 34px;
+    }
   }
 
   .summary-info {
@@ -1100,7 +1095,7 @@ body {
           margin-right: 28px;
           font-size: 26px;
         }
-  
+
         .sum-info {
           font-size: 22px;
         }
@@ -1126,13 +1121,22 @@ body {
       font-size: 26px;
     }
 
+    .tooltip {
+      @include t-form(translate(18vw, -60px));
+
+      p::after {
+        width: 160px;
+        word-break: keep-all;
+      }
+    }
+
     h2 {
       margin: 140px auto 20px;
       font-size: 36px;
     }
 
-    ul{
-      strong{
+    ul {
+      strong {
         font-size: 26px;
       }
     }
@@ -1140,7 +1144,7 @@ body {
     .point {
       li {
         width: auto;
-  
+
         +li {
           margin-left: 24px;
         }
@@ -1151,7 +1155,7 @@ body {
         height: 240px;
       }
 
-      strong{
+      strong {
         margin: 6px 0;
       }
 
@@ -1179,7 +1183,7 @@ body {
 
       .site-a11y {
         font-size: 24px;
-  
+
         p:nth-of-type(2) {
           width: 70%;
           font-size: 20px;
@@ -1196,25 +1200,25 @@ body {
 
   #project-project {
     height: 500px;
-  
+
     .swiper-container {
       @include t-form(translateY(-400px));
       max-width: none;
       width: 70%;
       height: 700px;
     }
-  
+
     .swiper-slide {
       >* {
         top: auto;
       }
-  
+
       .slide-image {
         @include t-form(translate(-50%, -50%));
         left: 50%;
         top: 0;
       }
-  
+
       .slide-text {
         @include t-form(translate(-50%, -30%));
         left: 50%;
@@ -1222,22 +1226,22 @@ body {
         right: auto;
         width: 80%;
         padding-right: 0;
-  
+
         >* {
           @include t-form(translateY(0));
           text-align: center;
         }
-  
+
         strong {
           display: inline-block;
           width: 100%;
           font-size: 48px;
         }
-  
+
         p {
           margin-bottom: 50px;
         }
-  
+
         a {
           display: block;
           width: 200px;
@@ -1245,14 +1249,14 @@ body {
         }
       }
     }
-  
+
     .swiper-pagination {
       @include t-form(translateX(-50%));
       left: 50% !important;
       right: auto;
       top: 28%;
       width: auto;
-  
+
       .swiper-pagination-bullet {
         @include b-radius(10px);
         @include t-sition(all .3s);
@@ -1261,33 +1265,33 @@ body {
         height: 11px;
         margin: 0 4px;
         border: 3px solid #fff;
-  
+
         &-active {
           width: 30px;
           background: $b-pink;
         }
       }
     }
-  
+
     .announce {
       display: none;
     }
-  
+
     .project-main {
       position: absolute;
       display: inline-block;
       right: 30px;
       bottom: 30px;
       z-index: 100;
-  
+
       img {
         width: 32px;
         height: 32px;
       }
-  
+
       span {
         display: block;
-  
+
         &::after {
           content: "";
           @include t-sition(all .4s);
@@ -1300,7 +1304,7 @@ body {
           z-index: -10;
         }
       }
-  
+
       &:hover,
       &:focus {
         span::after {
@@ -1315,6 +1319,14 @@ body {
 @media screen and (max-width: 768px) {
   .summary-info {
     height: 400px;
+
+    .tooltip {
+      right: -10px;
+
+      p::after {
+        width: 138px;
+      }
+    }
 
     .txt-area {
       left: 8%;
@@ -1331,7 +1343,7 @@ body {
         .sum-title {
           font-size: 22px;
         }
-  
+
         .sum-info {
           font-size: 18px;
         }
@@ -1352,10 +1364,18 @@ body {
       font-size: 22px;
     }
 
+    .tooltip {
+      @include t-form(translate(23vw, -60px));
+
+      p::after {
+        left: -10px;
+      }
+    }
+
     .point {
       li {
         float: none;
-  
+
         +li {
           margin-left: 0;
           margin-top: 80px;
@@ -1376,8 +1396,19 @@ body {
 
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
+  .tooltip {
+    font-size: 10px;
+  }
+
   .summary-info {
     height: 300px;
+
+    .tooltip {
+      p::after {
+        width: 90px;
+        word-break: keep-all;
+      }
+    }
 
     .txt-area {
       left: 5%;
@@ -1397,7 +1428,7 @@ body {
           width: 120px;
           font-size: 18px;
         }
-  
+
         .sum-info {
           font-size: 14px;
         }
@@ -1423,8 +1454,17 @@ body {
       font-size: 18px;
     }
 
-    ul{
-      strong{
+    .tooltip {
+      @include t-form(translate(32vw, -56px));
+
+      p::after {
+        left: -40px;
+        width: 90px;
+      }
+    }
+
+    ul {
+      strong {
         font-size: 26px;
       }
     }
@@ -1437,17 +1477,17 @@ body {
       }
     }
 
-    .report{
+    .report {
       li {
         >div {
           width: vw-calc600(448);
           height: vw-calc600(652);
         }
-     }
+      }
 
       .site-a11y {
         font-size: 22px;
-  
+
         p:nth-of-type(2) {
           font-size: 18px;
         }
@@ -1458,7 +1498,7 @@ body {
           height: vw-calc600(616);
           padding-top: 0;
         }
-  
+
         .gist .blob-code-inner {
           font-size: 16px;
         }
@@ -1468,13 +1508,13 @@ body {
 
   #project-project {
     height: 650px;
-  
+
     .swiper-container {
       @include t-form(translateY(-300px));
       width: 80%;
       height: 700px;
     }
-  
+
     .swiper-slide {
       .slide-image {
         width: 280px;
@@ -1483,15 +1523,15 @@ body {
 
       .slide-text {
         width: 90%;
-  
+
         strong {
           font-size: 34px;
         }
 
-        p{
+        p {
           font-size: 20px;
         }
-  
+
         a {
           font-size: 18px;
         }
@@ -1504,6 +1544,13 @@ body {
 @media screen and (max-width: 425px) {
   .summary-info {
     height: 300px;
+
+    .tooltip {
+      p::after {
+        left: -36px;
+        width: 80px;
+      }
+    }
 
     .txt-area {
       @include t-form(translateX(-50%));
@@ -1520,7 +1567,7 @@ body {
         }
       }
 
-      ul{
+      ul {
         width: 300px;
         margin: 0 auto;
       }
@@ -1538,12 +1585,21 @@ body {
       font-size: 16px;
     }
 
+    .tooltip {
+      @include t-form(translate(36vw, -56px));
+
+      p::after {
+        left: -50px;
+        width: 90px;
+      }
+    }
+
     h2 {
       font-size: 30px;
     }
 
-    ul{
-      strong{
+    ul {
+      strong {
         font-size: 18px;
       }
     }
@@ -1554,14 +1610,14 @@ body {
       }
     }
 
-    .report{
+    .report {
       .site-a11y {
         font-size: 22px;
 
         p:nth-of-type(1) {
           font-size: 16px;
         }
-  
+
         p:nth-of-type(2) {
           font-size: 14px;
         }
@@ -1577,13 +1633,13 @@ body {
 
   #project-project {
     height: 550px;
-  
+
     .swiper-container {
       @include t-form(translateY(-200px));
       width: 80%;
       height: 580px;
     }
-  
+
     .swiper-slide {
       .slide-image {
         width: 260px;
@@ -1592,15 +1648,15 @@ body {
 
       .slide-text {
         width: 95%;
-  
+
         strong {
           font-size: 22px;
         }
 
-        p{
+        p {
           font-size: 16px;
         }
-  
+
         a {
           font-size: 16px;
         }

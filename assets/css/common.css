@@ -187,15 +187,11 @@ body {
     .summary-info .txt-area h2 {
       display: inline-block;
       margin-bottom: 60px;
-      font-size: 60px;
-      background: red; }
+      font-size: 60px; }
       .summary-info .txt-area h2 span {
         font-size: 110px; }
-    .summary-info .txt-area ul {
-      background: orange; }
     .summary-info .txt-area li {
-      margin-bottom: 32px;
-      background: green; }
+      margin-bottom: 32px; }
       .summary-info .txt-area li > * {
         float: left;
         position: relative; }
@@ -267,8 +263,7 @@ body {
 
 .core-info {
   margin: 160px auto 500px;
-  text-align: center;
-  background: hotpink; }
+  text-align: center; }
   .core-info > p {
     margin-bottom: 110px;
     font-size: 40px;
@@ -282,8 +277,7 @@ body {
     background: no-repeat center; }
   .core-info .tooltip {
     -webkit-transform: translateX(16vw);
-    transform: translateX(16vw);
-    margin-top: -50px; }
+    transform: translateX(16vw); }
     .core-info .tooltip svg {
       fill: #3e2a26; }
     .core-info .tooltip p {
@@ -301,11 +295,9 @@ body {
       margin-bottom: 0; }
   .core-info ul {
     display: inline-block;
-    width: auto;
-    background: red; }
+    width: auto; }
     .core-info ul li {
-      float: left;
-      background: orange; }
+      float: left; }
     .core-info ul strong {
       display: block;
       font-size: 48px;
@@ -337,25 +329,21 @@ body {
     height: auto;
     font-size: 30px;
     line-height: 2.25;
-    word-break: keep-all;
-    background: gold; }
+    word-break: keep-all; }
   .core-info .report {
     width: 100%;
     height: auto;
-    margin-top: 60px;
-    background: pink; }
+    margin-top: 60px; }
     .core-info .report li {
       float: none;
-      margin: 0 auto 180px;
-      background: gold; }
+      margin: 0 auto 180px; }
       .core-info .report li > div {
         -webkit-box-sizing: border-box;
         -moz-box-sizing: border-box;
         box-sizing: border-box;
         float: left;
         width: 448px;
-        height: 652px;
-        background: greenyellow; }
+        height: 652px; }
         .core-info .report li > div:nth-child(2) {
           margin: 0 28px; }
       .core-info .report li:nth-child(even) > * {
@@ -368,8 +356,7 @@ body {
         position: relative;
         margin: 24px 0 120px;
         font-size: 20px;
-        line-height: 1.8;
-        background: skyblue; }
+        line-height: 1.8; }
         .core-info .report .site-a11y p:nth-of-type(1)::after {
           -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -381,8 +368,7 @@ body {
           height: 4px; }
       .core-info .report .site-a11y p:nth-of-type(2) {
         font-size: 24px;
-        word-break: keep-all;
-        background: plum; }
+        word-break: keep-all; }
     .core-info .report .site-pic,
     .core-info .report .site-code {
       cursor: pointer; }
@@ -468,7 +454,7 @@ body {
     padding: 25px;
     margin: 0 auto;
     overflow: visible;
-    background: red; }
+    background: #e5dedd; }
   #project-project .swiper-slide.swiper-slide-active .slide-image img {
     opacity: 1;
     transition-delay: .3s; }
@@ -527,8 +513,7 @@ body {
       transition: all 0.4s;
       -webkit-transform: translateY(25px);
       transform: translateY(25px);
-      opacity: 0;
-      background: orange; }
+      opacity: 0; }
     #project-project .swiper-slide .slide-text strong {
       font-size: 48px; }
     #project-project .swiper-slide .slide-text p {
@@ -801,6 +786,8 @@ body {
       margin: 10px 0; }
     .core-info .point .core-txt {
       font-size: 18px; }
+    .core-info .report {
+      margin-top: 0; }
 
   #project-project .announce {
     left: 50%;
@@ -810,6 +797,10 @@ body {
 @media screen and (max-width: 1024px) {
   .max1400 {
     max-width: none; }
+
+  .tooltip svg {
+    width: 34px;
+    height: 34px; }
 
   .summary-info {
     height: 500px; }
@@ -839,6 +830,12 @@ body {
   .core-info > p {
     margin-bottom: 20px;
     font-size: 26px; }
+  .core-info .tooltip {
+    -webkit-transform: translate(18vw, -60px);
+    transform: translate(18vw, -60px); }
+    .core-info .tooltip p::after {
+      width: 160px;
+      word-break: keep-all; }
   .core-info h2 {
     margin: 140px auto 20px;
     font-size: 36px; }
@@ -965,6 +962,10 @@ body {
 @media screen and (max-width: 768px) {
   .summary-info {
     height: 400px; }
+    .summary-info .tooltip {
+      right: -10px; }
+      .summary-info .tooltip p::after {
+        width: 138px; }
     .summary-info .txt-area {
       left: 8%; }
       .summary-info .txt-area h2 {
@@ -984,6 +985,11 @@ body {
     .core-info > p {
       margin-bottom: 10px;
       font-size: 22px; }
+    .core-info .tooltip {
+      -webkit-transform: translate(23vw, -60px);
+      transform: translate(23vw, -60px); }
+      .core-info .tooltip p::after {
+        left: -10px; }
     .core-info .point li {
       float: none; }
       .core-info .point li + li {
@@ -996,8 +1002,14 @@ body {
       width: 89.0625vw; } }
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
+  .tooltip {
+    font-size: 10px; }
+
   .summary-info {
     height: 300px; }
+    .summary-info .tooltip p::after {
+      width: 90px;
+      word-break: keep-all; }
     .summary-info .txt-area {
       left: 5%; }
       .summary-info .txt-area h2 {
@@ -1023,6 +1035,12 @@ body {
 
   .core-info > p {
     font-size: 18px; }
+  .core-info .tooltip {
+    -webkit-transform: translate(32vw, -56px);
+    transform: translate(32vw, -56px); }
+    .core-info .tooltip p::after {
+      left: -40px;
+      width: 90px; }
   .core-info ul strong {
     font-size: 26px; }
   .core-info .point .core-txt {
@@ -1064,6 +1082,9 @@ body {
 @media screen and (max-width: 425px) {
   .summary-info {
     height: 300px; }
+    .summary-info .tooltip p::after {
+      left: -36px;
+      width: 80px; }
     .summary-info .txt-area {
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
@@ -1085,6 +1106,12 @@ body {
     margin: 100px auto 200px; }
     .core-info > p {
       font-size: 16px; }
+    .core-info .tooltip {
+      -webkit-transform: translate(36vw, -56px);
+      transform: translate(36vw, -56px); }
+      .core-info .tooltip p::after {
+        left: -50px;
+        width: 90px; }
     .core-info h2 {
       font-size: 30px; }
     .core-info ul strong {
