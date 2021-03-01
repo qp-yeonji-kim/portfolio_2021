@@ -985,10 +985,10 @@
 @media screen and (max-width: 1440px) {
   #tab-info {
     .summary-info {
-  
+
       h2 {
         padding-top: 0;
-  
+
         span {
           font-size: 70px;
         }
@@ -1046,7 +1046,7 @@
 @media screen and (max-width: 600px) {
   #cgv-info {
     .core-info {
-      .report{
+      .report {
         li:nth-of-type(1) {
           .site-pic:nth-of-type(2) {
             &::after {
@@ -1076,18 +1076,18 @@
   }
 
   #tab-info {
-      .summary-info {
-  
-        h2 {
-  
-          span {
-            font-size: 40px;
-          }
+    .summary-info {
+
+      h2 {
+
+        span {
+          font-size: 40px;
         }
       }
+    }
 
     .core-info {
-      .report{
+      .report {
         li:nth-of-type(1) {
           .site-pic:nth-of-type(2) {
             &::after {
@@ -1096,9 +1096,9 @@
             }
           }
         }
-  
+
         li:nth-of-type(2) {
-          .site-pic {    
+          .site-pic {
             &::after {
               clip: rect(vw-calc600(231), vw-calc600(149), vw-calc600(431), vw-calc600(-50));
               clip-path: circle(vw-calc600(100) at 0px 331px);
@@ -1111,18 +1111,18 @@
 
   #gs-info {
     .core-info {
-      .report{
+      .report {
         li:nth-of-type(1) {
-          .site-pic:nth-of-type(2) {    
+          .site-pic:nth-of-type(2) {
             &::after {
               clip: rect(vw-calc600(0), vw-calc600(448), vw-calc600(200), vw-calc600(248));
               clip-path: circle(vw-calc600(100) at vw-calc600(348) vw-calc600(100));
             }
           }
         }
-  
+
         li:nth-of-type(2) {
-          .site-pic {    
+          .site-pic {
             &::after {
               clip: rect(vw-calc600(425), vw-calc600(350), vw-calc600(625), vw-calc600(150));
               clip-path: circle(vw-calc600(100) at vw-calc600(250) vw-calc600(525));

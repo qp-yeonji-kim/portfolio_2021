@@ -301,7 +301,7 @@ body {
     .core-info ul strong {
       display: block;
       font-size: 48px;
-      font-weight: 300; }
+      font-weight: 700; }
     .core-info ul .core-pic,
     .core-info ul .site-pic,
     .core-info ul .site-pic::before,
@@ -1117,13 +1117,13 @@ body {
     .core-info ul strong {
       font-size: 18px; }
     .core-info .point .core-txt {
-      font-size: 14px; }
+      font-size: 18px; }
     .core-info .report .site-a11y {
       font-size: 22px; }
       .core-info .report .site-a11y p:nth-of-type(1) {
         font-size: 16px; }
       .core-info .report .site-a11y p:nth-of-type(2) {
-        font-size: 14px; }
+        font-size: 18px; }
     .core-info .report .site-code .gist .blob-code-inner {
       font-size: 14px; }
 
