@@ -1200,9 +1200,10 @@
     -webkit-background-size: 400%, 100% !important;
     background-size: 400%, 100% !important; }
     #aboutme h2 {
-      padding: 30px 0;
+      padding: 80px 0 0;
       font-size: 26px; }
     #aboutme .my_feature {
+      margin-top: 80px;
       font-size: 16px; }
     #aboutme .ability_list li + li {
       margin: 60px auto 0; }

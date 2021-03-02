@@ -1884,11 +1884,12 @@
     @include bg-size(400%, 100%);
 
     h2 {
-      padding: 30px 0;
+      padding: 80px 0 0;
       font-size: 26px;
     }
 
     .my_feature {
+      margin-top: 80px;
       font-size: 16px;
     }
 
