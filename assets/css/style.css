@@ -355,8 +355,7 @@
       font-size: 40px;
       text-align: center; }
     #aboutme #main-project .link {
-      margin: 40px 60px;
-      background: hotpink; }
+      margin: 40px 60px; }
       #aboutme #main-project .link a {
         -webkit-border-radius: 40px;
         -moz-border-radius: 40px;
@@ -797,7 +796,18 @@
             height: 26px; }
       #aboutme #main-project .link-project svg {
         right: -vw-calc1440(30); }
-
+  @keyframes checking {
+    0% {
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    50% {
+      opacity: 1;
+      width: 0;
+      height: 6.9444444444vw; }
+    100% {
+      opacity: 1;
+      width: 13.8888888889vw; } }
   #project-list h1 {
     padding-top: 100px;
     font-size: 60px; }
@@ -970,7 +980,18 @@
           border-right: none; }
       #aboutme #main-project .link-project svg {
         right: -vw-calc1440(30); }
-
+  @keyframes checking {
+    0% {
+      opacity: 0;
+      width: 0;
+      height: 0; }
+    50% {
+      opacity: 1;
+      width: 0;
+      height: 9.765625vw; }
+    100% {
+      opacity: 1;
+      width: 19.53125vw; } }
   #project-list h1 {
     padding-top: 100px;
     font-size: 60px; }
