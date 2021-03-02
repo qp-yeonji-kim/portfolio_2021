@@ -146,7 +146,7 @@
   top: 100px;
   width: 100%;
   padding-bottom: 400px;
-  background: url("../images/main/bg-pink.svg") no-repeat bottom center;
+  background: $b-pink url("../images/main/bg-pink.svg") no-repeat bottom center;
 
   &.load {
     opacity: 1;
@@ -175,7 +175,6 @@
     padding-top: 100px;
     margin-left: 120px;
     font-size: 50px;
-    background-color: red;
   }
 
   .my_feature {
@@ -184,13 +183,11 @@
     padding-top: 150px;
     font-size: 38px;
     line-height: 1.8;
-    background-color: rgba(255, 166, 0, 0.4);
 
     p {
       @include t-form(translateY(-50%));
       position: absolute;
       top: 50%;
-      background-color: gold;
     }
 
     .me {
@@ -199,9 +196,7 @@
       position: relative;
       width: 650px;
       height: 650px;
-      background:
-        /* $l-pink */
-        yellow no-repeat center;
+      background: $l-pink no-repeat center;
 
       &::after {
         @include bg-size(contain);
@@ -217,7 +212,6 @@
   }
 
   .think {
-    background: greenyellow;
     padding-top: 0;
 
     >* {
@@ -245,7 +239,6 @@
 
   .ability {
     height: 650px;
-    background: rgba(127, 255, 212, 0.572);
 
     &.fadein {
       .show {
@@ -304,14 +297,13 @@
   }
 
   .ability_list {
-    background-color: yellowgreen;
+    margin: 0 auto;
 
     li {
       position: relative;
       float: left;
       width: 328px;
       height: 328px;
-      background-color: skyblue;
 
       +li {
         margin-left: 152px;
@@ -1068,6 +1060,7 @@
       li {
         width: vw-calc1440(328);
         height: vw-calc1440(328);
+        margin-left: vw-calc1440(15);
 
         +li {
           margin-left: vw-calc1440(152);
@@ -1085,12 +1078,12 @@
         }
 
         .ability_txt {
-          left: vw-calc1440(120);
+          left: vw-calc1440(110);
           width: 90%;
           font-size: 20px;
 
           strong {
-            margin-bottom: 14px;
+            margin-bottom: 0;
             font-size: 30px;
           }
         }
@@ -1269,7 +1262,6 @@
           font-size: 18px;
 
           strong {
-            margin-bottom: 10px;
             font-size: 26px;
           }
         }
@@ -1428,7 +1420,7 @@
         }
 
         .ability_txt {
-          left: 220px;
+          left: vw-calc1024(160);
           width: 400px;
           font-size: 30px;
 
