@@ -206,6 +206,7 @@
         width: 100%;
         height: 100%; }
   #aboutme .think {
+    background: greenyellow;
     padding-top: 0; }
     #aboutme .think > * {
       float: right; }
@@ -310,8 +311,7 @@
         font-size: 24px;
         line-height: 1.5;
         color: #fff;
-        z-index: 1000;
-        background-color: plum; }
+        z-index: 1000; }
         #aboutme .ability_list li .ability_txt strong {
           display: block;
           margin-bottom: 20px;
@@ -744,8 +744,8 @@
     #aboutme .ability {
       height: 650px; }
       #aboutme .ability.fadein .me {
-        bottom: 10.4166666667vw;
         left: 41.6666666667vw;
+        bottom: 10.4166666667vw;
         width: 700px;
         height: 700px; }
       #aboutme .ability > div:first-child {
@@ -779,7 +779,6 @@
         height: 40.1388888889vw; }
       #aboutme #main-project p {
         top: -6.9444444444vw;
-        width: 34.7222222222vw;
         font-size: 38px; }
       #aboutme #main-project .link {
         margin: 2.7777777778vw 4.1666666667vw; }
@@ -828,39 +827,37 @@
       font-size: 70px; } }
 /* PC: 1280px~1024px */
 @media screen and (max-width: 1280px) {
-  #aboutme {
-    -webkit-background-size: 150%, 100% !important;
-    background-size: 150%, 100% !important; }
-    #aboutme h2 {
-      font-size: 40px; }
-    #aboutme .my_feature {
-      font-size: 26px; }
-    #aboutme .ability {
-      height: 550px; }
-      #aboutme .ability.fadein .me {
-        width: 580px;
-        height: 580px; }
-    #aboutme .ability_list li {
+  #aboutme h2 {
+    font-size: 40px; }
+  #aboutme .my_feature {
+    font-size: 26px; }
+  #aboutme .ability {
+    height: 550px; }
+    #aboutme .ability.fadein .me {
+      width: 580px;
+      height: 580px; }
+  #aboutme .ability_list li {
+    width: 22.7777777778vw;
+    height: 22.7777777778vw; }
+    #aboutme .ability_list li + li {
+      margin-left: 10.5555555556vw; }
+    #aboutme .ability_list li::after {
       width: 22.7777777778vw;
       height: 22.7777777778vw; }
-      #aboutme .ability_list li + li {
-        margin-left: 10.5555555556vw; }
-      #aboutme .ability_list li::after {
-        width: 22.7777777778vw;
-        height: 22.7777777778vw; }
-      #aboutme .ability_list li::before {
-        left: 8.3333333333vw;
-        width: 22.7777777778vw;
-        height: 22.7777777778vw; }
-      #aboutme .ability_list li .ability_txt {
-        left: 8.3333333333vw;
-        width: 100%;
-        font-size: 18px; }
-        #aboutme .ability_list li .ability_txt strong {
-          margin-bottom: 10px;
-          font-size: 26px; }
-    #aboutme #main-project p {
-      font-size: 34px; }
+    #aboutme .ability_list li::before {
+      left: 8.3333333333vw;
+      width: 22.7777777778vw;
+      height: 22.7777777778vw; }
+    #aboutme .ability_list li .ability_txt {
+      left: 8.3333333333vw;
+      width: 100%;
+      font-size: 18px; }
+      #aboutme .ability_list li .ability_txt strong {
+        margin-bottom: 10px;
+        font-size: 26px; }
+  #aboutme #main-project p {
+    margin-bottom: 20px;
+    font-size: 34px; }
 
   #project-list h1 {
     padding-top: 80px;
@@ -878,6 +875,102 @@
     font-size: 52px; } }
 /* Tablet: 1024px~768px */
 @media screen and (max-width: 1024px) {
+  #aboutme {
+    -webkit-background-size: 350%, 100% !important;
+    background-size: 350%, 100% !important; }
+    #aboutme h2 {
+      padding-top: 60px;
+      margin-left: 0;
+      font-size: 40px;
+      text-align: center; }
+    #aboutme .my_feature {
+      font-size: 34px;
+      height: 117.1875vw; }
+      #aboutme .my_feature p {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        top: 83.0078125vw;
+        width: 100%;
+        text-align: center; }
+      #aboutme .my_feature .me {
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        width: 63.4765625vw;
+        height: 63.4765625vw; }
+    #aboutme .think {
+      padding-top: 100px; }
+      #aboutme .think > * {
+        float: none; }
+      #aboutme .think p {
+        left: 50%; }
+      #aboutme .think .me {
+        left: 50%; }
+    #aboutme .happy {
+      padding-top: 100px; }
+      #aboutme .happy > * {
+        float: none; }
+      #aboutme .happy p {
+        left: 50%;
+        right: auto; }
+      #aboutme .happy .me {
+        left: 50%; }
+    #aboutme .ability {
+      height: 87.890625vw;
+      padding-top: 0; }
+      #aboutme .ability.fadein .me {
+        left: 65%;
+        bottom: 30%;
+        width: 58.59375vw;
+        height: 58.59375vw; }
+      #aboutme .ability > div:first-child {
+        left: 8%;
+        top: 80%; }
+    #aboutme .ability_list li {
+      float: none;
+      width: 648px;
+      height: 428px;
+      margin: 0 auto; }
+      #aboutme .ability_list li + li {
+        margin-left: 0;
+        margin: 100px auto 0; }
+      #aboutme .ability_list li::after {
+        width: 428px;
+        height: 428px; }
+      #aboutme .ability_list li::before {
+        left: 220px;
+        width: 428px;
+        height: 428px; }
+      #aboutme .ability_list li .ability_txt {
+        left: 220px;
+        width: 400px;
+        font-size: 30px; }
+        #aboutme .ability_list li .ability_txt strong {
+          font-size: 42px; }
+    #aboutme #main-project {
+      width: 82.03125vw;
+      height: 59.5703125vw;
+      margin: 300px auto 0; }
+      #aboutme #main-project::after {
+        bottom: -33.203125vw;
+        width: 58.59375vw;
+        height: 56.4453125vw; }
+      #aboutme #main-project p {
+        top: -13.671875vw;
+        font-size: 38px; }
+      #aboutme #main-project .link {
+        margin: 3.90625vw 5.859375vw; }
+        #aboutme #main-project .link a {
+          width: 20.3125vw;
+          height: 20.3125vw; }
+        #aboutme #main-project .link .check {
+          border: 2.9296875vw solid #ed6d46;
+          width: 19.53125vw;
+          height: 9.765625vw;
+          border-top: none;
+          border-right: none; }
+      #aboutme #main-project .link-project svg {
+        right: -vw-calc1440(30); }
+
   #project-list h1 {
     padding-top: 100px;
     font-size: 60px; }
@@ -932,6 +1025,49 @@
     font-size: 60px; } }
 /* Tablet: 768px~600px */
 @media screen and (max-width: 768px) {
+  #aboutme {
+    -webkit-background-size: 350%, 100% !important;
+    background-size: 350%, 100% !important; }
+    #aboutme h2 {
+      padding-top: 0;
+      padding: 60px 0; }
+    #aboutme .my_feature {
+      height: 156.25vw;
+      font-size: 30px; }
+      #aboutme .my_feature p {
+        top: 96.3541666667vw; }
+      #aboutme .my_feature .me {
+        width: 84.6354166667vw;
+        height: 84.6354166667vw; }
+    #aboutme .think {
+      padding-top: 0; }
+    #aboutme .happy {
+      padding-top: 0; }
+    #aboutme .ability {
+      height: 78.125vw; }
+    #aboutme .ability_list li {
+      width: 84.375vw;
+      height: 55.7291666667vw; }
+      #aboutme .ability_list li + li {
+        margin: 100px auto 0; }
+      #aboutme .ability_list li::after {
+        width: 55.7291666667vw;
+        height: 55.7291666667vw; }
+      #aboutme .ability_list li::before {
+        left: 28.6458333333vw;
+        width: 55.7291666667vw;
+        height: 55.7291666667vw; }
+      #aboutme .ability_list li .ability_txt {
+        left: 23.4375vw;
+        width: 360px;
+        font-size: 26px; }
+    #aboutme #main-project .link {
+      margin: 0 2.7777777778vw; }
+      #aboutme #main-project .link span {
+        font-size: 22px; }
+        #aboutme #main-project .link span::before {
+          height: 22px; }
+
   #project-list h1 {
     padding-top: 80px;
     font-size: 50px; }
@@ -949,6 +1085,46 @@
     font-size: 52px; } }
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
+  #aboutme {
+    -webkit-background-size: 400%, 100% !important;
+    background-size: 400%, 100% !important;
+    padding-bottom: 200px; }
+    #aboutme h2 {
+      padding: 40px 0;
+      font-size: 30px; }
+    #aboutme .my_feature {
+      font-size: 22px; }
+    #aboutme .ability_list {
+      margin-top: 40px; }
+      #aboutme .ability_list li .ability_txt {
+        left: 16.6666666667vw;
+        width: 300px;
+        font-size: 22px; }
+        #aboutme .ability_list li .ability_txt strong {
+          margin-bottom: 4px;
+          font-size: 30px; }
+    #aboutme #main-project {
+      margin: 180px auto 0; }
+      #aboutme #main-project::after {
+        width: 50vw;
+        height: 48.1666666667vw; }
+      #aboutme #main-project p {
+        top: -20vw;
+        font-size: 26px; }
+      #aboutme #main-project .link {
+        margin: -1.6666666667vw 2.7777777778vw 0; }
+        #aboutme #main-project .link a {
+          -webkit-border-radius: 20px;
+          -moz-border-radius: 20px;
+          -ms-border-radius: 20px;
+          -o-border-radius: 20px;
+          border-radius: 20px; }
+        #aboutme #main-project .link span {
+          top: -10px;
+          font-size: 18px; }
+      #aboutme #main-project .link-project svg {
+        right: -vw-calc1440(30); }
+
   #project-list h1 {
     padding-top: 60px;
     font-size: 40px; }
@@ -1017,6 +1193,45 @@
     clip-path: circle(16.6666666667vw at 41.6666666667vw 87.5vw); } }
 /* Mobile: 425px~ */
 @media screen and (max-width: 425px) {
+  #aboutme {
+    -webkit-background-size: 400%, 100% !important;
+    background-size: 400%, 100% !important; }
+    #aboutme h2 {
+      padding: 30px 0;
+      font-size: 26px; }
+    #aboutme .my_feature {
+      font-size: 16px; }
+    #aboutme .ability_list li + li {
+      margin: 60px auto 0; }
+    #aboutme .ability_list li .ability_txt {
+      left: 15vw;
+      width: 210px;
+      font-size: 16px; }
+      #aboutme .ability_list li .ability_txt strong {
+        margin-bottom: 2px;
+        font-size: 22px; }
+    #aboutme #main-project {
+      margin: 180px auto 0; }
+      #aboutme #main-project::after {
+        width: 46.6666666667vw;
+        height: 45vw; }
+      #aboutme #main-project p {
+        top: -20vw;
+        font-size: 22px; }
+      #aboutme #main-project .link {
+        margin: -3.3333333333vw 2.7777777778vw 0; }
+        #aboutme #main-project .link a {
+          -webkit-border-radius: 10px;
+          -moz-border-radius: 10px;
+          -ms-border-radius: 10px;
+          -o-border-radius: 10px;
+          border-radius: 10px; }
+        #aboutme #main-project .link span {
+          top: -10px;
+          font-size: 16px; }
+      #aboutme #main-project .link-project svg {
+        right: -vw-calc1440(30); }
+
   #project-list ul {
     margin: 30px auto 40px; }
     #project-list ul li {

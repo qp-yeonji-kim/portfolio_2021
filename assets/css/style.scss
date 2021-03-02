@@ -217,6 +217,7 @@
   }
 
   .think {
+    background: greenyellow;
     padding-top: 0;
 
     >* {
@@ -350,7 +351,6 @@
         line-height: 1.5;
         color: #fff;
         z-index: 1000;
-        background-color: plum;
 
         strong {
           display: block;
@@ -1052,8 +1052,8 @@
 
       &.fadein {
         .me {
-          bottom: vw-calc1440(150);
           left: vw-calc1440(600);
+          bottom: vw-calc1440(150);
           width: 700px;
           height: 700px;
         }
@@ -1111,7 +1111,6 @@
 
       p {
         top: vw-calc1440(-100);
-        width: vw-calc1440(500);
         font-size: 38px;
       }
 
@@ -1206,8 +1205,6 @@
 /* PC: 1280px~1024px */
 @media screen and (max-width: 1280px) {
   #aboutme {
-    @include bg-size(150%, 100%);
-
     h2 {
       font-size: 40px;
     }
@@ -1263,6 +1260,7 @@
 
     #main-project {
       p {
+        margin-bottom: 20px;
         font-size: 34px;
       }
     }
@@ -1307,8 +1305,164 @@
 
 /* Tablet: 1024px~768px */
 @media screen and (max-width: 1024px) {
-  #project-list {
+  #aboutme {
+    @include bg-size(350%, 100%);
 
+    h2 {
+      padding-top: 60px;
+      margin-left: 0;
+      font-size: 40px;
+      text-align: center;
+    }
+
+    .my_feature {
+      font-size: 34px;
+      height: vw-calc1024(1200);
+
+      p {
+        @include t-form(translateX(-50%));
+        top: vw-calc1024(850);
+        width: 100%;
+        text-align: center;
+      }
+
+      .me {
+        @include t-form(translateX(-50%));
+        width: vw-calc1024(650);
+        height: vw-calc1024(650);
+      }
+    }
+
+    .think {
+      padding-top: 100px;
+
+      >* {
+        float: none;
+      }
+
+      p {
+        left: 50%;
+      }
+
+      .me {
+        left: 50%;
+      }
+    }
+
+    .happy {
+      padding-top: 100px;
+
+      >* {
+        float: none;
+      }
+
+      p {
+        left: 50%;
+        right: auto;
+      }
+
+      .me {
+        left: 50%;
+      }
+    }
+
+    .ability {
+      height: vw-calc1024(900);
+      padding-top: 0;
+
+      &.fadein {
+        .me {
+          left: 65%;
+          bottom: 30%;
+          width: vw-calc1024(600);
+          height: vw-calc1024(600);
+        }
+      }
+
+      >div:first-child {
+        left: 8%;
+        top: 80%;
+      }
+    }
+
+    .ability_list {
+
+      li {
+        float: none;
+        width: 648px;
+        height: 428px;
+        margin: 0 auto;
+
+        +li {
+          margin-left: 0;
+          margin: 100px auto 0;
+        }
+
+        &::after {
+          width: 428px;
+          height: 428px;
+        }
+
+        &::before {
+          left: 220px;
+          width: 428px;
+          height: 428px;
+        }
+
+        .ability_txt {
+          left: 220px;
+          width: 400px;
+          font-size: 30px;
+
+          strong {
+            font-size: 42px;
+          }
+        }
+      }
+    }
+
+    #main-project {
+      width: vw-calc1024(840);
+      height: vw-calc1024(610);
+      margin: 300px auto 0;
+
+      &::after {
+        bottom: vw-calc1024(-340);
+        width: vw-calc1024(600);
+        height: vw-calc1024(578);
+      }
+
+      p {
+        top: vw-calc1024(-140);
+        font-size: 38px;
+      }
+
+      .link {
+        margin: vw-calc1024(40) vw-calc1024(60);
+
+        a {
+          width: vw-calc1024(208);
+          height: vw-calc1024(208);
+        }
+
+        .check {
+          border: vw-calc1024(30) solid $orange;
+          width: vw-calc1024(200);
+          height: vw-calc1024(100);
+          border-top: none;
+          border-right: none;
+        }
+      }
+
+      .link-project {
+        svg {
+          right: -vw-calc1440(30);
+        }
+      }
+    }
+  }
+
+  #project-list {
     h1 {
       padding-top: 100px;
       font-size: 60px;
@@ -1391,6 +1545,84 @@
 
 /* Tablet: 768px~600px */
 @media screen and (max-width: 768px) {
+  #aboutme {
+    @include bg-size(350%, 100%);
+
+    h2 {
+      padding-top: 0;
+      padding: 60px 0;
+    }
+
+    .my_feature {
+      height: vw-calc768(1200);
+      font-size: 30px;
+
+      p {
+        top: vw-calc768(740);
+      }
+
+      .me {
+        width: vw-calc768(650);
+        height: vw-calc768(650);
+      }
+    }
+
+    .think {
+      padding-top: 0;
+    }
+
+    .happy {
+      padding-top: 0;
+    }
+
+    .ability {
+      height: vw-calc768(600);
+    }
+
+    .ability_list {
+
+      li {
+        width: vw-calc768(648);
+        height: vw-calc768(428);
+
+        +li {
+          margin: 100px auto 0;
+        }
+
+        &::after {
+          width: vw-calc768(428);
+          height: vw-calc768(428);
+        }
+
+        &::before {
+          left: vw-calc768(220);
+          width: vw-calc768(428);
+          height: vw-calc768(428);
+        }
+
+        .ability_txt {
+          left: vw-calc768(180);
+          width: 360px;
+          font-size: 26px;
+        }
+      }
+    }
+
+    #main-project {
+      .link {
+        margin: 0 vw-calc1440(40);
+
+        span {
+          font-size: 22px;
+
+          &::before {
+            height: 22px;
+          }
+        }
+      }
+    }
+  }
+
   #project-list {
     h1 {
       padding-top: 80px;
@@ -1432,6 +1664,70 @@
 
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
+  #aboutme {
+    @include bg-size(400%, 100%);
+    padding-bottom: 200px;
+
+    h2 {
+      padding: 40px 0;
+      font-size: 30px;
+    }
+
+    .my_feature {
+      font-size: 22px;
+    }
+
+    .ability_list {
+      margin-top: 40px;
+
+      li {
+        .ability_txt {
+          left: vw-calc600(100);
+          width: 300px;
+          font-size: 22px;
+
+          strong {
+            margin-bottom: 4px;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+
+    #main-project {
+      margin: 180px auto 0;
+
+      &::after {
+        width: vw-calc600(300);
+        height: vw-calc600(289);
+      }
+      
+      p {
+        top: vw-calc600(-120);
+        font-size: 26px;
+      }
+
+      .link {
+        margin: vw-calc600(-10) vw-calc1440(40) 0;
+
+        a {
+          @include b-radius(20px);
+        }
+
+        span {
+          top: -10px;
+          font-size: 18px;
+        }
+      }
+
+      .link-project {
+        svg {
+          right: -vw-calc1440(30);
+        }
+      }
+    }
+  }
+
   #project-list {
 
     h1 {
@@ -1579,6 +1875,73 @@
 
 /* Mobile: 425px~ */
 @media screen and (max-width: 425px) {
+  #aboutme {
+    @include bg-size(400%, 100%);
+
+    h2 {
+      padding: 30px 0;
+      font-size: 26px;
+    }
+
+    .my_feature {
+      font-size: 16px;
+    }
+
+    .ability_list {
+
+      li {
+
+        +li {
+          margin: 60px auto 0;
+        }
+
+        .ability_txt {
+          left: vw-calc600(90);
+          width: 210px;
+          font-size: 16px;
+
+          strong {
+            margin-bottom: 2px;
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    #main-project {
+      margin: 180px auto 0;
+
+      &::after {
+        width: vw-calc600(280);
+        height: vw-calc600(270);
+      }
+      
+      p {
+        top: vw-calc600(-120);
+        font-size: 22px;
+      }
+
+      .link {
+        margin: vw-calc600(-20) vw-calc1440(40) 0;
+
+        a {
+          @include b-radius(10px);
+        }
+
+        span {
+          top: -10px;
+          font-size: 16px;
+        }
+      }
+
+      .link-project {
+        svg {
+          right: -vw-calc1440(30);
+        }
+      }
+    }
+  }
+
   #project-list {
     ul {
       margin: 30px auto 40px;
