@@ -180,8 +180,8 @@
   .my_feature {
     position: relative;
     width: 100%;
-    padding-top: 150px;
-    font-size: 38px;
+    margin-top: 150px;
+    font-size: 34px;
     line-height: 1.8;
 
     p {
@@ -194,8 +194,8 @@
       @include b-radius(42% 58% 70% 30% / 45% 45% 55% 55%);
       @include bg-size(contain);
       position: relative;
-      width: 650px;
-      height: 650px;
+      width: 600px;
+      height: 600px;
       background: $l-pink no-repeat center;
 
       &::after {
@@ -203,8 +203,8 @@
         @include t-form(translate(-50%, -50%));
         content: "";
         position: absolute;
-        top: 50%;
         left: 50%;
+        top: 50%;
         width: 100%;
         height: 100%;
       }
@@ -212,10 +212,18 @@
   }
 
   .think {
-    padding-top: 0;
+    margin-top: 60px;
 
     >* {
       float: right;
+    }
+
+    p {
+      left: 5%;
+    }
+
+    .me {
+      right: 5%;
     }
 
     .me::after {
@@ -229,7 +237,11 @@
     }
 
     p {
-      right: 0;
+      right: 5%;
+    }
+
+    .me {
+      left: 5%;
     }
 
     .me::after {
@@ -1005,36 +1017,8 @@
       font-size: 30px;
 
       .me {
-        width: vw-calc1440(650);
-        height: vw-calc1440(650);
-      }
-    }
-
-    .think {
-      >* {
-        float: right;
-      }
-
-      p {
-        left: 4%;
-      }
-
-      .me {
-        right: 4%;
-      }
-    }
-
-    .happy {
-      >* {
-        float: left;
-      }
-
-      p {
-        right: 4%;
-      }
-
-      .me {
-        left: 4%;
+        width: vw-calc1440(600);
+        height: vw-calc1440(600);
       }
     }
 
@@ -1051,7 +1035,7 @@
       }
 
       >div:first-child {
-        left: 4%;
+        left: 8%;
       }
     }
 
@@ -1319,19 +1303,20 @@
     @include bg-size(350%, 100%);
 
     h2 {
-      padding-top: 60px;
+      padding-top: 180px;
       margin-left: 0;
-      font-size: 40px;
+      font-size: 60px;
       text-align: center;
     }
 
     .my_feature {
-      font-size: 34px;
       height: vw-calc1024(1200);
+      margin-top: 140px;
+      font-size: 36px;
 
       p {
         @include t-form(translateX(-50%));
-        top: vw-calc1024(850);
+        top: vw-calc1024(780);
         width: 100%;
         text-align: center;
       }
@@ -1340,11 +1325,11 @@
         @include t-form(translateX(-50%));
         width: vw-calc1024(650);
         height: vw-calc1024(650);
+        margin: 0;
       }
     }
 
     .think {
-      padding-top: 100px;
 
       >* {
         float: none;
@@ -1360,7 +1345,6 @@
     }
 
     .happy {
-      padding-top: 100px;
 
       >* {
         float: none;
@@ -1578,12 +1562,12 @@
     @include bg-size(350%, 100%);
 
     h2 {
-      padding-top: 0;
-      padding: 60px 0;
+      padding: 140px 0 0;
     }
 
     .my_feature {
-      height: vw-calc768(1200);
+      height: vw-calc768(1100);
+      margin-top: 100px;
       font-size: 30px;
 
       p {
@@ -1594,14 +1578,6 @@
         width: vw-calc768(650);
         height: vw-calc768(650);
       }
-    }
-
-    .think {
-      padding-top: 0;
-    }
-
-    .happy {
-      padding-top: 0;
     }
 
     .ability {
@@ -1698,7 +1674,7 @@
     padding-bottom: 200px;
 
     h2 {
-      padding: 40px 0;
+      padding: 100px 0 0;
       font-size: 30px;
     }
 
