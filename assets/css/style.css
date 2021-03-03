@@ -5,11 +5,11 @@
   height: 100vh;
   overflow: hidden; }
   #main-cnt .talk {
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     -webkit-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
     -moz-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
     -ms-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
@@ -25,9 +25,9 @@
     position: relative;
     top: 50%;
     left: 50%;
-    width: 820px;
-    height: 760px;
-    padding: 160px 120px;
+    width: 42.7083333333vw;
+    height: 39.5833333333vw;
+    padding: 8.3333333333vw 6.25vw;
     border: 1px solid #3e2a26;
     z-index: 10; }
     #main-cnt .talk p:first-of-type {
@@ -36,16 +36,18 @@
       text-align: left; }
     #main-cnt .talk p:nth-of-type(2) {
       font-size: 40px;
-      line-height: 60px;
+      line-height: 1.5;
       text-align: right; }
       #main-cnt .talk p:nth-of-type(2) span {
         color: #447844; }
     #main-cnt .talk img {
       position: absolute;
-      top: 0;
       left: 0;
+      top: 0;
       z-index: -10; }
   #main-cnt .link {
+    -webkit-background-size: contain !important;
+    background-size: contain !important;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -54,9 +56,11 @@
     -o-transition: all 1s;
     transition: all 1s;
     position: absolute;
-    padding: 100px;
+    width: 49.4791666667vw;
+    height: 52.0833333333vw;
+    padding: 5.2083333333vw;
     text-align: center;
-    background: no-repeat /contain; }
+    background: no-repeat; }
     #main-cnt .link.bigger {
       -webkit-transform: scale(5);
       transform: scale(5);
@@ -68,6 +72,7 @@
       -moz-transition: opacity 0.3s;
       -o-transition: opacity 0.3s;
       transition: opacity 0.3s;
+      position: absolute;
       display: inline-block;
       font-size: 50px; }
   #main-cnt .link-intro {
@@ -78,11 +83,10 @@
     border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
     top: -30%;
     left: -10%;
-    width: 950px;
-    height: 1000px;
     background-color: #d9abb3; }
     #main-cnt .link-intro a {
-      line-height: 600px; }
+      left: 40%;
+      top: 55%; }
   #main-cnt .link-project {
     -webkit-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
     -moz-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
@@ -91,27 +95,29 @@
     border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
     right: -10%;
     bottom: -30%;
-    width: 950px;
-    height: 1000px;
     background-color: #e5dedd; }
     #main-cnt .link-project a {
-      line-height: 1000px; }
+      left: 35%;
+      top: 35%; }
   #main-cnt .mysite {
     position: absolute;
     top: 5%;
-    right: 5%; }
+    right: 5%;
+    z-index: 1000; }
     #main-cnt .mysite li {
       float: left;
-      margin: 0 10px; }
+      margin: 0 20px; }
       #main-cnt .mysite li a {
         display: inline-block;
         text-align: center; }
         #main-cnt .mysite li a img {
-          width: 24px; }
+          width: 34px; }
         #main-cnt .mysite li a span {
+          display: block;
+          margin-top: 10px;
           font-family: LuxM;
-          font-weight: 600;
-          display: block; }
+          font-size: 18px;
+          font-weight: 600; }
 
 @keyframes morph {
   0% {
@@ -715,6 +721,17 @@
 
 /* PC: 144Opx~1280px */
 @media screen and (max-width: 1440px) {
+  #main-cnt .talk {
+    width: 56.9444444444vw;
+    height: 52.7777777778vw;
+    padding: 11.1111111111vw 8.3333333333vw; }
+    #main-cnt .talk p:first-of-type {
+      font-size: 68px; }
+    #main-cnt .talk p:nth-of-type(2) {
+      font-size: 34px; }
+  #main-cnt .link a {
+    font-size: 42px; }
+
   #aboutme {
     -webkit-background-size: 150%, 100% !important;
     background-size: 150%, 100% !important; }
@@ -873,6 +890,23 @@
     font-size: 52px; } }
 /* Tablet: 1024px~768px */
 @media screen and (max-width: 1024px) {
+  #main-cnt .talk {
+    width: 80.078125vw;
+    height: 74.21875vw;
+    padding: 15.625vw 11.71875vw; }
+  #main-cnt .link {
+    width: 92.7734375vw;
+    height: 97.65625vw;
+    padding: 9.765625vw; }
+  #main-cnt .link-intro {
+    top: -30%;
+    left: -20%; }
+  #main-cnt .link-project {
+    right: -20%;
+    bottom: -30%; }
+  #main-cnt .mysite {
+    top: 3%; }
+
   #aboutme {
     -webkit-background-size: 350%, 100% !important;
     background-size: 350%, 100% !important; }
@@ -1032,6 +1066,22 @@
     font-size: 60px; } }
 /* Tablet: 768px~600px */
 @media screen and (max-width: 768px) {
+  #main-cnt .talk p:first-of-type {
+    font-size: 46px; }
+  #main-cnt .talk p:nth-of-type(2) {
+    font-size: 30px; }
+  #main-cnt .link-intro {
+    top: -15%;
+    left: -20%; }
+    #main-cnt .link-intro a {
+      left: 35%;
+      top: 40%; }
+  #main-cnt .link-project {
+    right: -15%;
+    bottom: -20%; }
+    #main-cnt .link-project a {
+      top: 45%; }
+
   #aboutme {
     -webkit-background-size: 350%, 100% !important;
     background-size: 350%, 100% !important; }
@@ -1088,6 +1138,25 @@
     font-size: 52px; } }
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
+  #main-cnt .talk p:first-of-type {
+    font-size: 30px; }
+  #main-cnt .talk p:nth-of-type(2) {
+    font-size: 20px; }
+  #main-cnt .link a {
+    font-size: 26px; }
+  #main-cnt .link-intro a {
+    top: 45%; }
+  #main-cnt .link-project a {
+    top: 35%; }
+  #main-cnt .mysite {
+    top: 4%;
+    right: 4%; }
+    #main-cnt .mysite li {
+      margin: 0 14px; }
+      #main-cnt .mysite li a span {
+        margin-top: 8px;
+        font-size: 14px; }
+
   #aboutme {
     -webkit-background-size: 400%, 100% !important;
     background-size: 400%, 100% !important;
@@ -1196,6 +1265,20 @@
     clip-path: circle(16.6666666667vw at 41.6666666667vw 87.5vw); } }
 /* Mobile: 425px~ */
 @media screen and (max-width: 425px) {
+  #main-cnt .talk p:first-of-type {
+    font-size: 22px; }
+  #main-cnt .talk p:nth-of-type(2) {
+    font-size: 16px; }
+  #main-cnt .link a {
+    font-size: 20px; }
+  #main-cnt .mysite {
+    top: 4%;
+    right: 4%; }
+    #main-cnt .mysite li {
+      margin: 0 10px; }
+      #main-cnt .mysite li a span {
+        display: none; }
+
   #aboutme {
     -webkit-background-size: 400%, 100% !important;
     background-size: 400%, 100% !important; }

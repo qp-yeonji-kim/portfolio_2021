@@ -7,17 +7,17 @@
   overflow: hidden;
 
   .talk {
-    @include t-form(translate(-50%, -50%));
     @include borderbox;
+    @include t-form(translate(-50%, -50%));
     @include b-radius(42% 58% 70% 30% / 45% 45% 55% 55%);
     @include ani(morph 5s ease-in-out infinite);
     @include t-sition(all 1s ease-in-out);
     position: relative;
     top: 50%;
     left: 50%;
-    width: 820px;
-    height: 760px;
-    padding: 160px 120px;
+    width: vw-calc1920(820);
+    height: vw-calc1920(760);
+    padding: vw-calc1920(160) vw-calc1920(120);
     border: 1px solid $b-brown;
     z-index: 10;
 
@@ -29,7 +29,7 @@
 
     p:nth-of-type(2) {
       font-size: 40px;
-      line-height: 60px;
+      line-height: 1.5;
       text-align: right;
 
       span {
@@ -39,19 +39,22 @@
 
     img {
       position: absolute;
-      top: 0;
       left: 0;
+      top: 0;
       z-index: -10;
     }
   }
 
   .link {
+    @include bg-size(contain);
     @include borderbox;
     @include t-sition(all 1s);
     position: absolute;
-    padding: 100px;
+    width: vw-calc1920(950);
+    height: vw-calc1920(1000);
+    padding: vw-calc1920(100);
     text-align: center;
-    background: no-repeat /contain;
+    background: no-repeat;
 
     &.bigger {
       @include t-form(scale(5));
@@ -64,6 +67,7 @@
 
     a {
       @include t-sition(opacity 0.3s);
+      position: absolute;
       display: inline-block;
       font-size: 50px;
     }
@@ -73,12 +77,11 @@
     @include b-radius(42% 58% 70% 30% / 45% 45% 55% 55%);
     top: -30%;
     left: -10%;
-    width: 950px;
-    height: 1000px;
     background-color: $b-pink;
 
     a {
-      line-height: 600px;
+      left: 40%;
+      top: 55%;
     }
   }
 
@@ -86,12 +89,11 @@
     @include b-radius(42% 58% 70% 30% / 45% 45% 55% 55%);
     right: -10%;
     bottom: -30%;
-    width: 950px;
-    height: 1000px;
     background-color: $l-pink;
 
     a {
-      line-height: 1000px;
+      left: 35%;
+      top: 35%;
     }
   }
 
@@ -99,23 +101,26 @@
     position: absolute;
     top: 5%;
     right: 5%;
+    z-index: 1000;
 
     li {
       float: left;
-      margin: 0 10px;
+      margin: 0 20px;
 
       a {
         display: inline-block;
         text-align: center;
 
         img {
-          width: 24px;
+          width: 34px;
         }
 
         span {
-          font-family: LuxM;
-          font-weight: 600;
           display: block;
+          margin-top: 10px;
+          font-family: LuxM;
+          font-size: 18px;
+          font-weight: 600;
         }
       }
     }
@@ -1001,6 +1006,30 @@
 
 /* PC: 144Opx~1280px */
 @media screen and (max-width: 1440px) {
+  #main-cnt {
+
+    .talk {
+      width: vw-calc1440(820);
+      height: vw-calc1440(760);
+      padding: vw-calc1440(160) vw-calc1440(120);
+
+      p:first-of-type {
+        font-size: 68px;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 34px;
+      }
+    }
+
+    .link {
+
+      a {
+        font-size: 42px;
+      }
+    }
+  }
+
   #aboutme {
     @include bg-size(150%, 100%);
 
@@ -1299,6 +1328,35 @@
 
 /* Tablet: 1024px~768px */
 @media screen and (max-width: 1024px) {
+  #main-cnt {
+
+    .talk {
+      width: vw-calc1024(820);
+      height: vw-calc1024(760);
+      padding: vw-calc1024(160) vw-calc1024(120);
+    }
+
+    .link {
+      width: vw-calc1024(950);
+      height: vw-calc1024(1000);
+      padding: vw-calc1024(100);
+    }
+
+    .link-intro {
+      top: -30%;
+      left: -20%;
+    }
+
+    .link-project {
+      right: -20%;
+      bottom: -30%;
+    }
+
+    .mysite {
+      top: 3%;
+    }
+  }
+
   #aboutme {
     @include bg-size(350%, 100%);
 
@@ -1558,6 +1616,38 @@
 
 /* Tablet: 768px~600px */
 @media screen and (max-width: 768px) {
+  #main-cnt {
+
+    .talk {
+      p:first-of-type {
+        font-size: 46px;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 30px;
+      }
+    }
+
+    .link-intro {
+      top: -15%;
+      left: -20%;
+
+      a {
+        left: 35%;
+        top: 40%;
+      }
+    }
+
+    .link-project {
+      right: -15%;
+      bottom: -20%;
+
+      a {
+        top: 45%;
+      }
+    }
+  }
+
   #aboutme {
     @include bg-size(350%, 100%);
 
@@ -1669,6 +1759,55 @@
 
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
+  #main-cnt {
+
+    .talk {
+
+      p:first-of-type {
+        font-size: 30px;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 20px;
+      }
+    }
+
+    .link {
+      a {
+        font-size: 26px;
+      }
+    }
+
+    .link-intro {
+      a {
+        top: 45%;
+      }
+    }
+
+    .link-project {
+      a {
+        top: 35%;
+      }
+    }
+
+    .mysite {
+      top: 4%;
+      right: 4%;
+
+      li {
+        margin: 0 14px;
+
+        a {
+
+          span {
+            margin-top: 8px;
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
   #aboutme {
     @include bg-size(400%, 100%);
     padding-bottom: 200px;
@@ -1880,6 +2019,42 @@
 
 /* Mobile: 425px~ */
 @media screen and (max-width: 425px) {
+  #main-cnt {
+
+    .talk {
+
+      p:first-of-type {
+        font-size: 22px;
+      }
+
+      p:nth-of-type(2) {
+        font-size: 16px;
+      }
+    }
+
+    .link {
+      a {
+        font-size: 20px;
+      }
+    }
+
+    .mysite {
+      top: 4%;
+      right: 4%;
+
+      li {
+        margin: 0 10px;
+
+        a {
+
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
   #aboutme {
     @include bg-size(400%, 100%);
 
