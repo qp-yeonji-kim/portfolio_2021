@@ -1139,11 +1139,13 @@
 /* Mobile: 600px~425px */
 @media screen and (max-width: 600px) {
   #main-cnt .talk p:first-of-type {
-    font-size: 30px; }
+    font-size: 30px;
+    font-weight: 600; }
   #main-cnt .talk p:nth-of-type(2) {
     font-size: 20px; }
   #main-cnt .link a {
-    font-size: 26px; }
+    font-size: 26px;
+    font-weight: 600; }
   #main-cnt .link-intro a {
     top: 45%; }
   #main-cnt .link-project a {
