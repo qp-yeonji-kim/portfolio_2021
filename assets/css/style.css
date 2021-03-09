@@ -555,7 +555,8 @@
         font-weight: 700;
         line-height: 50px;
         text-align: center;
-        border: 1px solid #3e2a26; }
+        border: 1px solid #3e2a26;
+        z-index: 10; }
         #project-list ul li a::after {
           -webkit-border-radius: 4px;
           -moz-border-radius: 4px;

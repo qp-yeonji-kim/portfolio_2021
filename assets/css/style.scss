@@ -645,6 +645,7 @@
         line-height: 50px;
         text-align: center;
         border: 1px solid $b-brown;
+        z-index: 10;
 
         &::after {
           @include b-radius(4px);
