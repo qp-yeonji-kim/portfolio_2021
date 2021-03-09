@@ -74,8 +74,7 @@
       transition: opacity 0.3s;
       position: absolute;
       display: inline-block;
-      font-size: 50px;
-      color: #afeeee; }
+      font-size: 50px; }
   #main-cnt .link-intro {
     -webkit-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
     -moz-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
