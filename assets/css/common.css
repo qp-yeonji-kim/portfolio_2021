@@ -156,7 +156,7 @@ footer {
     opacity: 1; }
 
 body {
-  font-family: PnM;
+  font-family: PnM, "맑은 고딕", "Malgun Gothic", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #3e2a26; }
