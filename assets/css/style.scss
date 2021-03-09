@@ -695,7 +695,7 @@
     .device-pc {
       background-image: url("../images/project/pc-cgv1.png");
     }
-
+    
     .tooltip {
       p::before {
         border-bottom-color: $colcgv;
@@ -1987,7 +1987,7 @@
           .site-pic {
             &::after {
               clip: rect(vw-calc600(231), vw-calc600(149), vw-calc600(431), vw-calc600(-50));
-              clip-path: circle(vw-calc600(100) at 0px 331px);
+              clip-path: circle(vw-calc600(100) at vw-calc600(0) vw-calc600(331));
             }
           }
         }

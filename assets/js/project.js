@@ -51,8 +51,8 @@ $(document).ready(function () {
     if (e.keyCode === 13) $(this).trigger('click');
   });
 
-  // 코드부가 설명
-  if (windowSize > 600) {
+  // 코드 부가 설명
+  if ($(window).width() > 600) {
     $('.site-code').on('click', function () {
       var $viewDiv = $(this);
       var $siblingDiv = $(this).siblings('.site-code, .site-pic');
