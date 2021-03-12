@@ -695,7 +695,7 @@
     .device-pc {
       background-image: url("../images/project/pc-cgv1.png");
     }
-    
+
     .tooltip {
       p::before {
         border-bottom-color: $colcgv;
@@ -1740,6 +1740,10 @@
           width: 120px;
           height: 40px;
           line-height: 40px;
+
+          &::after {
+            height: 40px;
+          }
         }
       }
     }
@@ -1925,6 +1929,10 @@
           height: 60px;
           line-height: 60px;
           font-size: 22px;
+
+          &::after {
+            height: 60px;
+          }
         }
       }
     }
@@ -2147,6 +2155,10 @@
           height: 50px;
           line-height: 50px;
           font-size: 18px;
+
+          &::after {
+            height: 50px;
+          }
         }
       }
     }
