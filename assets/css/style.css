@@ -74,7 +74,8 @@
       transition: opacity 0.3s;
       position: absolute;
       display: inline-block;
-      font-size: 50px; }
+      font-size: 50px;
+      font-weight: 700; }
   #main-cnt .link-intro {
     -webkit-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
     -moz-border-radius: 42% 58% 70% 30%/45% 45% 55% 55%;
@@ -890,7 +891,7 @@
   #tab-info .summary-info h2 span {
     font-size: 52px; } }
 /* Tablet: 1024px~768px */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) and (orientation: portrait) {
   #main-cnt .talk {
     width: 80.078125vw;
     height: 74.21875vw;
@@ -1065,23 +1066,38 @@
 
   #tab-info .summary-info h2 span {
     font-size: 60px; } }
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+  #main-cnt .talk {
+    width: 41.015625vw;
+    height: 35.15625vw;
+    padding: 6.8359375vw 6.8359375vw; }
+    #main-cnt .talk p:first-of-type {
+      font-size: 30px; }
+    #main-cnt .talk p:nth-of-type(2) {
+      font-size: 18px; }
+  #main-cnt .link a {
+    font-size: 24px; }
+  #main-cnt .link-intro a {
+    left: 40%;
+    top: 45%; }
+  #main-cnt .link-project a {
+    left: 35%;
+    top: 40%; }
+  #main-cnt .mysite li {
+    margin: 0 14px; }
+    #main-cnt .mysite li a span {
+      margin-top: 5px;
+      font-size: 14px; } }
 /* Tablet: 768px~600px */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (orientation: portrait) {
   #main-cnt .talk p:first-of-type {
     font-size: 46px; }
   #main-cnt .talk p:nth-of-type(2) {
     font-size: 30px; }
-  #main-cnt .link-intro {
-    top: -15%;
-    left: -20%; }
-    #main-cnt .link-intro a {
-      left: 35%;
-      top: 40%; }
-  #main-cnt .link-project {
-    right: -15%;
-    bottom: -20%; }
-    #main-cnt .link-project a {
-      top: 45%; }
+  #main-cnt .link-intro a {
+    top: 40%; }
+  #main-cnt .link-project a {
+    top: 45%; }
 
   #aboutme {
     -webkit-background-size: 350%, 100% !important;
@@ -1139,8 +1155,13 @@
 
   #tab-info .summary-info h2 span {
     font-size: 52px; } }
+@media screen and (max-width: 768px) and (orientation: landscape) {
+  #main-cnt .talk {
+    width: 46.875vw;
+    height: 41.015625vw;
+    padding: 7.32421875vw 9.765625vw; } }
 /* Mobile: 600px~425px */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 600px) and (orientation: portrait) {
   #main-cnt .talk p:first-of-type {
     font-size: 30px;
     font-weight: 600; }
@@ -1270,6 +1291,29 @@
   #gs-info .core-info .report li:nth-of-type(2) .site-pic::after {
     clip: rect(70.8333333333vw, 58.3333333333vw, 104.1666666667vw, 25vw);
     clip-path: circle(16.6666666667vw at 41.6666666667vw 87.5vw); } }
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  #main-cnt .talk {
+    width: 48.828125vw;
+    height: 44.921875vw;
+    padding: 7.32421875vw 9.765625vw; }
+    #main-cnt .talk p:first-of-type {
+      font-size: 22px;
+      font-weight: 600; }
+    #main-cnt .talk p:nth-of-type(2) {
+      font-size: 16px; }
+  #main-cnt .link a {
+    font-size: 18px; }
+  #main-cnt .link-intro a {
+    left: 35%;
+    top: 55%; }
+  #main-cnt .link-project a {
+    left: 30%;
+    top: 30%; }
+  #main-cnt .mysite li {
+    margin: 0 10px; }
+    #main-cnt .mysite li a span {
+      margin-top: 5px;
+      font-size: 12px; } }
 /* Mobile: 425px~ */
 @media screen and (max-width: 425px) {
   #main-cnt .talk p:first-of-type {
