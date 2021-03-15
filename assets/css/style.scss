@@ -1308,7 +1308,8 @@
         }
 
         p {
-          height: 160px;
+          height: 180px;
+          padding: 16px 0 0 0;
           font-size: 18px;
         }
       }
@@ -1691,15 +1692,17 @@
 
     .link-intro {
 
+      top: -25%;
+
       a {
-        top: 40%;
+        top: 50%;
       }
     }
 
     .link-project {
 
       a {
-        top: 45%;
+        top: 30%;
       }
     }
   }
@@ -1854,7 +1857,7 @@
 
     .link-intro {
       a {
-        top: 45%;
+        top: 50%;
       }
     }
 
@@ -2175,6 +2178,27 @@
         font-size: 20px;
       }
     }
+
+    .link-intro {
+      top: -15%;
+      left: -30%;
+
+      a {
+        left: 50%;
+        top: 42%;
+      }
+    }
+
+    .link-project {
+      right: -20%;
+      bottom: -20%;
+
+      a {
+        left: 35%;
+        top: 35%;
+      }
+    }
+
 
     .mysite {
       top: 4%;

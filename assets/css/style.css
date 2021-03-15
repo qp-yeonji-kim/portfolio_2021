@@ -885,7 +885,8 @@
       margin: 60px 0 0;
       font-size: 26px; }
     #project-list ul li p {
-      height: 160px;
+      height: 180px;
+      padding: 16px 0 0 0;
       font-size: 18px; }
 
   #tab-info .summary-info h2 span {
@@ -1094,10 +1095,12 @@
     font-size: 46px; }
   #main-cnt .talk p:nth-of-type(2) {
     font-size: 30px; }
-  #main-cnt .link-intro a {
-    top: 40%; }
+  #main-cnt .link-intro {
+    top: -25%; }
+    #main-cnt .link-intro a {
+      top: 50%; }
   #main-cnt .link-project a {
-    top: 45%; }
+    top: 30%; }
 
   #aboutme {
     -webkit-background-size: 350%, 100% !important;
@@ -1171,7 +1174,7 @@
     font-size: 26px;
     font-weight: 600; }
   #main-cnt .link-intro a {
-    top: 45%; }
+    top: 50%; }
   #main-cnt .link-project a {
     top: 35%; }
   #main-cnt .mysite {
@@ -1322,6 +1325,18 @@
     font-size: 16px; }
   #main-cnt .link a {
     font-size: 20px; }
+  #main-cnt .link-intro {
+    top: -15%;
+    left: -30%; }
+    #main-cnt .link-intro a {
+      left: 50%;
+      top: 42%; }
+  #main-cnt .link-project {
+    right: -20%;
+    bottom: -20%; }
+    #main-cnt .link-project a {
+      left: 35%;
+      top: 35%; }
   #main-cnt .mysite {
     top: 4%;
     right: 4%; }
