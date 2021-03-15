@@ -1616,7 +1616,7 @@
   }
 }
 
-@media screen and (max-width: 1024px) and (orientation: landscape){
+@media screen and (max-width: 1024px) and (orientation: landscape) {
   #main-cnt {
 
     .talk {
@@ -1658,12 +1658,12 @@
     }
 
     .mysite {
-  
+
       li {
         margin: 0 14px;
 
         a {
-  
+
           span {
             margin-top: 5px;
             font-size: 14px;
@@ -1676,7 +1676,7 @@
 
 /* Tablet: 768px~600px */
 @media screen and (max-width: 768px) and (orientation: portrait) {
-  
+
   #main-cnt {
     .talk {
 
@@ -1817,7 +1817,7 @@
   }
 }
 
-@media screen and (max-width: 768px) and (orientation: landscape){
+@media screen and (max-width: 768px) and (orientation: landscape) {
   #main-cnt {
 
     .talk {
@@ -2095,7 +2095,7 @@
   }
 }
 
-@media screen and (max-width: 600px) and (orientation: landscape){
+@media screen and (max-width: 600px) and (orientation: landscape) {
   #main-cnt {
 
     .talk {
@@ -2107,7 +2107,7 @@
         font-size: 22px;
         font-weight: 600;
       }
-  
+
       p:nth-of-type(2) {
         font-size: 16px;
       }
@@ -2138,12 +2138,12 @@
     }
 
     .mysite {
-  
+
       li {
         margin: 0 10px;
 
         a {
-  
+
           span {
             margin-top: 5px;
             font-size: 12px;
@@ -2156,7 +2156,7 @@
 }
 
 /* Mobile: 425px~ */
-@media screen and (max-width: 425px)  {
+@media screen and (max-width: 425px) {
   #main-cnt {
 
     .talk {
